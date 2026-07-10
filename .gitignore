@@ -1,0 +1,10 @@
+AppData/
+ntuser.dat*
+Cookies
+'Application Data'
+venv/
+pycache/
+.ipynb_checkpoints/
+.vscode/
+result/**/*.pt
+result/**/*.npz

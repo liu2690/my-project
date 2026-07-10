@@ -1,0 +1,151 @@
+VOC_Index,VOC_Name,Selection_Freq,Soft_Mean,Soft_Std
+40,"126_2,4-Pentadienenitrile                                                                                                      ",0.77,0.6256107,0.19141467
+259,875_4-n-Propylbenzoic acid                                                                                                     ,0.73,0.62755376,0.18609883
+46,"137_2-Butenal, 2-methyl-                                                                                                       ",0.73,0.5884398,0.15551473
+132,465_3-Ethyl-4-methylpentan-1-ol                                                                                                ,0.69,0.5623,0.15565363
+181,"614_Butanedioic acid, dimethyl ester                                                                                           ",0.68,0.55941814,0.1555141
+229,"752_Hexanoic acid, 2-ethyl-                                                                                                    ",0.67,0.56102467,0.18037018
+44,"133_Formic acid, 2-methylbutyl ester                                                                                           ",0.67,0.5603919,0.16283424
+33,"101_1,3-Propanediol                                                                                                            ",0.65,0.5640759,0.16384181
+65,"226_4-Hexen-3-one, 4-methyl-                                                                                                   ",0.64,0.5614847,0.18008758
+231,"771_1H-Indene, 2,3-dihydro-5-methyl-                                                                                           ",0.64,0.5269535,0.1627767
+42,"131_2-Butenal, 2-methyl-, (E)-                                                                                                 ",0.62,0.5430472,0.16387019
+18,42_Triethylamine                                                                                                               ,0.61,0.5516963,0.16499281
+14,"34_Butanal, 2-methyl-                                                                                                          ",0.61,0.5331451,0.16201536
+399,"1376_Cyclooctasiloxane, hexadecamethyl-                                                                                        ",0.61,0.52643424,0.14103685
+43,132_Pyridine                                                                                                                   ,0.6,0.54411596,0.15924962
+255,"846_Ethanol, 1-(2-butoxyethoxy)-                                                                                               ",0.6,0.5435623,0.16782267
+370,1258_Butylated Hydroxytoluene                                                                                                  ,0.6,0.5424549,0.16400169
+373,1277_Octadecyl octyl ether                                                                                                     ,0.6,0.5409037,0.17234923
+25,"76_Ethane, methoxy-                                                                                                            ",0.6,0.53747034,0.17680211
+204,675_Cyclooctyl alcohol                                                                                                         ,0.6,0.53422177,0.1547674
+82,"268_Cyclotrisiloxane, hexamethyl-                                                                                              ",0.6,0.5334686,0.16886401
+119,"392_1-Butyl(dimethyl)silyloxy-2,2-dimethylpropane                                                                              ",0.6,0.5310753,0.1634892
+30,"88_Sulfurous acid, dimethyl ester                                                                                              ",0.6,0.5280164,0.18564785
+161,544_2-Octanone                                                                                                                 ,0.6,0.5164717,0.15980679
+414,"1472_Benzenecarbothioic acid, S-ethyl ester                                                                                    ",0.59,0.54493445,0.1543965
+120,"395_Ethanol, 2-butoxy-                                                                                                         ",0.59,0.5319619,0.16723031
+66,"227_Pipecolic acid, N-propoxycarbonyl-, dodecyl ester                                                                          ",0.59,0.5301098,0.1798326
+423,1516_Tetradecanoic acid                                                                                                        ,0.58,0.5422258,0.16679204
+113,"378_2,2,3-Triethyloxirane                                                                                                      ",0.58,0.53275627,0.16827294
+80,"262_1,5-Dimethyl-6-oxa-bicyclo[3.1.0]hexane                                                                                    ",0.58,0.53188777,0.18093629
+194,"645_Nonane, 5-methyl-5-propyl-                                                                                                 ",0.58,0.5294458,0.16431208
+47,"147_Methanamine, N,N-difluoro-                                                                                                 ",0.58,0.5193223,0.17291687
+363,"1241_Ethanone, 1-[4-(1-hydroxy-1-methylethyl)phenyl]-                                                                          ",0.58,0.5157005,0.1513787
+232,"777_Cyclopentasiloxane, decamethyl-                                                                                            ",0.57,0.5318385,0.1597105
+254,845_3-Decanone                                                                                                                 ,0.57,0.5270614,0.16934435
+339,"1179_Naphthalene, 1,3-dimethyl-                                                                                                ",0.57,0.5236257,0.16618313
+251,832_trans-2-Dodecen-1-ol                                                                                                       ,0.57,0.5225665,0.1456286
+142,"492_Pentadecane, 6-methyl-                                                                                                     ",0.57,0.5222276,0.15820915
+41,"130_3-Oxa-bicyclo[3.2.0]hept-6-ene-2,4-dione                                                                                   ",0.57,0.51877093,0.16987883
+223,720_Linalool                                                                                                                   ,0.57,0.5158281,0.16653289
+230,"755_Undecane, 3,8-dimethyl-                                                                                                    ",0.57,0.5156433,0.15793057
+84,"273_1-Butyne, 3-chloro-                                                                                                        ",0.57,0.5116891,0.16595429
+68,"230_3-Penten-2-one, 4-methyl-                                                                                                  ",0.57,0.50679785,0.18981951
+307,"1083_2,7-Imino-3,6-methanonaphthalene, decahydro-                                                                              ",0.57,0.5066141,0.17883958
+27,"82_2-Cyclopenten-1-one, 3-methyl-                                                                                              ",0.57,0.50458044,0.14608283
+272,"949_Heptadecane, 2,6,10,15-tetramethyl-                                                                                        ",0.57,0.49902892,0.16142018
+16,"38_Methoxyacetic acid, 2-tetrahydrofurylmethyl ester                                                                           ",0.56,0.536742,0.18422022
+53,174_1-Methyl-1-ethoxycyclobutane                                                                                               ,0.56,0.51899636,0.15898721
+323,"1138_Bicyclo[4.4.0]dec-1-ene, 2-isopropyl-5-methyl-9-methylene-                                                                ",0.56,0.51747304,0.17806828
+185,"623_3-Benzofurancarboxaldehyde, 2,3-dihydro-3-methyl-                                                                          ",0.56,0.5167985,0.15657273
+107,"360_3,5-Octanedione, 2,2,4,7-tetramethyl-                                                                                      ",0.56,0.51544863,0.17198962
+215,701_(+)-4-Carene                                                                                                               ,0.56,0.51473767,0.1697768
+331,"1163_10,10-Dimethyl-4-acetyl-tricyclo[5.2.1.0(1,5)]decane                                                                      ",0.56,0.51443976,0.18231265
+74,238_2-Methyl-4-methoxy-1-butanol                                                                                               ,0.56,0.5143053,0.17026512
+389,"1334_Glutaric acid, di(isobutyl) ester                                                                                         ",0.56,0.5141076,0.1652392
+362,1240_1-Dodecanol                                                                                                               ,0.56,0.5092691,0.1615683
+302,1067_Cedrene-V6                                                                                                                ,0.56,0.50591487,0.17743558
+136,"474_2-Heptenal, (Z)-                                                                                                           ",0.55,0.52747023,0.15634906
+345,"1190_Quinoline, 1,2-dihydro-2,2,4-trimethyl-                                                                                   ",0.55,0.52714425,0.15463088
+188,627_3-Ethyl-3-heptanol                                                                                                         ,0.55,0.5219231,0.16201383
+268,"914_Pentasiloxane, dodecamethyl-                                                                                               ",0.55,0.5173111,0.16013426
+378,1297_aR-Himachalene                                                                                                            ,0.55,0.5009893,0.17993596
+71,235_3-Nonen-5-one                                                                                                              ,0.55,0.49923238,0.17695156
+293,"1042_Ethanone, 1-[4-(1-methylethyl)phenyl]-                                                                                    ",0.55,0.4986982,0.16491638
+403,"1408_Heptadecane, 2-methyl-                                                                                                    ",0.55,0.48996955,0.17267972
+237,"787_Acetamide, 2-(3-cyano-4-methoxymethyl-6-methylpyridin-2-ylsulfanyl)-N-(3-trifluoromethylphenyl)-                           ",0.54,0.5205027,0.16174486
+50,"160_Butanoic acid, 2-amino-4-(methylsulfinyl)-, (.+/-.)-                                                                       ",0.54,0.5181242,0.14200313
+67,"228_Cyclopentane, 1,2,4-trimethyl-, (1.alpha.,2.beta.,4.alpha.)-                                                               ",0.54,0.51807696,0.18866697
+213,"697_Benzene, 2-ethyl-1,4-dimethyl-                                                                                             ",0.54,0.51752084,0.16483685
+144,496_(E)1-Allyl-2-methylcyclohexanol                                                                                            ,0.54,0.5165747,0.18954407
+426,"1563_Benzene, 1-methyl-4-(1,2,2-trimethylcyclopentyl)-, (R)-                                                                   ",0.54,0.51510733,0.15806517
+256,"848_Benzenemethanol, .alpha.-methyl-, acetate                                                                                  ",0.54,0.5110823,0.16156451
+424,"1526_.alpha.-Phellandrene, dimer                                                                                               ",0.54,0.5082022,0.17558762
+381,"1308_Dotriacontane, 1-iodo-                                                                                                    ",0.54,0.5046401,0.16666438
+7,"17_Furan, 2,3-dihydro-4-methyl-                                                                                                ",0.54,0.50323737,0.14733768
+79,"259_Heptane, 3,4,5-trimethyl-                                                                                                  ",0.54,0.5027923,0.14445749
+153,523_Benzonitrile                                                                                                               ,0.54,0.50062865,0.1532149
+375,"1282_Benzoic acid, 4-ethoxy-, ethyl ester                                                                                      ",0.54,0.49478835,0.15864873
+236,"784_1,1,3,3,5,5,7,7-Octamethyl-7-(2-methylpropoxy)tetrasiloxan-1-ol                                                            ",0.53,0.5289723,0.19080828
+6,14_Thiirane                                                                                                                    ,0.53,0.524954,0.1688405
+201,668_Phenylglyoxal                                                                                                              ,0.53,0.5238039,0.174874
+15,36_1-Penten-3-one                                                                                                              ,0.53,0.51992446,0.17515954
+392,"1343_2,2,4-Trimethyl-1,3-pentanediol diisobutyrate                                                                             ",0.53,0.51595753,0.16958855
+26,"80_Propionic acid, 2-mercapto-, allyl ester                                                                                    ",0.53,0.5138758,0.16016442
+149,503_5-Nonanol                                                                                                                  ,0.53,0.51202387,0.15994471
+397,1368_Benzophenone                                                                                                              ,0.53,0.51169705,0.16246721
+86,283_3-Furaldehyde                                                                                                              ,0.53,0.51151913,0.16836104
+0,"1_2-Butenal, (Z)-                                                                                                              ",0.53,0.5101365,0.18058875
+51,"162_3-Hexene, 2,2-dimethyl-, (Z)-                                                                                              ",0.53,0.50924444,0.19207694
+271,"948_2,6,10-Trimethyltridecane                                                                                                  ",0.53,0.5065698,0.16794758
+283,"1011_Naphthalene, 1,2,3,4-tetrahydro-1,8-dimethyl-                                                                             ",0.53,0.5044315,0.16214645
+162,"546_Benzene, 1,2,3-trimethyl-                                                                                                  ",0.53,0.5040236,0.1823306
+164,"551_2-Methyl-1,6-dioxaspiro[4.4]nonane                                                                                         ",0.53,0.5026713,0.15287799
+355,"1217_Silane, trichlorooctadecyl-                                                                                               ",0.53,0.5015811,0.1759742
+266,910_2-Ethylhexyl acrylate                                                                                                      ,0.53,0.4999451,0.15505698
+334,"1173_Spiro[5.5]undec-2-ene, 3,7,7-trimethyl-11-methylene-, (-)-                                                                ",0.53,0.49759698,0.14408378
+207,"683_Formic acid, octyl ester                                                                                                   ",0.53,0.4972834,0.17753157
+202,"670_Aniline, N-methyl-                                                                                                         ",0.53,0.49692047,0.16854699
+225,732_Nonanal                                                                                                                    ,0.53,0.49474385,0.15955295
+416,"1481_Benzene, 1-(1,1-dimethylethyl)-4-phenoxy-                                                                                 ",0.53,0.49352622,0.15980579
+281,"990_3,4-Dimethylcumene                                                                                                         ",0.53,0.4914861,0.15307653
+427,"1564_Acetophenone, 2,2-difluoro-2-phenyl-                                                                                      ",0.53,0.48420864,0.1482448
+278,977_Nonanoic acid                                                                                                              ,0.53,0.4841078,0.18438391
+287,"1017_Naphthalene, 1-methyl-                                                                                                    ",0.52,0.53417224,0.17121649
+328,"1157_2,4,8-Trimethyl-1,2,3,4-tetrahydroquinoline                                                                               ",0.52,0.52828765,0.1739653
+114,"383_3,3-Dichloropropyne                                                                                                        ",0.52,0.51988876,0.16494302
+93,321_4-Hydroxy-3-hexanone                                                                                                       ,0.52,0.5172354,0.1519049
+297,"1052_1,3-Cyclohexadiene-1-carboxaldehyde, 2,6,6-trimethyl-                                                                     ",0.52,0.5150587,0.15973727
+200,"663_2,5-Hexanediol, 2,5-dimethyl-                                                                                              ",0.52,0.51377845,0.16533507
+134,"471_Hexanal, 2-ethyl-                                                                                                          ",0.52,0.5101165,0.16706009
+91,316_2-Ethyl-5-propylcyclopentanone                                                                                             ,0.52,0.5099161,0.15340026
+359,"1234_2,5-cyclohexadiene-1,4-dione, 2-(1,1-dimethylethyl)-5-(2-methyl-2-propen-1-yl)-                                           ",0.52,0.50938344,0.16163693
+177,"596_Octane, 3,3-dimethyl-                                                                                                      ",0.52,0.5086807,0.18723959
+147,"501_5-Ethyl-2,4-nonandione                                                                                                     ",0.52,0.5075969,0.15873955
+253,838_Terpinen-4-ol                                                                                                              ,0.52,0.5056905,0.17095648
+173,"588_Propanenitrile, 2,2'-azobis[2-methyl-                                                                                      ",0.52,0.50535595,0.16089985
+233,"781_trans-1,2-Dimethylsilacyclohexane                                                                                          ",0.52,0.5030531,0.17875144
+418,1499_Heneicosane                                                                                                               ,0.52,0.50284815,0.1524922
+226,"741_Decane, 2,5-dimethyl-                                                                                                      ",0.52,0.49955836,0.16806914
+203,672_Acetophenone                                                                                                               ,0.52,0.498402,0.17784776
+365,"1243_Ppropiolic acid, 3-(1-hydroxy-2-isopropyl-5-methylcyclohexyl)-                                                            ",0.52,0.49711815,0.1754668
+72,236_Hexanal                                                                                                                    ,0.52,0.4961306,0.17266819
+100,338_1-Methoxycyclohexane                                                                                                       ,0.52,0.49460748,0.15137562
+49,155_Tetraethylammonium chloride                                                                                                ,0.52,0.4926575,0.18150212
+433,1645_Palmitoleic acid                                                                                                          ,0.52,0.4923973,0.1653898
+21,58_cis-1-Ethoxy-1-butene                                                                                                       ,0.52,0.49099186,0.16178127
+249,"827_p-Acetophenetidide, N-methyl-                                                                                              ",0.51,0.52244836,0.17972752
+288,1018_2-Undecanone                                                                                                              ,0.51,0.52243453,0.16345406
+220,"714_Benzoic acid, methyl ester                                                                                                 ",0.51,0.5171545,0.15793663
+384,"1319_Pentadecane, 4-methyl-                                                                                                    ",0.51,0.5112021,0.1632693
+61,"216_Propane, 1,3-dimethoxy-                                                                                                    ",0.51,0.51050997,0.18597792
+401,"1392_1,3,5-Triazine-2,4,6(1H,3H,5H)-trione, 1,3,5-tri-2-propenyl-                                                              ",0.51,0.5084374,0.16524516
+402,"1393_Fumaric acid, eicosyl trans-hex-3-enyl ester                                                                              ",0.51,0.5081322,0.1831348
+211,"693_Hexane, 2,5-dimethoxy-2,5-dimethyl-                                                                                        ",0.51,0.5064757,0.17260177
+430,"1597_Benzenebutanal, .gamma.,4-dimethyl-                                                                                       ",0.51,0.50607044,0.16756962
+258,"863_1-Buten-3-one, 1-(2-carboxy-4,4-dimethylcyclobutenyl)-                                                                     ",0.51,0.50411505,0.1690819
+90,"301_Benzene, chloro-                                                                                                           ",0.51,0.5026148,0.16740614
+217,706_2-Butoxyethyl acetate                                                                                                      ,0.51,0.5023397,0.16023186
+189,"629_Benzaldehyde, 2-hydroxy-                                                                                                   ",0.51,0.5013732,0.16637754
+326,"1150_1H-3a,7-Methanoazulene, octahydro-1,4,9,9-tetramethyl-, (1.alpha.,3a.alpha.,4.beta.,7.alpha.,8a.beta.)-                   ",0.51,0.5010296,0.15200652
+391,1340_Diethyl Phthalate                                                                                                         ,0.51,0.5009484,0.17142805
+371,"1263_2,4-Di-tert-butylphenol                                                                                                   ",0.51,0.5003529,0.17763904
+212,"696_Silicic acid, diethyl bis(trimethylsilyl) ester                                                                            ",0.51,0.49468815,0.1870737
+347,"1197_Quinoline, 2,7-dimethyl-                                                                                                  ",0.51,0.49384257,0.15751082
+366,1248_Dodecanenitrile                                                                                                           ,0.51,0.49341357,0.16710652
+413,"1465_1-Penten-3-one, 2-methyl-1-(2,2,6-trimethylcyclohexen-1-yl)-                                                              ",0.51,0.4910282,0.15506193
+125,"422_1-Pentanol, TBDMS derivative                                                                                               ",0.51,0.49082384,0.16628166
+55,"180_1-Penten-3-one, 2-methyl-                                                                                                  ",0.51,0.4846944,0.17007464
+273,"950_Acetic acid, chloro-, 2-phenylethyl ester                                                                                  ",0.51,0.4821858,0.16832578
+126,"425_Benzene, (1-methylethyl)-                                                                                                  ",0.51,0.47940704,0.1655119
