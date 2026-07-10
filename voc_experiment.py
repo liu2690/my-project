@@ -67,7 +67,9 @@ def experiment(data_path, save_path, num_cluster,
                experiment_repeats=2, repeats=2, epochs=200,
                sparsity_lambda=1e-2,
                temp_start=1.0, temp_end=0.3,
-               seed=42, panel_threshold=0.5):
+               seed=42, panel_threshold=0.5,
+               classifier_type='linear',
+               record_train_f1=False):
 
     set_seed(seed)
 
@@ -86,20 +88,28 @@ def experiment(data_path, save_path, num_cluster,
 
     k_means_mask = feature_cluster(x_pool.float().numpy(), num_cluster)
 
+    # 类别不平衡补偿：计算 train 集上的类别权重
+    class_counts = torch.bincount(y_pool.long())
+    class_weights = torch.tensor(
+        [1.0, class_counts[0].item() / max(class_counts[1].item(), 1e-6)],
+        device=DEVICE
+    )
+
     all_masks = []
     all_soft = []
     all_cm = []
     all_probs = []
     all_targets = []
     all_metrics = []
+    all_train_f1 = []  # Phase 1 诊断用
 
     pbar = tqdm(range(experiment_repeats))
     for out_idx in pbar:
 
         train_loader_init, val_loader, x_train = split_dataset(
-            x_pool, y_pool, batch_size=16, split_length=[0.75, 0.25])
+            x_pool, y_pool, batch_size=32, split_length=[0.75, 0.25])
         train_loader_init = torch.utils.data.DataLoader(
-            train_loader_init.dataset, batch_size=16, shuffle=True, drop_last=True)
+            train_loader_init.dataset, batch_size=32, shuffle=True, drop_last=True)
         x_val = torch.cat([x for x, _ in val_loader])
 
         group_best_acc, group_best_mask, group_best_wts = -1.0, None, None
@@ -111,13 +121,17 @@ def experiment(data_path, save_path, num_cluster,
                 head_dim=256,
                 num_class=2,
                 temperature=temp_start,
+                classifier_type=classifier_type,
             ).to(DEVICE, dtype=DTYPE)
 
-            optimizer = optim.Adam([
+            # 分层学习率：logist 低 lr，classifier 高 lr
+            optimizer = optim.AdamW([
                 {'params': model.logist.parameters(), 'lr': 1e-5, 'weight_decay': 1e-4},
-                {'params': model.mlp_classifier.parameters(), 'lr': 5e-4, 'weight_decay': 5e-3},
+                {'params': model.mlp_classifier.parameters(), 'lr': 5e-5, 'weight_decay': 1e-2},
             ])
-            criterion = nn.CrossEntropyLoss()
+            criterion = nn.CrossEntropyLoss(
+                weight=class_weights, label_smoothing=0.05
+            )
             local_best_acc, local_best_wts, local_best_mask = 0.0, None, None
 
             for epoch in range(epochs):
@@ -132,6 +146,7 @@ def experiment(data_path, save_path, num_cluster,
                     sparsity = model.selection_prob(x).mean()
                     loss = criterion(outputs, y) + sparsity_lambda * sparsity
                     loss.backward()
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
                     optimizer.step()
 
                 model.eval()
@@ -154,6 +169,36 @@ def experiment(data_path, save_path, num_cluster,
                 group_best_acc = local_best_acc
                 group_best_wts = local_best_wts
                 group_best_mask = local_best_mask
+
+            # Phase 1 诊断：记录 train F1（使用最佳 val 模型）
+            if record_train_f1 and group_best_wts is not None:
+                model.load_state_dict(group_best_wts)
+                model.eval()
+                with torch.no_grad():
+                    mask_eval = model.get_score(x_val.to(DEVICE, dtype=DTYPE))
+                    train_correct, train_total = 0, 0
+                    train_preds_all, train_labels_all = [], []
+                    for x_t, y_t in train_loader_init:
+                        x_t = x_t.to(DEVICE, dtype=DTYPE)
+                        y_t = y_t.to(DEVICE).long()
+                        outputs = model.mlp_classifier(x_t * mask_eval)
+                        preds = outputs.argmax(1)
+                        train_correct += (preds == y_t).sum().item()
+                        train_total += y_t.size(0)
+                        train_preds_all.extend(preds.cpu().numpy())
+                        train_labels_all.extend(y_t.cpu().numpy())
+                    train_acc = train_correct / train_total
+                    # 计算 train F1
+                    train_cm = confusion_matrix(train_labels_all, train_preds_all, labels=[0, 1])
+                    tn, fp = float(train_cm[0, 0]), float(train_cm[0, 1])
+                    fn, tp = float(train_cm[1, 0]), float(train_cm[1, 1])
+                    eps = 1e-12
+                    train_sens = tp / (tp + fn + eps)
+                    train_ppv = tp / (tp + fp + eps)
+                    train_f1 = 2 * train_sens * train_ppv / (train_sens + train_ppv + eps)
+                    all_train_f1.append({
+                        'Repeat': out_idx, 'Train_Acc': train_acc, 'Train_F1': train_f1
+                    })
 
         if group_best_wts is not None:
             model.load_state_dict(group_best_wts)
@@ -223,16 +268,27 @@ def experiment(data_path, save_path, num_cluster,
         'experiment_repeats': experiment_repeats, 'repeats': repeats, 'epochs': epochs,
         'batch_size': 16, 'split_outer': [0.8, 0.2], 'split_inner': [0.75, 0.25],
         'num_blocks': 4, 'head_dim': 256,
-        'lr_logist': 1e-5, 'lr_classifier': 5e-4,
-        'wd_logist': 1e-4, 'wd_classifier': 5e-3,
+        'lr_logist': 1e-5, 'lr_classifier': 5e-5,
+        'wd_logist': 1e-4, 'wd_classifier': 1e-2,
         'sparsity_lambda': sparsity_lambda,
         'temp_start': temp_start, 'temp_end': temp_end,
         'panel_threshold': panel_threshold,
+        'classifier_type': classifier_type,
+        'label_smoothing': 0.05, 'class_weight': [1.0, float(class_counts[0] / max(class_counts[1], 1e-6))],
+        'grad_clip': 1.0,
         'torch_version': torch.__version__, 'numpy_version': np.__version__,
     }
     with open(os.path.join(out_dir, 'run_config.json'), 'w') as f:
         json.dump(config, f, indent=2, ensure_ascii=False)
     print(f"[保存②] 运行配置 → {os.path.join(out_dir, 'run_config.json')}")
+
+    # Phase 1 诊断：保存 train F1
+    if record_train_f1 and all_train_f1:
+        train_f1_df = pd.DataFrame(all_train_f1)
+        train_f1_csv = os.path.join(out_dir, 'train_f1_diagnosis.csv')
+        train_f1_df.to_csv(train_f1_csv, index=False)
+        print(f"[保存②b] Train F1 诊断 → {train_f1_csv}")
+        print(f"  Train F1 mean: {train_f1_df['Train_F1'].mean():.4f} ± {train_f1_df['Train_F1'].std():.4f}")
 
     feat_csv = os.path.join(out_dir, 'feature_selection_stats.csv')
     pd.DataFrame({
