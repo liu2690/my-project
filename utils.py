@@ -33,7 +33,7 @@ def split_data(
 #     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 #     return train_loader, val_loader, test_loader, x_train #train_x用于k_means
 
-def split_dataset(samples: Tensor, labels: Tensor, batch_size = None, split_length = [0.8, 0.2]):
+def split_dataset(samples: Tensor, labels: Tensor, batch_size=None, split_length=[0.8, 0.2]):
     """
     执行 8:2 的分层划分并返回 DataLoader
     """
@@ -42,7 +42,7 @@ def split_dataset(samples: Tensor, labels: Tensor, batch_size = None, split_leng
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 
     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
-    return train_loader, test_loader, x_train #train_x用于k_means
+    return train_loader, test_loader, x_train  # train_x用于k_means
 
 
 def feature_cluster(x, num_cluster = None):

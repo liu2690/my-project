@@ -212,6 +212,15 @@ class MultiView(nn.Module):
         return torch.sigmoid(self.mask_logist(x).mean(dim=0))
 
     def forward(self, x):
-        mask  = self.get_score(x)
+        theta = self.mask_logist(x).mean(dim=0)              # [D]
+        if self.training:
+            u      = torch.rand_like(theta).clamp_(1e-6, 1 - 1e-6)
+            gumbel = torch.log(u) - torch.log1p(-u)
+            soft   = torch.sigmoid((theta + gumbel) / self.temperature)
+            hard   = (theta + gumbel > 0).float()
+            mask   = hard + (soft - soft.detach())
+        else:
+            mask   = (theta > 0).float()
         logit = self.mlp_classifier(x * mask)
-        return logit, mask
+        sparsity = torch.sigmoid(theta).mean()               # 复用 theta，避免二次 mask_logist
+        return logit, mask, sparsity

@@ -24,12 +24,13 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def set_seed(seed):
+    """设置随机种子，cudnn.benchmark=True 加速 CNN 计算"""
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = False
+    torch.backends.cudnn.benchmark = True
 
 
 def compute_metrics(cm, targets, probs):
@@ -82,7 +83,7 @@ def experiment(data_path, save_path, num_cluster,
     voc_names = [str(v.flat[0]) for v in data['feat_names'].flatten()]
 
     train_loader, test_loader, _ = split_dataset(
-        samples, labels, batch_size=16, split_length=[0.8, 0.2])
+        samples, labels, batch_size=32, split_length=[0.8, 0.2])
     _tmp = DataLoader(train_loader.dataset, batch_size=len(train_loader.dataset), shuffle=False)
     x_pool, y_pool = next(iter(_tmp))
 
@@ -142,8 +143,7 @@ def experiment(data_path, save_path, num_cluster,
                 for x, y in train_loader_init:
                     x, y = x.to(DEVICE, dtype=DTYPE), y.to(DEVICE).long()
                     optimizer.zero_grad()
-                    outputs, _ = model(x)
-                    sparsity = model.selection_prob(x).mean()
+                    outputs, _, sparsity = model(x)
                     loss = criterion(outputs, y) + sparsity_lambda * sparsity
                     loss.backward()
                     torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
@@ -266,7 +266,7 @@ def experiment(data_path, save_path, num_cluster,
     config = {
         'seed': seed, 'num_cluster': num_cluster,
         'experiment_repeats': experiment_repeats, 'repeats': repeats, 'epochs': epochs,
-        'batch_size': 16, 'split_outer': [0.8, 0.2], 'split_inner': [0.75, 0.25],
+        'batch_size': 32, 'split_outer': [0.8, 0.2], 'split_inner': [0.75, 0.25],
         'num_blocks': 4, 'head_dim': 256,
         'lr_logist': 1e-5, 'lr_classifier': 5e-5,
         'wd_logist': 1e-4, 'wd_classifier': 1e-2,
