@@ -1,0 +1,891 @@
+outer_fold,candidate_id,feature_name,feature_id,selected_by_voc_filter,selected_by_optional_selector,classifier_coefficient,coefficient_sign
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butenal, (Z)-",1,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4,5-Dihydrooxazole-5-one, 4-[4-acetoxy-3-methoxybenzylidene]-2-phenyl-",4,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cyclopropyl methyl carbinol,6,True,,0.047344946682853564,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzene,10,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethane, 1,2-dichloro-",11,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Methoxypropionic acid,13,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Thiirane,14,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Furan, 2,3-dihydro-4-methyl-",17,True,,-0.1300842299930999,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Diborane(6), .mu.-mercapto-",18,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexane, (1,1-dimethylethyl)-",19,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Oxo-6-(piperidine-1-sulfonyl)-benzooxazole-3-carboxylic acid 2-chloro-ethyl ester,25,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propanol, 1-methoxy-",26,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Nonane, 5-methylene-",28,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Disiloxane, hexamethyl-",29,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butanal, 2-methyl-",34,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Penten-3-one,36,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Methoxyacetic acid, 2-tetrahydrofurylmethyl ester",38,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,tert-Butylpentamethyldisiloxane,40,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Triethylamine,42,True,,0.35296709815605826,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentane, 2,2,4-trimethyl-",45,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Heptanal, 2-methyl-",54,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,cis-1-Ethoxy-1-butene,58,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butanol, 3,3-dimethyl-4-dimethylamino-2-phenyl-",61,True,,-0.07328842852639374,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,Trimethylene oxide,70,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,4-Dioxane",74,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethane, methoxy-",76,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propionic acid, 2-mercapto-, allyl ester",80,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Cyclopenten-1-one, 3-methyl-",82,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanamine, N-ethyl-",83,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silanediol, dimethyl-",86,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Sulfurous acid, dimethyl ester",88,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclopentanemethanol, 3-methylene-",94,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Formic acid, butyl ester",100,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3-Propanediol",101,True,,-0.17546939631017652,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethane, 1,1-diethoxy-",104,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Formic acid, 5-methylhex-2-yl ester",107,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Heptene,110,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propane, 3,3-dichloro-1,1,1,2,2-pentafluoro-",117,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Pentanol, 2-methyl-",119,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Oxirane, 2-(1,1-dimethylethyl)-3-methyl-",120,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4-Pentadienenitrile",126,True,,-0.20083753915175176,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Oxa-bicyclo[3.2.0]hept-6-ene-2,4-dione",130,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butenal, 2-methyl-, (E)-",131,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Pyridine,132,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Formic acid, 2-methylbutyl ester",133,True,,0.09582305661333075,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Disulfide, dimethyl",135,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butenal, 2-methyl-",137,True,,0.2581511619172939,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Methanamine, N,N-difluoro-",147,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Propanoic acid,148,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetraethylammonium chloride,155,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butanoic acid, 2-amino-4-(methylsulfinyl)-, (.+/-.)-",160,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Toluene,172,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Methyl-1-ethoxycyclobutane,174,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Boron, trihydro(pyridine)-, (T-4)-",176,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Penten-3-one, 2-methyl-",180,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,2,4,4-Tetramethyloctane",182,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butane, 2-cyclopropyl-",186,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"D-Erythro-Tetrofuranose-3-ulose, 4-C-cyclopropyl-1,2-O-isopropylidene-, .alpha.-",194,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3-Dioxolane, 2-ethyl-4-methyl-",203,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cyclopentanone,214,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propane, 1,3-dimethoxy-",216,True,,0.03193039854254463,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3-Diisopropoxy-1,3-dimethyl-1,3-disilacyclobutane",217,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,4-Ethylbenzamide,223,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Methoxy-1,3-dioxolane",224,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4-Hexen-3-one, 4-methyl-",226,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pipecolic acid, N-propoxycarbonyl-, dodecyl ester",227,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclopentane, 1,2,4-trimethyl-, (1.alpha.,2.beta.,4.alpha.)-",228,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Penten-2-one, 4-methyl-",230,True,,-0.13084052685518874,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Isovaleric acid, 3-methylbutyl-2 ester",232,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexane, 2,2,4-trimethyl-",234,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Nonen-5-one,235,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hexanal,236,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanol, 2-propoxy-",237,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Methyl-4-methoxy-1-butanol,238,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Butene, 2,3,3-trimethyl-",239,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetrachloroethylene,240,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Butanoic acid,249,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propanoic acid, propyl ester",256,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Heptane, 3,4,5-trimethyl-",259,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,5-Dimethyl-6-oxa-bicyclo[3.1.0]hexane",262,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetic acid, butyl ester",266,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclotrisiloxane, hexamethyl-",268,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butanoic acid, 2-oxo-, methyl ester",272,True,,-0.042996654362790994,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Butyne, 3-chloro-",273,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexane, 3,3-dimethyl-",274,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Furaldehyde,283,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,4-Hexen-3-one,288,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetrafluoromethane,291,True,,-0.19549061676423574,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,".beta.-D-Glucopyranose, 1,6-anhydro-",296,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, chloro-",301,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Ethyl-5-propylcyclopentanone,316,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Ethylbenzene,317,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,4-Hydroxy-3-hexanone,321,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6-Octadiene-4,5-diol",325,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,N-(2-Methoxyethyl)-tert-butylamine,332,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Ethylthiolane, S,S-dioxide",335,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Methylcyclopropanemethanol,336,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Methoxythiophene,337,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Methoxycyclohexane,338,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2H-Imidazole-2-thione, 1,3-dihydro-1-methyl-",339,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetaldehyde, butylhydrazone",340,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Cyclobutene-1,2-dione, 3-phenyl-",344,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Trisiloxane, octamethyl-",350,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Ethyl-2-nonanone,353,True,,0.06701332092692638,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-(1-cyclohexen-1-yl)-",358,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3,5-Octanedione, 2,2,4,7-tetramethyl-",360,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,2-Propanediol diformate",361,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hypoglycin,362,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cyclohexylmethylsilane,363,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Heptanone,364,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6-Lutidine",373,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Hexanol, 2-methyl-",377,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,2,3-Triethyloxirane",378,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3,3-Dichloropropyne",383,True,,-0.0510891342966636,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,n-Heptyl acrylate,385,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexa-1,3-diene, 5,6-diethyl-",386,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propenoic acid, butyl ester",387,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Heptanol,389,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Butyl(dimethyl)silyloxy-2,2-dimethylpropane",392,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanol, 2-butoxy-",395,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Heptanal,396,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Hexanol, 5-methyl-",399,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propanol, 1-methoxy-2-methyl-",401,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propanoic acid, butyl ester",411,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Pentanol, TBDMS derivative",422,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, (1-methylethyl)-",425,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Hexyn-3-ol, 3-methyl-",431,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Undecane, 5,5-dimethyl-",438,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Cyclohexen-1-one,442,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexane, 1,3-dimethyl-",449,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Heptanone, 4-methyl-",451,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,(-)-trans-Pinane,462,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Ethyl-4-methylpentan-1-ol,465,True,,0.1292474611909853,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexanal, 3,3-dimethyl-",466,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexanal, 2-ethyl-",471,True,,0.25987943877126024,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzoic acid, 2-formyl-4,6-dimethoxy-, 8,8-dimethoxyoct-2-yl ester",473,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Heptenal, (Z)-",474,True,,0.2898529979718056,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Ethylcyclopentanone,479,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1,1'-(1-methyl-1,2-ethanediyl)bis-",480,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2H-Pyran-3,4,5-triol, tetrahydro-2-methoxy-6-methyl-",483,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Nonane, 4-methyl-",485,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Tridecane, 6-methyl-",488,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentadecane, 6-methyl-",492,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanol, 2,2'-oxybis-",495,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,(E)1-Allyl-2-methylcyclohexanol,496,True,,-0.022442491807757925,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4-Octanol, 2-methyl-",497,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dibutylsulfamic acid,500,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"5-Ethyl-2,4-nonandione",501,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Oxalic acid, butyl 2-ethylhexyl ester",502,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,5-Nonanol,503,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Formic acid, heptyl ester",507,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Decane, 3,8-dimethyl-",509,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Decen-3-one,516,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzonitrile,523,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Pentenoic acid, 4-methyl-",524,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Octen-3-ol,525,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Dodecane, 2,2,11,11-tetramethyl-",527,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Phenol,528,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propanoic acid, 2,2-dimethyl-, cesium salt",536,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hexanoic acid,537,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclotetrasiloxane, octamethyl-",538,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Decane, 2,2-dimethyl-",539,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Octanone,544,True,,0.015366699091517578,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1,2,3-trimethyl-",546,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,4-Octanol,548,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Methyl-1,6-dioxaspiro[4.4]nonane",551,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Propanenitrile,565,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Decane,567,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Octanal,569,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanol, 2-(2-ethoxyethoxy)-",571,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Octanol, (S)-",574,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclopentene, 1,4-dimethyl-5-(1-methylethyl)-",575,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butane, 1,1'-[oxybis(2,1-ethanediyloxy)]bis-",582,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Dodecane, 6-methyl-",583,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1,2,4-trimethyl-",586,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Nonane, 2,5-dimethyl-",587,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Propanenitrile, 2,2'-azobis[2-methyl-",588,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propanol, 1-(2-ethoxypropoxy)-",590,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silane, triethylfluoro-",591,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetramethylbutanedinitrile,592,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Octane, 3,3-dimethyl-",596,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,D-Limonene,605,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexene, 4-methyl-1-(1-methylethyl)-",607,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Propyl-1-pentanol,608,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butanedioic acid, dimethyl ester",614,True,,0.009789067434060795,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-(1'-pyrrolidinyl)-2-butanone,619,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3,2-Dioxaborolane, 2,4-diethyl-",620,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzyl alcohol,621,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclopropanecarboxylic acid,4-methylpentyl ester",624,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3,5-Octadien-2-ol",626,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Ethyl-3-heptanol,627,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzaldehyde, 2-hydroxy-",629,True,,0.007910457533247572,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4,6-Cycloheptatrien-1-one, 4-methyl-",635,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propenoic acid, 2-methyl-, 2-hydroxypropyl ester",636,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4,4'-Bi-1,3,2-dioxaborolane, 2,2'-diethyl-",637,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Hexanol, 3,5,5-trimethyl-",640,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Nonane, 5-methyl-5-propyl-",645,True,,0.045303912149253,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Succinic acid, tridec-2-yn-1-yl 3-methylbut-3-en-1-yl ester",648,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2(3H)-Furanone, 5-ethyldihydro-",649,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,2,4,5-Tetrazine, 1,4-dibutylhexahydro-",650,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentanal, 5-[(tetrahydro-2H-pyran-2-yl)oxy]-",654,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Octenal, (E)-",656,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,5-Hexanediol, 2,5-dimethyl-",663,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4,7-Methano-1H-indene, octahydro-",666,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Phenylglyoxal,668,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Aniline, N-methyl-",670,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Acetophenone,672,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cyclooctyl alcohol,675,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Decane, 3-methyl-",677,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"7-Octen-2-ol, 2,6-dimethyl-",681,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Formic acid, octyl ester",683,True,,-0.3278231809913349,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,Decyl octyl ether,684,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Terephthalic acid, 2-methoxyethyl propyl ester",688,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Arsenous acid, tris(trimethylsilyl) ester",689,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexane, 2,5-dimethoxy-2,5-dimethyl-",693,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silicic acid, diethyl bis(trimethylsilyl) ester",696,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 2-ethyl-1,4-dimethyl-",697,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,6-Dioxaspiro[4.4]nonane, 2-ethyl-",698,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,(+)-4-Carene,701,True,,-0.07091523754271596,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,Lethane,703,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Butoxyethyl acetate,706,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4-Heptanol, 2,6-dimethyl-",709,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Nonanone,711,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzoic acid, methyl ester",714,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,5-Furandione, 3-(1,1-dimethylethyl)-",715,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Hexadecen-3-ol, 3,5,11,15-tetramethyl-",717,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Linalool,720,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Cyclohexen-1-one, 3,6-dimethyl-6-(1-methylethyl)-",728,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4-Trimethylsilyl-9,9-dimethyl-9-silafluorene",731,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Nonanal,732,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Decane, 2,5-dimethyl-",741,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1,3-dichloro-2-methyl-",743,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Isophorone,749,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexanoic acid, 2-ethyl-",752,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Undecane, 3,8-dimethyl-",755,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1H-Indene, 2,3-dihydro-5-methyl-",771,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclopentasiloxane, decamethyl-",777,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"trans-1,2-Dimethylsilacyclohexane",781,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6-Dihydroxyacetophenone, 2TMS derivative",782,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexanol, 1-butyl-",783,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,1,3,3,5,5,7,7-Octamethyl-7-(2-methylpropoxy)tetrasiloxan-1-ol",784,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetamide, 2-(3-cyano-4-methoxymethyl-6-methylpyridin-2-ylsulfanyl)-N-(3-trifluoromethylphenyl)-",787,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexadecanal, 2-methyl-",793,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,(R)-(+)-1-Phenyl-1-propanol,794,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2(3H)-Furanone, dihydro-5-propyl-",795,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2(3H)-Furanone, 5-heptyldihydro-",799,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, pentyl-",801,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silane, cyclohexyldimethoxymethyl-",802,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6-Dimethyldecane",804,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, (2-methylbutyl)-",807,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Nonenal, (E)-",813,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetic acid, phenylmethyl ester",815,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzoic acid,820,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"p-Acetophenetidide, N-methyl-",827,True,,-0.04490349779857387,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phenol, 2,4-dimethyl-",828,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,trans-2-Dodecen-1-ol,832,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Nonanol,835,True,,0.03701936086433275,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexanol, 5-methyl-2-(1-methylethyl)-",837,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Terpinen-4-ol,838,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-Decanone,845,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanol, 1-(2-butoxyethoxy)-",846,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzenemethanol, .alpha.-methyl-, acetate",848,True,,-0.11384496637620997,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Decanone,858,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Buten-3-one, 1-(2-carboxy-4,4-dimethylcyclobutenyl)-",863,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,4-n-Propylbenzoic acid,875,True,,-0.3397757692741538,negative
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzaldehyde, 2,4-dimethyl-",888,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dodecyl nonyl ether,889,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4-Nonadienal, (E,E)-",894,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,3,4,6-Tetrahydroisoquinolin-6-one, 1-[4-hydroxybenzyl]-7-methoxy-",897,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzothiazole,900,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Propenoic acid, 6-methylheptyl ester",907,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexane, isothiocyanato-",912,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentasiloxane, dodecamethyl-",914,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silane, trimethyl(3-methyl-1-butynyl)-",936,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1,3-bis(1,1-dimethylethyl)-",944,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Geraniol,947,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6,10-Trimethyltridecane",948,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetic acid, chloro-, 2-phenylethyl ester",950,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Sulfurous acid, 2-ethylhexyl undecyl ester",952,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1H-Indene, 2,3-dihydro-1,1-dimethyl-",958,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Decenal, (E)-",967,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzoic acid, 2-hydroxy-, ethyl ester",976,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Nonanoic acid,977,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzaldehyde, 4-propyl-",983,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,1-Decanol,984,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3,4-Dimethylcumene",990,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Picoline, 5-(tert-butylthio)-",1002,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Naphthalene, 1,2,3,4-tetrahydro-1,8-dimethyl-",1011,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phenol, 2-methyl-5-(1-methylethyl)-",1012,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1H-Pyrazole, 3-ethyl-4,5-dihydro-1,4-dimethyl-",1014,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzothiazole, 2-methyl-",1016,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Naphthalene, 1-methyl-",1017,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Cyclohexen-1-one, 4-butyl-3-methoxy-",1022,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Carbonic acid, tetradecyl vinyl ester",1032,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexasiloxane, dodecamethyl-",1033,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,".beta.-Hydroxypyruvic acid, trimethylsilyl ether, trimethylsilyl ester",1034,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-[4-(1-methylethyl)phenyl]-",1042,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-(2,4,5-trimethylphenyl)-",1044,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Bromo dodecane,1046,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,3-tert-Butyl-2-pyrazolin-5-one,1047,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3-Cyclohexadiene-1-carboxaldehyde, 2,6,6-trimethyl-",1052,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclohexanol, 4-(1,1-dimethylethyl)-, acetate, cis-",1060,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 3-cyclohexen-1-yl-",1061,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"(-)-1,2,2.alpha.,3,3,4,6,7,8,8.alpha.-decahydro-2.alpha.,7,8-trimethylacenaphthylene",1064,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexanamide, N-methallyl-",1066,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cedrene-V6,1067,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4,4-Trimethyl-3-(3-methylbutyl)cyclohex-2-enone",1071,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1-(1,1-dimethylethyl)-3-ethyl-",1074,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Sulfurous acid, cyclohexylmethyl heptadecyl ester",1077,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Tricyclo[5.4.0.0(2,8)]undec-9-ene, 2,6,6,9-tetramethyl-, (1R,2S,7R,8R)-",1080,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,7-Imino-3,6-methanonaphthalene, decahydro-",1083,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"(1R,3aS,4aS,8aS)-1,4,4,6-Tetramethyl-1,2,3,3a,4,4a,7,8-octahydrocyclopenta[1,4]cyclobuta[1,2]benzene",1084,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phenol, 2-(1,1-dimethylethyl)-6-methyl-",1090,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Heptacosane, 1-chloro-",1094,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Undecenal,1099,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-[4-(1-methylethenyl)phenyl]-",1100,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,N-(tert-Butyldimethylsilyl)-9-ethyl-9H-carbazol-3-amine,1102,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-(2,3-dihydro-1H-inden-5-yl)-",1103,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,o-tert-Butyl cyclohexyl acetate 1,1106,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Butyl benzoate,1111,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetic acid, trifluoro-, undecyl ester",1112,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Longifolene-(V4),1119,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4,4,6,6,8,8-Heptamethyl-1-nonene",1125,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butanone, 1-(1,3-benzodioxol-5-yl)-",1130,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Dodecanone,1133,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexasiloxane, tetradecamethyl-",1135,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Bicyclo[4.4.0]dec-1-ene, 2-isopropyl-5-methyl-9-methylene-",1138,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Diphenyl ether,1141,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,3-Dihydro-1H-cyclopenta[b]quinoxaline",1145,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1H-3a,7-Methanoazulene, octahydro-1,4,9,9-tetramethyl-, (1.alpha.,3a.alpha.,4.beta.,7.alpha.,8a.beta.)-",1150,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1H-Cycloprop[e]azulene, decahydro-1,1,4,7-tetramethyl-",1151,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4,8-Trimethyl-1,2,3,4-tetrahydroquinoline",1157,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-.alpha.,.alpha.,3,8-tetramethyl-, acetate, [3S-(3.alpha.,5.alpha.,8.alpha.)]-",1159,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Furancarboxylic acid, 2,5-dimethyl-, methyl ester",1162,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"10,10-Dimethyl-4-acetyl-tricyclo[5.2.1.0(1,5)]decane",1163,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"(3S,4aR,8aS)-1,1,3,6-Tetramethyl-3-vinyl-3,4,4a,7,8,8a-hexahydro-1H-isochromene",1167,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Cyanoquinoxaline,1172,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Spiro[5.5]undec-2-ene, 3,7,7-trimethyl-11-methylene-, (-)-",1173,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Naphthalene, 1,6-dimethyl-",1174,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4,7-methano-1H-inden-5-ol, 3a,4,5,6,7,7a-hexahydro-, acetate",1175,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Isopropenyl-4a,8-dimethyl-1,2,3,4,4a,5,6,8a-octahydronaphthalene",1177,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Nopyl acetate,1178,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Naphthalene, 1,3-dimethyl-",1179,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1,1'-(1,4-phenylene)bis-",1185,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,1,7,7a-Tetramethyl-1a,2,6,7,7a,7b-hexahydro-1H-cyclopropa[a]naphthalene",1186,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2-Butanone, 4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-",1187,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,.gamma.-Neoclovene,1189,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Quinoline, 1,2-dihydro-2,2,4-trimethyl-",1190,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"(-)-Neoclovene-(I), dihydro-",1196,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Quinoline, 2,7-dimethyl-",1197,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phthalic acid, methyl neopentyl ester",1198,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1-(1,5-dimethylhexyl)-4-methyl-",1200,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dimethyl phthalate,1201,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Biphenylene,1202,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"5,9-Undecadien-2-one, 6,10-dimethyl-, (E)-",1206,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Cyclohexene, 1,3,3-trimethyl-2-(1-methylbut-1-en-3-on-1-yl)-",1212,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,(-)-.alpha.-Panasinsen,1213,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silane, trichlorooctadecyl-",1217,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,5-cyclohexadien-1-one, 2,6-bis(1,1-dimethylethyl)-4-hydroxy-4-methyl-",1220,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,2-Bis(trimethylsilyl)-4-methylbenzene",1221,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,5-Cyclohexadiene-1,4-dione, 2,6-bis(1,1-dimethylethyl)-",1223,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,5-cyclohexadiene-1,4-dione, 2-(1,1-dimethylethyl)-5-(2-methyl-2-propen-1-yl)-",1234,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cycloheptasiloxane, tetradecamethyl-",1235,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanone, 1-[4-(1-hydroxy-1-methylethyl)phenyl]-",1241,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Butanedioic acid, bis(2-methylpropyl) ester",1242,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ppropiolic acid, 3-(1-hydroxy-2-isopropyl-5-methylcyclohexyl)-",1243,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dodecanenitrile,1248,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Octacosane, 1-iodo-",1250,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,n-Pentadecanol,1252,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Pentadecane,1257,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Butylated Hydroxytoluene,1258,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,4-Di-tert-butylphenol",1263,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Bis(pentamethylcyclotrisiloxy)tetramethyldisiloxane,1268,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Octadecyl octyl ether,1277,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Eicosane, 1-iodo-",1281,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzoic acid, 4-ethoxy-, ethyl ester",1282,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-(1-Cyclohexenyl)cyclohexanone,1283,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Dodecanol, 2-hexyl-",1286,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Phenylmaleic anhydride,1291,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,aR-Himachalene,1297,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Adipic acid, di(but-2-en-1-yl) ester",1302,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexadecane, 2,6,11,15-tetramethyl-",1305,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Dotriacontane, 1-iodo-",1308,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Heptasiloxane, hexadecamethyl-",1312,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Eicosane,1315,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dodecanoic acid,1321,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexadecane, 7,9-dimethyl-",1324,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Adamantanecarboxylic acid, 2-adamantyl ester",1325,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,2-Methoxycarbonyl-2-methylbrendane,1329,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Glutaric acid, di(isobutyl) ester",1334,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"4-tert-Butyl-2,6-diisopropylphenol",1338,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Diethyl Phthalate,1340,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",1343,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phenol, 2,4,6-tri-tert-butyl-",1344,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hexadecane,1353,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cedrane, 8-propoxy-",1358,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetradecanal,1361,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Benzophenone,1368,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, (1-butylheptyl)-",1371,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Cyclooctasiloxane, hexadecamethyl-",1376,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentadecane, 2,6,10-trimethyl-",1388,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3,5-Triazine-2,4,6(1H,3H,5H)-trione, 1,3,5-tri-2-propenyl-",1392,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Fumaric acid, eicosyl trans-hex-3-enyl ester",1393,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Heptadecane, 2-methyl-",1408,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phenol, 2,4-di-t-butyl-6-nitro-",1411,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Hexanoic acid, 3,5,5-trimethyl-, nonyl ester",1425,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3-Chloropropionic acid, heptadecyl ester",1433,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Pentanoic acid, 6-ethyl-3-octyl ester",1436,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Heptadecane,1445,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, (3-iodo-1-methoxypropyl)-",1448,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Silane, diethoxydiphenyl-",1452,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Pentadecanal-,1459,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"2,6,11,15-Tetramethyl-hexadeca-2,6,8,10,14-pentaene",1464,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1-Penten-3-one, 2-methyl-1-(2,2,6-trimethylcyclohexen-1-yl)-",1465,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzenecarbothioic acid, S-ethyl ester",1472,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, (1-butyloctyl)-",1473,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1-(1,1-dimethylethyl)-4-phenoxy-",1481,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Octadecane, 1-iodo-",1488,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Heneicosane,1499,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hexestrol,1501,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"3,5-di-tert-Butyl-4-hydroxybenzaldehyde",1503,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,3-Cyclopentadiene, 5,5-dimethyl-1,2-Dipropyl-",1507,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Hexatriacontyl pentafluoropropionate,1509,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetradecanoic acid,1516,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,".alpha.-Phellandrene, dimer",1526,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Kaur-16-ene, (8.beta.,13.beta.)-",1556,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzene, 1-methyl-4-(1,2,2-trimethylcyclopentyl)-, (R)-",1563,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Acetophenone, 2,2-difluoro-2-phenyl-",1564,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Ethanedione, diphenyl-",1570,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Isopropyl myristate,1579,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Benzenebutanal, .gamma.,4-dimethyl-",1597,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Bayer 28,589",1623,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Palmitoleic acid,1645,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Diisooctyl phthalate,1650,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,2-Benzenedicarboxylic acid, bis(2-methylpropyl) ester",1653,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tetracosane,1654,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"Phthalic acid, 4,4-dimethylpent-2-yl butyl ester",1656,True,,0.010261451263580563,positive
+0,elastic_net__C=0.1__l1=0.5__cw=none,"l-(+)-Ascorbic acid 2,6-dihexadecanoate",1660,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"7,11-Hexadecadienal",1663,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Bis(2-ethylhexyl) phthalate,1672,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Dotriacontane,1700,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Squalane,1707,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,"1,1'-Binaphthalene, 5,5',6,6',7,7',8,8'-octahydro-",1718,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Tritriacontane,1720,True,,0.0,zero
+0,elastic_net__C=0.1__l1=0.5__cw=none,Cyclic octaatomic sulfur,1730,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butenal, (Z)-",1,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4,5-Dihydrooxazole-5-one, 4-[4-acetoxy-3-methoxybenzylidene]-2-phenyl-",4,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cyclopropyl methyl carbinol,6,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzene,10,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethane, 1,2-dichloro-",11,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Methoxypropionic acid,13,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Thiirane,14,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Furan, 2,3-dihydro-4-methyl-",17,True,,-0.05666384891772221,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Diborane(6), .mu.-mercapto-",18,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexane, (1,1-dimethylethyl)-",19,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Oxo-6-(piperidine-1-sulfonyl)-benzooxazole-3-carboxylic acid 2-chloro-ethyl ester,25,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propanol, 1-methoxy-",26,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Nonane, 5-methylene-",28,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Disiloxane, hexamethyl-",29,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butanal, 2-methyl-",34,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Penten-3-one,36,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Methoxyacetic acid, 2-tetrahydrofurylmethyl ester",38,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,tert-Butylpentamethyldisiloxane,40,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Triethylamine,42,True,,0.3076960770321102,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentane, 2,2,4-trimethyl-",45,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptanal, 2-methyl-",54,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,cis-1-Ethoxy-1-butene,58,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butanol, 3,3-dimethyl-4-dimethylamino-2-phenyl-",61,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Trimethylene oxide,70,True,,-0.04852752224486624,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,4-Dioxane",74,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethane, methoxy-",76,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propionic acid, 2-mercapto-, allyl ester",80,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Cyclopenten-1-one, 3-methyl-",82,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanamine, N-ethyl-",83,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silanediol, dimethyl-",86,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propane, 1-isothiocyanato-",92,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Formic acid, butyl ester",100,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3-Propanediol",101,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethane, 1,1-diethoxy-",104,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Formic acid, 5-methylhex-2-yl ester",107,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Heptene,110,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propane, 3,3-dichloro-1,1,1,2,2-pentafluoro-",117,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Pentanol, 2-methyl-",119,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Oxirane, 2-(1,1-dimethylethyl)-3-methyl-",120,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4-Pentadienenitrile",126,True,,-0.13540743894166457,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Oxa-bicyclo[3.2.0]hept-6-ene-2,4-dione",130,True,,-0.004645458959949541,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butenal, 2-methyl-, (E)-",131,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Pyridine,132,True,,-0.0008864308220476965,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Formic acid, 2-methylbutyl ester",133,True,,0.09634107973389115,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Disulfide, dimethyl",135,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butenal, 2-methyl-",137,True,,0.25537249249901994,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Methanamine, N,N-difluoro-",147,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Propanoic acid,148,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetraethylammonium chloride,155,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butanoic acid, 2-amino-4-(methylsulfinyl)-, (.+/-.)-",160,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Hexene, 2,2-dimethyl-, (Z)-",162,True,,0.00404513163946013,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Toluene,172,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Methyl-1-ethoxycyclobutane,174,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Boron, trihydro(pyridine)-, (T-4)-",176,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Penten-3-one, 2-methyl-",180,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,2,4,4-Tetramethyloctane",182,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butane, 2-cyclopropyl-",186,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3-Dioxolane, 2-ethyl-4-methyl-",203,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cyclopentanone,214,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propane, 1,3-dimethoxy-",216,True,,0.00423243558013796,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3-Diisopropoxy-1,3-dimethyl-1,3-disilacyclobutane",217,True,,0.00764741315614175,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,4-Ethylbenzamide,223,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Methoxy-1,3-dioxolane",224,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4-Hexen-3-one, 4-methyl-",226,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pipecolic acid, N-propoxycarbonyl-, dodecyl ester",227,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclopentane, 1,2,4-trimethyl-, (1.alpha.,2.beta.,4.alpha.)-",228,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Penten-2-one, 4-methyl-",230,True,,-0.12400832154433093,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Isovaleric acid, 3-methylbutyl-2 ester",232,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexane, 2,2,4-trimethyl-",234,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Nonen-5-one,235,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hexanal,236,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 2-propoxy-",237,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Methyl-4-methoxy-1-butanol,238,True,,0.06563307265727551,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Butene, 2,3,3-trimethyl-",239,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetrachloroethylene,240,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Butanoic acid,249,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propanoic acid, propyl ester",256,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptane, 3,4,5-trimethyl-",259,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,5-Dimethyl-6-oxa-bicyclo[3.1.0]hexane",262,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetic acid, butyl ester",266,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclotrisiloxane, hexamethyl-",268,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butanoic acid, 2-oxo-, methyl ester",272,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Butyne, 3-chloro-",273,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexane, 3,3-dimethyl-",274,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Furaldehyde,283,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,4-Hexen-3-one,288,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetrafluoromethane,291,True,,-0.16782997463474664,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, chloro-",301,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Ethyl-5-propylcyclopentanone,316,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Ethylbenzene,317,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,4-Hydroxy-3-hexanone,321,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6-Octadiene-4,5-diol",325,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Succinic acid, but-3-yn-2-yl tetrahydrofurfuryl ester",329,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,N-(2-Methoxyethyl)-tert-butylamine,332,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Ethylthiolane, S,S-dioxide",335,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Methylcyclopropanemethanol,336,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Methoxythiophene,337,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Methoxycyclohexane,338,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2H-Imidazole-2-thione, 1,3-dihydro-1-methyl-",339,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetaldehyde, butylhydrazone",340,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Cyclobutene-1,2-dione, 3-phenyl-",344,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Trisiloxane, octamethyl-",350,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Ethyl-2-nonanone,353,True,,0.09921554751537905,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-(1-cyclohexen-1-yl)-",358,True,,0.021104261984051166,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3,5-Octanedione, 2,2,4,7-tetramethyl-",360,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,2-Propanediol diformate",361,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hypoglycin,362,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cyclohexylmethylsilane,363,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Heptanone,364,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,o-Xylene,370,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6-Lutidine",373,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,2,3-Triethyloxirane",378,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3,3-Dichloropropyne",383,True,,-0.0015405033833422723,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,n-Heptyl acrylate,385,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexa-1,3-diene, 5,6-diethyl-",386,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propenoic acid, butyl ester",387,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Heptanol,389,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Butyl(dimethyl)silyloxy-2,2-dimethylpropane",392,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 2-butoxy-",395,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Heptanal,396,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Hexanol, 5-methyl-",399,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propanol, 1-methoxy-2-methyl-",401,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propanoic acid, butyl ester",411,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Pentanol, TBDMS derivative",422,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, (1-methylethyl)-",425,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Hexyn-3-ol, 3-methyl-",431,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Undecane, 5,5-dimethyl-",438,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Cyclohexen-1-one,442,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexane, 1,3-dimethyl-",449,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Heptanone, 4-methyl-",451,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,(-)-trans-Pinane,462,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Ethyl-4-methylpentan-1-ol,465,True,,0.17502212664952066,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexanal, 3,3-dimethyl-",466,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexanal, 2-ethyl-",471,True,,0.13082500480866416,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Heptanone, 6-methyl-",472,True,,0.1635630545788603,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzoic acid, 2-formyl-4,6-dimethoxy-, 8,8-dimethoxyoct-2-yl ester",473,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Heptenal, (Z)-",474,True,,0.12138812983475043,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Ethylcyclopentanone,479,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1,1'-(1-methyl-1,2-ethanediyl)bis-",480,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzaldehyde,481,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2H-Pyran-3,4,5-triol, tetrahydro-2-methoxy-6-methyl-",483,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Nonane, 4-methyl-",485,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Tridecane, 6-methyl-",488,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentadecane, 6-methyl-",492,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 2,2'-oxybis-",495,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,(E)1-Allyl-2-methylcyclohexanol,496,True,,-0.28533269533781325,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4-Octanol, 2-methyl-",497,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Dibutylsulfamic acid,500,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"5-Ethyl-2,4-nonandione",501,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Oxalic acid, butyl 2-ethylhexyl ester",502,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,5-Nonanol,503,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Formic acid, heptyl ester",507,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Decane, 3,8-dimethyl-",509,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Decen-3-one,516,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzonitrile,523,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Pentenoic acid, 4-methyl-",524,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Octen-3-ol,525,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Dodecane, 2,2,11,11-tetramethyl-",527,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Phenol,528,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propanoic acid, 2,2-dimethyl-, cesium salt",536,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hexanoic acid,537,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclotetrasiloxane, octamethyl-",538,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Octanone,544,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1,2,3-trimethyl-",546,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,4-Octanol,548,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Methyl-1,6-dioxaspiro[4.4]nonane",551,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Propanenitrile,565,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Decane,567,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Octanal,569,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 2-(2-ethoxyethoxy)-",571,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Octanol, (S)-",574,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclopentene, 1,4-dimethyl-5-(1-methylethyl)-",575,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1,2,4-trimethyl-",586,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Propanenitrile, 2,2'-azobis[2-methyl-",588,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propanol, 1-(2-ethoxypropoxy)-",590,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silane, triethylfluoro-",591,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetramethylbutanedinitrile,592,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Octane, 3,3-dimethyl-",596,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,D-Limonene,605,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexene, 4-methyl-1-(1-methylethyl)-",607,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Propyl-1-pentanol,608,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butanedioic acid, dimethyl ester",614,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-(1'-pyrrolidinyl)-2-butanone,619,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3,2-Dioxaborolane, 2,4-diethyl-",620,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzyl alcohol,621,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Benzofurancarboxaldehyde, 2,3-dihydro-3-methyl-",623,True,,-0.06520541231247562,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclopropanecarboxylic acid,4-methylpentyl ester",624,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Heptanol, 3-methyl-",625,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3,5-Octadien-2-ol",626,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Ethyl-3-heptanol,627,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzaldehyde, 2-hydroxy-",629,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4,6-Cycloheptatrien-1-one, 4-methyl-",635,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propenoic acid, 2-methyl-, 2-hydroxypropyl ester",636,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4,4'-Bi-1,3,2-dioxaborolane, 2,2'-diethyl-",637,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Hexanol, 3,5,5-trimethyl-",640,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Nonane, 5-methyl-5-propyl-",645,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Succinic acid, tridec-2-yn-1-yl 3-methylbut-3-en-1-yl ester",648,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2(3H)-Furanone, 5-ethyldihydro-",649,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,2,4,5-Tetrazine, 1,4-dibutylhexahydro-",650,True,,-0.03868987142753031,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentanal, 5-[(tetrahydro-2H-pyran-2-yl)oxy]-",654,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Octenal, (E)-",656,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,5-Hexanediol, 2,5-dimethyl-",663,True,,0.06140621964083257,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Phenylglyoxal,668,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Aniline, N-methyl-",670,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Acetophenone,672,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cyclooctyl alcohol,675,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Decane, 3-methyl-",677,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"7-Octen-2-ol, 2,6-dimethyl-",681,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Formic acid, octyl ester",683,True,,-0.30628577772273885,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Decyl octyl ether,684,True,,-0.0036300653839531883,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Terephthalic acid, 2-methoxyethyl propyl ester",688,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Arsenous acid, tris(trimethylsilyl) ester",689,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexane, 2,5-dimethoxy-2,5-dimethyl-",693,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silicic acid, diethyl bis(trimethylsilyl) ester",696,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 2-ethyl-1,4-dimethyl-",697,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,6-Dioxaspiro[4.4]nonane, 2-ethyl-",698,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,(+)-4-Carene,701,True,,-0.16140051680264664,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Lethane,703,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Butoxyethyl acetate,706,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4-Heptanol, 2,6-dimethyl-",709,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Nonanone,711,True,,0.01209262607854061,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzoic acid, methyl ester",714,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Hexadecen-3-ol, 3,5,11,15-tetramethyl-",717,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptanal, 7,7-dimethoxy-",719,True,,-0.029911298616139056,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Linalool,720,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Alprenolol, O-acetyl-",722,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Cyclohexen-1-one, 3,6-dimethyl-6-(1-methylethyl)-",728,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Nonanal,732,True,,-0.02998816203168789,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Decane, 2,5-dimethyl-",741,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1,3-dichloro-2-methyl-",743,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Isophorone,749,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexanoic acid, 2-ethyl-",752,True,,-0.11522059672473027,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Undecane, 3,8-dimethyl-",755,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1H-Indene, 2,3-dihydro-5-methyl-",771,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"trans-1,2-Dimethylsilacyclohexane",781,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6-Dihydroxyacetophenone, 2TMS derivative",782,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexanol, 1-butyl-",783,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,1,3,3,5,5,7,7-Octamethyl-7-(2-methylpropoxy)tetrasiloxan-1-ol",784,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetamide, 2-(3-cyano-4-methoxymethyl-6-methylpyridin-2-ylsulfanyl)-N-(3-trifluoromethylphenyl)-",787,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexadecanal, 2-methyl-",793,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,(R)-(+)-1-Phenyl-1-propanol,794,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2(3H)-Furanone, dihydro-5-propyl-",795,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2(3H)-Furanone, 5-heptyldihydro-",799,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silane, cyclohexyldimethoxymethyl-",802,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6-Dimethyldecane",804,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, (2-methylbutyl)-",807,True,,-0.025350685169209825,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Decanone, 5,9-dimethyl-",812,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Nonenal, (E)-",813,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetic acid, phenylmethyl ester",815,True,,-0.051280657960832816,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzoic acid,820,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"p-Acetophenetidide, N-methyl-",827,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phenol, 2,4-dimethyl-",828,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,trans-2-Dodecen-1-ol,832,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Nonanol,835,True,,0.024502103750195105,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexanol, 5-methyl-2-(1-methylethyl)-",837,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-Decanone,845,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 1-(2-butoxyethoxy)-",846,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzenemethanol, .alpha.-methyl-, acetate",848,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Decanone,858,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Buten-3-one, 1-(2-carboxy-4,4-dimethylcyclobutenyl)-",863,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,4-n-Propylbenzoic acid,875,True,,-0.48413987438118716,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzaldehyde, 2,4-dimethyl-",888,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Dodecyl nonyl ether,889,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4-Nonadienal, (E,E)-",894,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,3,4,6-Tetrahydroisoquinolin-6-one, 1-[4-hydroxybenzyl]-7-methoxy-",897,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzothiazole,900,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Propenoic acid, 6-methylheptyl ester",907,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Ethylhexyl acrylate,910,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexane, isothiocyanato-",912,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentasiloxane, dodecamethyl-",914,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1,3-bis(1,1-dimethylethyl)-",944,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Geraniol,947,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6,10-Trimethyltridecane",948,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptadecane, 2,6,10,15-tetramethyl-",949,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetic acid, chloro-, 2-phenylethyl ester",950,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Sulfurous acid, 2-ethylhexyl undecyl ester",952,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1H-Indene, 2,3-dihydro-1,1-dimethyl-",958,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,E-6,Z-10-Hexadecatriene",964,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Decenal, (E)-",967,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzoic acid, 2-hydroxy-, ethyl ester",976,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Nonanoic acid,977,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzaldehyde, 4-propyl-",983,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Decanol,984,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3,4-Dimethylcumene",990,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Picoline, 5-(tert-butylthio)-",1002,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Naphthalene, 1,2,3,4-tetrahydro-1,8-dimethyl-",1011,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phenol, 2-methyl-5-(1-methylethyl)-",1012,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1H-Pyrazole, 3-ethyl-4,5-dihydro-1,4-dimethyl-",1014,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzothiazole, 2-methyl-",1016,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Naphthalene, 1-methyl-",1017,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Undecanone,1018,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Cyclohexen-1-one, 4-butyl-3-methoxy-",1022,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Carbonic acid, tetradecyl vinyl ester",1032,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexasiloxane, dodecamethyl-",1033,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,".beta.-Hydroxypyruvic acid, trimethylsilyl ether, trimethylsilyl ester",1034,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-[4-(1-methylethyl)phenyl]-",1042,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-(2,4,5-trimethylphenyl)-",1044,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Bromo dodecane,1046,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,3-tert-Butyl-2-pyrazolin-5-one,1047,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3-Cyclohexadiene-1-carboxaldehyde, 2,6,6-trimethyl-",1052,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexanol, 4-(1,1-dimethylethyl)-, acetate, cis-",1060,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 3-cyclohexen-1-yl-",1061,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"(-)-1,2,2.alpha.,3,3,4,6,7,8,8.alpha.-decahydro-2.alpha.,7,8-trimethylacenaphthylene",1064,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexanamide, N-methallyl-",1066,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cedrene-V6,1067,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4,4-Trimethyl-3-(3-methylbutyl)cyclohex-2-enone",1071,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1-(1,1-dimethylethyl)-3-ethyl-",1074,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Sulfurous acid, cyclohexylmethyl heptadecyl ester",1077,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Tricyclo[5.4.0.0(2,8)]undec-9-ene, 2,6,6,9-tetramethyl-, (1R,2S,7R,8R)-",1080,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,7-Imino-3,6-methanonaphthalene, decahydro-",1083,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"(1R,3aS,4aS,8aS)-1,4,4,6-Tetramethyl-1,2,3,3a,4,4a,7,8-octahydrocyclopenta[1,4]cyclobuta[1,2]benzene",1084,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phenol, 2-(1,1-dimethylethyl)-6-methyl-",1090,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptacosane, 1-chloro-",1094,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Undecenal,1099,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-[4-(1-methylethenyl)phenyl]-",1100,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,N-(tert-Butyldimethylsilyl)-9-ethyl-9H-carbazol-3-amine,1102,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-(2,3-dihydro-1H-inden-5-yl)-",1103,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,o-tert-Butyl cyclohexyl acetate 1,1106,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Butyl benzoate,1111,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetic acid, trifluoro-, undecyl ester",1112,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Longifolene-(V4),1119,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4,4,6,6,8,8-Heptamethyl-1-nonene",1125,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butanone, 1-(1,3-benzodioxol-5-yl)-",1130,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Dodecanone,1133,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexasiloxane, tetradecamethyl-",1135,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Bicyclo[4.4.0]dec-1-ene, 2-isopropyl-5-methyl-9-methylene-",1138,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Diphenyl ether,1141,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,3-Dihydro-1H-cyclopenta[b]quinoxaline",1145,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1H-3a,7-Methanoazulene, octahydro-1,4,9,9-tetramethyl-, (1.alpha.,3a.alpha.,4.beta.,7.alpha.,8a.beta.)-",1150,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1H-Cycloprop[e]azulene, decahydro-1,1,4,7-tetramethyl-",1151,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4,8-Trimethyl-1,2,3,4-tetrahydroquinoline",1157,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-.alpha.,.alpha.,3,8-tetramethyl-, acetate, [3S-(3.alpha.,5.alpha.,8.alpha.)]-",1159,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Furancarboxylic acid, 2,5-dimethyl-, methyl ester",1162,True,,-0.00022872183308584104,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"10,10-Dimethyl-4-acetyl-tricyclo[5.2.1.0(1,5)]decane",1163,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"(3S,4aR,8aS)-1,1,3,6-Tetramethyl-3-vinyl-3,4,4a,7,8,8a-hexahydro-1H-isochromene",1167,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Cyanoquinoxaline,1172,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Spiro[5.5]undec-2-ene, 3,7,7-trimethyl-11-methylene-, (-)-",1173,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4,7-methano-1H-inden-5-ol, 3a,4,5,6,7,7a-hexahydro-, acetate",1175,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Isopropenyl-4a,8-dimethyl-1,2,3,4,4a,5,6,8a-octahydronaphthalene",1177,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Nopyl acetate,1178,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Naphthalene, 1,3-dimethyl-",1179,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Isosativene,1184,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1,1'-(1,4-phenylene)bis-",1185,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,1,7,7a-Tetramethyl-1a,2,6,7,7a,7b-hexahydro-1H-cyclopropa[a]naphthalene",1186,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butanone, 4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-",1187,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,.gamma.-Neoclovene,1189,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Quinoline, 1,2-dihydro-2,2,4-trimethyl-",1190,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"(-)-Neoclovene-(I), dihydro-",1196,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Quinoline, 2,7-dimethyl-",1197,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phthalic acid, methyl neopentyl ester",1198,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1-(1,5-dimethylhexyl)-4-methyl-",1200,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Dimethyl phthalate,1201,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Biphenylene,1202,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"5,9-Undecadien-2-one, 6,10-dimethyl-, (E)-",1206,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Cyclohexene, 1,3,3-trimethyl-2-(1-methylbut-1-en-3-on-1-yl)-",1212,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,(-)-.alpha.-Panasinsen,1213,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silane, trichlorooctadecyl-",1217,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,5-cyclohexadien-1-one, 2,6-bis(1,1-dimethylethyl)-4-hydroxy-4-methyl-",1220,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,2-Bis(trimethylsilyl)-4-methylbenzene",1221,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,5-Cyclohexadiene-1,4-dione, 2,6-bis(1,1-dimethylethyl)-",1223,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,5-cyclohexadiene-1,4-dione, 2-(1,1-dimethylethyl)-5-(2-methyl-2-propen-1-yl)-",1234,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cycloheptasiloxane, tetradecamethyl-",1235,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2-Butenedioic acid (Z)-, monododecyl ester",1239,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,1-Dodecanol,1240,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanone, 1-[4-(1-hydroxy-1-methylethyl)phenyl]-",1241,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Butanedioic acid, bis(2-methylpropyl) ester",1242,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ppropiolic acid, 3-(1-hydroxy-2-isopropyl-5-methylcyclohexyl)-",1243,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Dodecanenitrile,1248,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Octacosane, 1-iodo-",1250,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,n-Pentadecanol,1252,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Pentadecane,1257,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Butylated Hydroxytoluene,1258,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,4-Di-tert-butylphenol",1263,True,,-0.05521691721493746,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Bis(pentamethylcyclotrisiloxy)tetramethyldisiloxane,1268,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Octadecyl octyl ether,1277,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Eicosane, 1-iodo-",1281,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzoic acid, 4-ethoxy-, ethyl ester",1282,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-(1-Cyclohexenyl)cyclohexanone,1283,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Dodecanol, 2-hexyl-",1286,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,aR-Himachalene,1297,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Adipic acid, di(but-2-en-1-yl) ester",1302,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexadecane, 2,6,11,15-tetramethyl-",1305,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Dotriacontane, 1-iodo-",1308,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptasiloxane, hexadecamethyl-",1312,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Eicosane,1315,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentadecane, 4-methyl-",1319,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Dodecanoic acid,1321,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexadecane, 7,9-dimethyl-",1324,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Adamantanecarboxylic acid, 2-adamantyl ester",1325,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,2-Methoxycarbonyl-2-methylbrendane,1329,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Glutaric acid, di(isobutyl) ester",1334,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"4-tert-Butyl-2,6-diisopropylphenol",1338,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Diethyl Phthalate,1340,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,2,4-Trimethyl-1,3-pentanediol diisobutyrate",1343,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phenol, 2,4,6-tri-tert-butyl-",1344,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hexadecane,1353,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclohexane, 1,1'-(1,3-propanediyl)bis-",1356,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cedrane, 8-propoxy-",1358,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetradecanal,1361,True,,-0.03654909734839617,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Benzophenone,1368,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Cyclooctasiloxane, hexadecamethyl-",1376,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentadecane, 2,6,10-trimethyl-",1388,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3,5-Triazine-2,4,6(1H,3H,5H)-trione, 1,3,5-tri-2-propenyl-",1392,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Fumaric acid, eicosyl trans-hex-3-enyl ester",1393,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pyrene, hexadecahydro-",1406,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Heptadecane, 2-methyl-",1408,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Phenol, 2,4-di-t-butyl-6-nitro-",1411,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetradecyl trifluoroacetate,1419,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Hexanoic acid, 3,5,5-trimethyl-, nonyl ester",1425,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3-Chloropropionic acid, heptadecyl ester",1433,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Pentanoic acid, 6-ethyl-3-octyl ester",1436,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Heptadecane,1445,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, (3-iodo-1-methoxypropyl)-",1448,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Silane, diethoxydiphenyl-",1452,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Pentadecanal-,1459,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"2,6,11,15-Tetramethyl-hexadeca-2,6,8,10,14-pentaene",1464,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1-Penten-3-one, 2-methyl-1-(2,2,6-trimethylcyclohexen-1-yl)-",1465,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzenecarbothioic acid, S-ethyl ester",1472,True,,-0.2590271617099889,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1-(1,1-dimethylethyl)-4-phenoxy-",1481,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Octadecane, 1-iodo-",1488,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Heneicosane,1499,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hexestrol,1501,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"3,5-di-tert-Butyl-4-hydroxybenzaldehyde",1503,True,,-0.009649310953059341,negative
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,3-Cyclopentadiene, 5,5-dimethyl-1,2-Dipropyl-",1507,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Hexatriacontyl pentafluoropropionate,1509,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetradecanoic acid,1516,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,".alpha.-Phellandrene, dimer",1526,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Kaur-16-ene, (8.beta.,13.beta.)-",1556,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzene, 1-methyl-4-(1,2,2-trimethylcyclopentyl)-, (R)-",1563,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Acetophenone, 2,2-difluoro-2-phenyl-",1564,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanedione, diphenyl-",1570,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Isopropyl myristate,1579,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Benzenebutanal, .gamma.,4-dimethyl-",1597,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Bayer 28,589",1623,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Tetrapentacontane, 1,54-dibromo-",1638,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Palmitoleic acid,1645,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Diisooctyl phthalate,1650,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,2-Benzenedicarboxylic acid, bis(2-methylpropyl) ester",1653,True,,0.005739647892370781,positive
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Tetracosane,1654,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"l-(+)-Ascorbic acid 2,6-dihexadecanoate",1660,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"7,11-Hexadecadienal",1663,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"Ethanol, 2-[2-(4-nonylphenoxy)ethoxy]-",1668,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Squalane,1707,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,"1,1'-Binaphthalene, 5,5',6,6',7,7',8,8'-octahydro-",1718,True,,0.0,zero
+1,elastic_net__C=0.1__l1=0.5__cw=balanced,Cyclic octaatomic sulfur,1730,True,,0.0,zero

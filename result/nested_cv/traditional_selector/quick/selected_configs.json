@@ -1,0 +1,20 @@
+[
+  {
+    "outer_fold": 0,
+    "selected_candidate_id": "elastic_net__C=0.1__l1=0.5__cw=none",
+    "selected_model_family": "elastic_net",
+    "threshold": 0.398322246537,
+    "score_type": "probability",
+    "tuned_f1": 0.5454545454545454,
+    "tuned_mcc": 0.3133397807202561
+  },
+  {
+    "outer_fold": 1,
+    "selected_candidate_id": "elastic_net__C=0.1__l1=0.5__cw=balanced",
+    "selected_model_family": "elastic_net",
+    "threshold": 0.341477259212,
+    "score_type": "probability",
+    "tuned_f1": 0.5806451612903226,
+    "tuned_mcc": 0.28880007514798783
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "mode": "dataflow_smoke",
+  "smoke_test_only": true,
+  "formal_evaluation": false,
+  "canonical_outer_test_not_accessed": true,
+  "outer_test_labels_not_read": true,
+  "outer_test_predictions_not_generated": true,
+  "start_time": "2026-07-12T08:59:06.676169+00:00",
+  "end_time": "2026-07-12T08:59:11.500265+00:00",
+  "runtime": 4.786756753921509,
+  "frozen_config_hash": "d66206a1262c3d83e9ea9dfbcbe5cfed08c77263cb493011c7843c22c7de10b6",
+  "frozen_config_match": true,
+  "frozen_config_mismatches": [],
+  "dataset_fingerprint": "5b866523ae14b0cd888b6a4ba4edbaa0821fab8d90bc4027a7433aff440fd93f",
+  "outer_manifest_hash": "74e6b237e77206f160c3b02e0b4df5525b42a29eece90c396f78b787d05b9c32",
+  "validations": {
+    "manifest_loading": true,
+    "pipeline_construction": true,
+    "inner_fold_fit": true,
+    "inner_validation_score": true,
+    "candidate_specific_oof": true,
+    "threshold_selection": true,
+    "outer_train_refit_interface": true,
+    "output_schema": true
+  }
+}

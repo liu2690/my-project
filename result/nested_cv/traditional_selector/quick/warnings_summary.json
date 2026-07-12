@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total_warnings": 62,
+    "from_tests": 62,
+    "from_quick_training": 0,
+    "convergence_warnings": 0,
+    "selected_candidates_had_convergence_warning": false,
+    "any_candidate_ranked_without_convergence": false,
+    "notes": "All 62 warnings originate from test code. No ConvergenceWarning occurred during quick training. All 30 candidate evaluations completed with warning_count=0."
+  },
+  "categories": [
+    {
+      "warning_type": "FutureWarning",
+      "warning_message": "'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.",
+      "source": "sklearn.utils.validation",
+      "count": 48,
+      "from_tests": true,
+      "from_quick_training": false,
+      "source_files": [
+        "tests/test_holdout_dataflow_isolation.py",
+        "tests/test_nested_cv_dataflow.py",
+        "tests/test_voc_preprocessor.py"
+      ],
+      "severity": "low",
+      "action": "No action required. sklearn internal deprecation, will be resolved when upgrading sklearn."
+    },
+    {
+      "warning_type": "UserWarning",
+      "warning_message": "A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.",
+      "source": "sklearn.metrics._classification",
+      "count": 6,
+      "from_tests": true,
+      "from_quick_training": false,
+      "source_files": [
+        "tests/test_metrics.py",
+        "tests/test_thresholding.py"
+      ],
+      "severity": "low",
+      "action": "Expected behavior in unit tests that intentionally test single-class edge cases. No action required."
+    },
+    {
+      "warning_type": "PytestRemovedIn10Warning",
+      "warning_message": "Class-scoped fixture defined as instance method is deprecated.",
+      "source": "pytest",
+      "count": 5,
+      "from_tests": true,
+      "from_quick_training": false,
+      "source_files": [
+        "tests/test_nested_cv_outputs.py"
+      ],
+      "severity": "low",
+      "action": "Can refactor fixtures to @classmethod in future cleanup. Not blocking."
+    },
+    {
+      "warning_type": "ResourceWarning",
+      "warning_message": "unclosed file <_io.TextIOWrapper name='nested_cv_engine.py' mode='r' encoding='UTF-8'>",
+      "source": "pytest",
+      "count": 1,
+      "from_tests": true,
+      "from_quick_training": false,
+      "source_files": [
+        "tests/test_shared_fold_manifests.py"
+      ],
+      "severity": "low",
+      "action": "Fix unclosed file handle in test_shared_fold_manifests.py line 125."
+    },
+    {
+      "warning_type": "FutureWarning (runtime)",
+      "warning_message": "'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.",
+      "source": "sklearn.utils.validation",
+      "count": "~30 (one per pipeline fit during quick run)",
+      "from_tests": false,
+      "from_quick_training": true,
+      "outer_fold": "0, 1",
+      "candidate_id": "all 30 candidates",
+      "is_selected_candidate": true,
+      "severity": "low",
+      "action": "sklearn internal deprecation. Does not affect results. No action required."
+    }
+  ],
+  "quick_selected_candidates_convergence": {
+    "outer_fold_0": {
+      "selected_candidate_id": "elastic_net__C=0.1__l1=0.5__cw=none",
+      "had_convergence_warning": false,
+      "warning_count": 0
+    },
+    "outer_fold_1": {
+      "selected_candidate_id": "elastic_net__C=0.1__l1=0.5__cw=balanced",
+      "had_convergence_warning": false,
+      "warning_count": 0
+    }
+  },
+  "conclusion": {
+    "convergence_warnings_in_quick_training": 0,
+    "selected_candidates_converged": true,
+    "no_candidate_ranked_without_convergence": true,
+    "all_warnings_are_benign": true,
+    "no_statistical_protocol_changes_needed": true
+  }
+}

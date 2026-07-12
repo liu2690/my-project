@@ -1,0 +1,2087 @@
+{
+  "timestamp": "2026-07-12T16:16:29.727317",
+  "pipeline_config": {
+    "imputer": "SimpleImputer(strategy=\"median\")",
+    "scaler": "StandardScaler()",
+    "classifier": "LogisticRegression(penalty=\"l2\", C=1.0, solver=\"liblinear\", class_weight=None, max_iter=10000, random_state=42)",
+    "note": "No hyperparameter search. All data-driven steps inside CV fold."
+  },
+  "structure": {
+    "excel_shape": [
+      161,
+      1735
+    ],
+    "excel_sheet_names": [
+      "Sheet6"
+    ],
+    "n_samples": 159,
+    "n_features_raw": 1734,
+    "class_distribution": {
+      "1": 53,
+      "2": 53,
+      "3": 53
+    },
+    "class_1_count": 53,
+    "class_2_count": 53,
+    "class_3_count": 53,
+    "nan_count": 0,
+    "inf_count": 0,
+    "neg_inf_count": 0,
+    "negative_values_count": 0,
+    "constant_features": 0,
+    "duplicate_feature_cols": 0,
+    "duplicate_samples": 0,
+    "unknown_voc_names": 746,
+    "voc_id_min": 0,
+    "voc_id_max": 1733,
+    "sample_id_format": "sample_row_NNNN (based on original Excel row)",
+    "sample_id_examples": [
+      "sample_row_0003",
+      "sample_row_0004",
+      "sample_row_0005",
+      "sample_row_0006",
+      "sample_row_0007"
+    ]
+  },
+  "near_duplicate": {
+    "method": "Pearson correlation on known features (n=988), threshold=0.999",
+    "n_pairs": 0,
+    "pairs": []
+  },
+  "metadata": {
+    "checked_locations": [
+      "Excel file: data/1、2、3.xlsx, sheet: Sheet6",
+      "Row 0 (header): all columns",
+      "Row 1 (VOC name row): all columns",
+      "Column 0 (label column): header = \"Class\", row1 = NaN",
+      "MAT file: data/voc_dataset_1+2_vs_3.mat — only X, y, feat_names",
+      "Repository files: no separate metadata CSV/JSON found"
+    ],
+    "col0_header": "Class",
+    "col0_row1": "nan",
+    "has_subject_id": false,
+    "has_batch_id": false,
+    "has_instrument_id": false,
+    "has_collection_date": false,
+    "has_location": false,
+    "has_operator": false,
+    "has_replicate_id": false,
+    "has_sample_id": false,
+    "extra_columns_beyond_voc": 0,
+    "keyword_matches_in_headers": [
+      {
+        "col_index": 5,
+        "row0": "4",
+        "row1": "4,5-Dihydrooxazole-5-one, 4-[4-acetoxy-3-methoxybenzylidene]-2-phenyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 14,
+        "row0": "13",
+        "row1": "3-Methoxypropionic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 23,
+        "row0": "22",
+        "row1": "Glutaric acid, isobutyl 2-methylpentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 26,
+        "row0": "25",
+        "row1": "2-Oxo-6-(piperidine-1-sulfonyl)-benzooxazole-3-carboxylic acid 2-chloro-ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 39,
+        "row0": "38",
+        "row1": "Methoxyacetic acid, 2-tetrahydrofurylmethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 48,
+        "row0": "47",
+        "row1": "2-Acetamido-N-methylbutyramide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 49,
+        "row0": "48",
+        "row1": "3-Fluorobenzoic acid, 3,4-dimethylphenyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 53,
+        "row0": "52",
+        "row1": "Sulfide, allyl methyl",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 71,
+        "row0": "70",
+        "row1": "Trimethylene oxide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 81,
+        "row0": "80",
+        "row1": "Propionic acid, 2-mercapto-, allyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 89,
+        "row0": "88",
+        "row1": "Sulfurous acid, dimethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 97,
+        "row0": "96",
+        "row1": "4-Ethylbenzoic acid, 2-methylbutyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 101,
+        "row0": "100",
+        "row1": "Formic acid, butyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 108,
+        "row0": "107",
+        "row1": "Formic acid, 5-methylhex-2-yl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 133,
+        "row0": "132",
+        "row1": "Pyridine",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 134,
+        "row0": "133",
+        "row1": "Formic acid, 2-methylbutyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 136,
+        "row0": "135",
+        "row1": "Disulfide, dimethyl",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 149,
+        "row0": "148",
+        "row1": "Propanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 156,
+        "row0": "155",
+        "row1": "Tetraethylammonium chloride",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 159,
+        "row0": "158",
+        "row1": "2-Butenoic acid, 4-hydroxy-, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 161,
+        "row0": "160",
+        "row1": "Butanoic acid, 2-amino-4-(methylsulfinyl)-, (.+/-.)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 169,
+        "row0": "168",
+        "row1": "3,5-Dihydroxybenzamide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 177,
+        "row0": "176",
+        "row1": "Boron, trihydro(pyridine)-, (T-4)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 195,
+        "row0": "194",
+        "row1": "D-Erythro-Tetrofuranose-3-ulose, 4-C-cyclopropyl-1,2-O-isopropylidene-, .alpha.-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 200,
+        "row0": "199",
+        "row1": "Formic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 213,
+        "row0": "212",
+        "row1": "Cyclopentanecarboxylic acid, 2-hydroxy-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 224,
+        "row0": "223",
+        "row1": "4-Ethylbenzamide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 226,
+        "row0": "225",
+        "row1": "Thiocyanic acid, ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 228,
+        "row0": "227",
+        "row1": "Pipecolic acid, N-propoxycarbonyl-, dodecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 233,
+        "row0": "232",
+        "row1": "Isovaleric acid, 3-methylbutyl-2 ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 249,
+        "row0": "248",
+        "row1": "Sulfurous acid, hexyl octyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 250,
+        "row0": "249",
+        "row1": "Butanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 257,
+        "row0": "256",
+        "row1": "Propanoic acid, propyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 267,
+        "row0": "266",
+        "row1": "Acetic acid, butyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 273,
+        "row0": "272",
+        "row1": "Butanoic acid, 2-oxo-, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 290,
+        "row0": "289",
+        "row1": "1-Hydroxy-1-phenyl-1-(tricyclo[2,2,1,0(2,6)]hept-2-yl)-3-piperidinopropane",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 294,
+        "row0": "293",
+        "row1": "2-Propenoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 308,
+        "row0": "307",
+        "row1": "Propanoic acid, 2-hydroxy-, ethyl ester, (L)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 313,
+        "row0": "312",
+        "row1": "Butanoic acid, 3-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 330,
+        "row0": "329",
+        "row1": "Succinic acid, but-3-yn-2-yl tetrahydrofurfuryl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 336,
+        "row0": "335",
+        "row1": "2-Ethylthiolane, S,S-dioxide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 340,
+        "row0": "339",
+        "row1": "2H-Imidazole-2-thione, 1,3-dihydro-1-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 374,
+        "row0": "373",
+        "row1": "2,6-Lutidine",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 388,
+        "row0": "387",
+        "row1": "2-Propenoic acid, butyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 412,
+        "row0": "411",
+        "row1": "Propanoic acid, butyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 416,
+        "row0": "415",
+        "row1": "Cyanogen chloride",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 430,
+        "row0": "429",
+        "row1": "Benzohydroxamic acid, 2TMS derivative",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 436,
+        "row0": "435",
+        "row1": "Acetic acid, fluoro-, ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 444,
+        "row0": "443",
+        "row1": "Sulfurous acid, 2-ethylhexyl tridecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 445,
+        "row0": "444",
+        "row1": "Propanamide, 2,2-dimethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 453,
+        "row0": "452",
+        "row1": "1-Hydroxycyclohexanecarboxylic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 464,
+        "row0": "463",
+        "row1": "Formamide, N,N-diethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 468,
+        "row0": "467",
+        "row1": "2-Pyridinecarboxaldehyde",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 474,
+        "row0": "473",
+        "row1": "Benzoic acid, 2-formyl-4,6-dimethoxy-, 8,8-dimethoxyoct-2-yl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 488,
+        "row0": "487",
+        "row1": "Dimethyl trisulfide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 489,
+        "row0": "488",
+        "row1": "Tridecane, 6-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 492,
+        "row0": "491",
+        "row1": "Norbornane, 2-ethylidene-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 500,
+        "row0": "499",
+        "row1": "N-maleic acid 2,2,6,6-Tetramethyl,-4-piperidylmonoamide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 501,
+        "row0": "500",
+        "row1": "Dibutylsulfamic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 503,
+        "row0": "502",
+        "row1": "Oxalic acid, butyl 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 508,
+        "row0": "507",
+        "row1": "Formic acid, heptyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 515,
+        "row0": "514",
+        "row1": "Pyridine, 3,4-dimethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 525,
+        "row0": "524",
+        "row1": "3-Pentenoic acid, 4-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 537,
+        "row0": "536",
+        "row1": "Propanoic acid, 2,2-dimethyl-, cesium salt",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 538,
+        "row0": "537",
+        "row1": "Hexanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 559,
+        "row0": "558",
+        "row1": "Pyridine, 2,4,6-trimethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 602,
+        "row0": "601",
+        "row1": "Hexanoic acid, 2-methylpropyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 613,
+        "row0": "612",
+        "row1": "Ethanone, 1-(2-pyridinyl)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 615,
+        "row0": "614",
+        "row1": "Butanedioic acid, dimethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 620,
+        "row0": "619",
+        "row1": "1-(1'-pyrrolidinyl)-2-butanone",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 625,
+        "row0": "624",
+        "row1": "Cyclopropanecarboxylic acid,4-methylpentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 637,
+        "row0": "636",
+        "row1": "2-Propenoic acid, 2-methyl-, 2-hydroxypropyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 649,
+        "row0": "648",
+        "row1": "Succinic acid, tridec-2-yn-1-yl 3-methylbut-3-en-1-yl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 666,
+        "row0": "665",
+        "row1": "Sulfurous acid, 2-ethylhexyl nonyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 675,
+        "row0": "674",
+        "row1": "Sulfurous acid, decyl 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 684,
+        "row0": "683",
+        "row1": "Formic acid, octyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 689,
+        "row0": "688",
+        "row1": "Terephthalic acid, 2-methoxyethyl propyl ester",
+        "matched_keyword": "rep"
+      },
+      {
+        "col_index": 689,
+        "row0": "688",
+        "row1": "Terephthalic acid, 2-methoxyethyl propyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 690,
+        "row0": "689",
+        "row1": "Arsenous acid, tris(trimethylsilyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 691,
+        "row0": "690",
+        "row1": "Pentanoic acid, 3-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 693,
+        "row0": "692",
+        "row1": "Formic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 697,
+        "row0": "696",
+        "row1": "Silicic acid, diethyl bis(trimethylsilyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 706,
+        "row0": "705",
+        "row1": "Phenyltrimethylammonium chloride",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 715,
+        "row0": "714",
+        "row1": "Benzoic acid, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 740,
+        "row0": "739",
+        "row1": "4-Piperidinone, 2,2,6,6-tetramethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 753,
+        "row0": "752",
+        "row1": "Hexanoic acid, 2-ethyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 769,
+        "row0": "768",
+        "row1": "Succinimide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 770,
+        "row0": "769",
+        "row1": "Carbonic acid, decyl undecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 775,
+        "row0": "774",
+        "row1": "Pentanedioic acid, dimethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 777,
+        "row0": "776",
+        "row1": "(Z),(Z)-2,5-Dimethyl-2,4-hexadienedioic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 787,
+        "row0": "786",
+        "row1": "trans-2,4-Dimethylthiane, S,S-dioxide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 788,
+        "row0": "787",
+        "row1": "Acetamide, 2-(3-cyano-4-methoxymethyl-6-methylpyridin-2-ylsulfanyl)-N-(3-trifluoromethylphenyl)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 790,
+        "row0": "789",
+        "row1": "Acetic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 816,
+        "row0": "815",
+        "row1": "Acetic acid, phenylmethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 821,
+        "row0": "820",
+        "row1": "Benzoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 828,
+        "row0": "827",
+        "row1": "p-Acetophenetidide, N-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 851,
+        "row0": "850",
+        "row1": "p-Ethylbenzylchloride",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 857,
+        "row0": "856",
+        "row1": "trans-2-Methyl-4-n-butylthiane, S,S-dioxide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 871,
+        "row0": "870",
+        "row1": "Cyclohexanol, 1-methyl-4-(1-methylethylidene)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 876,
+        "row0": "875",
+        "row1": "4-n-Propylbenzoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 882,
+        "row0": "881",
+        "row1": "15-Hydroxy-7-oxodehydroabietic acid, methyl ester, TMS derivative",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 884,
+        "row0": "883",
+        "row1": "Tridecane, 5-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 886,
+        "row0": "885",
+        "row1": "Glutaric acid, dodec-2-en-1-yl 3-methyl-5-methoxypentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 908,
+        "row0": "907",
+        "row1": "2-Propenoic acid, 6-methylheptyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 916,
+        "row0": "915",
+        "row1": "4-Amino-5-methyl-2(1H)-pyrimidinethione",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 922,
+        "row0": "921",
+        "row1": "Dichloroacetic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 923,
+        "row0": "922",
+        "row1": "Phosphonoacetic Acid, 3TMS derivative",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 931,
+        "row0": "930",
+        "row1": "Hexanedioic acid, dimethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 942,
+        "row0": "941",
+        "row1": "Benzeneacetic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 949,
+        "row0": "948",
+        "row1": "2,6,10-Trimethyltridecane",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 951,
+        "row0": "950",
+        "row1": "Acetic acid, chloro-, 2-phenylethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 953,
+        "row0": "952",
+        "row1": "Sulfurous acid, 2-ethylhexyl undecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 957,
+        "row0": "956",
+        "row1": "Pentafluoropropionic acid, decyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 977,
+        "row0": "976",
+        "row1": "Benzoic acid, 2-hydroxy-, ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 978,
+        "row0": "977",
+        "row1": "Nonanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 992,
+        "row0": "991",
+        "row1": "1-(4-Anisidino)-2-phenyl-2-(1,2,4-thiadiazol-5-yl)ethane",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1004,
+        "row0": "1003",
+        "row1": "Cyclopentanecarboxamide, N-[2-(2-methylphenoxy)ethyl]-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1029,
+        "row0": "1028",
+        "row1": "Carbonic acid, eicosyl vinyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1030,
+        "row0": "1029",
+        "row1": "Formamide, N,N-dibutyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1033,
+        "row0": "1032",
+        "row1": "Carbonic acid, tetradecyl vinyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1035,
+        "row0": "1034",
+        "row1": ".beta.-Hydroxypyruvic acid, trimethylsilyl ether, trimethylsilyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1044,
+        "row0": "1043",
+        "row1": "Succinic acid, 3,7-dimethyloct-6-en-1-yl pentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1050,
+        "row0": "1049",
+        "row1": "7-Chloro-2,3-dihydro-3-(4-N,N-dimethylaminobenzylidene)-5-phenyl-1H-1,4-benzodiazepin-2-one",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1059,
+        "row0": "1058",
+        "row1": "Benzamide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1064,
+        "row0": "1063",
+        "row1": "Methoxyacetic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1067,
+        "row0": "1066",
+        "row1": "Hexanamide, N-methallyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1078,
+        "row0": "1077",
+        "row1": "Sulfurous acid, cyclohexylmethyl heptadecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1110,
+        "row0": "1109",
+        "row1": "Propanoic acid, 2-methyl-, 3-hydroxy-2,2,4-trimethylpentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1113,
+        "row0": "1112",
+        "row1": "Acetic acid, trifluoro-, undecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1116,
+        "row0": "1115",
+        "row1": "1,4-Dimethyl-8-isopropylidenetricyclo[5.3.0.0(4,10)]decane",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1123,
+        "row0": "1122",
+        "row1": "Succinic acid, di(2-(3-nitrophenyl)ethyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1161,
+        "row0": "1160",
+        "row1": "Pentanoic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1163,
+        "row0": "1162",
+        "row1": "3-Furancarboxylic acid, 2,5-dimethyl-, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1170,
+        "row0": "1169",
+        "row1": "Octahydro-1H-pyrido(1,2-c)pyrimidin-1-one",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1172,
+        "row0": "1171",
+        "row1": "Benzoic acid, 1-methylpropyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1189,
+        "row0": "1188",
+        "row1": "2-Propenoic acid, 3-(2-hydroxyphenyl)-, (E)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1199,
+        "row0": "1198",
+        "row1": "Phthalic acid, methyl neopentyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1231,
+        "row0": "1230",
+        "row1": "Phthalimide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1240,
+        "row0": "1239",
+        "row1": "2-Butenedioic acid (Z)-, monododecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1243,
+        "row0": "1242",
+        "row1": "Butanedioic acid, bis(2-methylpropyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1244,
+        "row0": "1243",
+        "row1": "Ppropiolic acid, 3-(1-hydroxy-2-isopropyl-5-methylcyclohexyl)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1255,
+        "row0": "1254",
+        "row1": "2-Tridecanone",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1257,
+        "row0": "1256",
+        "row1": "2-Propanone, 1-(3,5,5-trimethyl-2-cyclohexen-1-ylidene)-, (E)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1276,
+        "row0": "1275",
+        "row1": "(O-Tolyl)carbamic acid, biphenyl-2-yl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1283,
+        "row0": "1282",
+        "row1": "Benzoic acid, 4-ethoxy-, ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1290,
+        "row0": "1289",
+        "row1": "Phloroglucinic acid, 4TMS",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1292,
+        "row0": "1291",
+        "row1": "Phenylmaleic anhydride",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1302,
+        "row0": "1301",
+        "row1": "Dichloroacetic acid, 2-(1-adamantyl)ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1303,
+        "row0": "1302",
+        "row1": "Adipic acid, di(but-2-en-1-yl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1314,
+        "row0": "1313",
+        "row1": "Tridecane, 3-cyclohexyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1322,
+        "row0": "1321",
+        "row1": "Dodecanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1326,
+        "row0": "1325",
+        "row1": "1-Adamantanecarboxylic acid, 2-adamantyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1333,
+        "row0": "1332",
+        "row1": "Trichloroacetic acid, 2-(1-adamantyl)ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1334,
+        "row0": "1333",
+        "row1": "Benzoic acid, 2-hydroxy-, 2-methylbutyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1335,
+        "row0": "1334",
+        "row1": "Glutaric acid, di(isobutyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1338,
+        "row0": "1337",
+        "row1": "Glutaric acid, butyl undecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1394,
+        "row0": "1393",
+        "row1": "Fumaric acid, eicosyl trans-hex-3-enyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1422,
+        "row0": "1421",
+        "row1": "Hexanedioic acid, bis(2-methylpropyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1426,
+        "row0": "1425",
+        "row1": "Hexanoic acid, 3,5,5-trimethyl-, nonyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1429,
+        "row0": "1428",
+        "row1": "2-Acetamidotropone",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1433,
+        "row0": "1432",
+        "row1": "Ethanol, 1-[1-(4-propoxybenzyl)-1H-benzoimidazol-2-yl]-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1434,
+        "row0": "1433",
+        "row1": "3-Chloropropionic acid, heptadecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1437,
+        "row0": "1436",
+        "row1": "Pentanoic acid, 6-ethyl-3-octyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1451,
+        "row0": "1450",
+        "row1": "Benzoic acid, 2-ethylhexyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1452,
+        "row0": "1451",
+        "row1": "1,2-Benzenedicarboxylic acid, butyl methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1471,
+        "row0": "1470",
+        "row1": "Hippuric acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1473,
+        "row0": "1472",
+        "row1": "Benzenecarbothioic acid, S-ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1479,
+        "row0": "1478",
+        "row1": "5H-Pyrrolo(3,2-d)pyrimidine-2,4-diamine",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1514,
+        "row0": "1513",
+        "row1": "9-Hexadecenoic acid, eicosyl ester, (Z)-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1517,
+        "row0": "1516",
+        "row1": "Tetradecanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1530,
+        "row0": "1529",
+        "row1": "Octanoic acid, octyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1545,
+        "row0": "1544",
+        "row1": "Pentadecafluorooctanoic acid, heptadecyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1556,
+        "row0": "1555",
+        "row1": "Carbonic acid, 2-ethylhexyl octyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1585,
+        "row0": "1584",
+        "row1": "Dicyclohexyldisulphide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1605,
+        "row0": "1604",
+        "row1": "Phthalic acid, 5-methylhex-2-yl isobutyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1609,
+        "row0": "1608",
+        "row1": "Pentadecanoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1641,
+        "row0": "1640",
+        "row1": "Hexadecanoic acid, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1644,
+        "row0": "1643",
+        "row1": "Benzenepropanoic acid, 3,5-bis(1,1-dimethylethyl)-4-hydroxy-, methyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1646,
+        "row0": "1645",
+        "row1": "Palmitoleic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1648,
+        "row0": "1647",
+        "row1": "Undecanoic acid, benzyldimethylsilyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1649,
+        "row0": "1648",
+        "row1": "Furan-3-carboxylic acid, 5-(adamantan-1-yl)-2-methyl-, (2,6-dimethylphenyl)amide",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1654,
+        "row0": "1653",
+        "row1": "1,2-Benzenedicarboxylic acid, bis(2-methylpropyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1657,
+        "row0": "1656",
+        "row1": "Phthalic acid, 4,4-dimethylpent-2-yl butyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1661,
+        "row0": "1660",
+        "row1": "l-(+)-Ascorbic acid 2,6-dihexadecanoate",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1665,
+        "row0": "1664",
+        "row1": "Phthalic acid, di(2-propylpentyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1688,
+        "row0": "1687",
+        "row1": "Hexadecanoic acid, ethyl ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1698,
+        "row0": "1697",
+        "row1": "1,4-Benzenedicarboxylic acid, bis(2-ethylhexyl) ester",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1702,
+        "row0": "1701",
+        "row1": "m-Toluic acid, TBDMS derivative",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1713,
+        "row0": "1712",
+        "row1": "cis-10-Heptadecenoic acid",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1714,
+        "row0": "1713",
+        "row1": "benzenamine, 4,4'-ethylidenebis[N,N-diethyl-3-methyl-",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1724,
+        "row0": "1723",
+        "row1": "Boric acid, 3TMS derivative",
+        "matched_keyword": "id"
+      },
+      {
+        "col_index": 1734,
+        "row0": "1733",
+        "row1": "Heptadecanoic acid",
+        "matched_keyword": "id"
+      }
+    ],
+    "conclusion": "在当前检查的工作表 (Sheet6)、列名和仓库数据文件中未发现 subject_id、batch_id、instrument_id、collection_date、location、operator、replicate_id 等元数据。"
+  },
+  "task_results": [
+    {
+      "task": "1vs2",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 2 → 1",
+      "neg_label": "Class 1 → 0",
+      "pos_original": "2",
+      "neg_original": "1",
+      "pooled_metrics": {
+        "f1": 0.39603960396039606,
+        "accuracy": 0.42452830188679247,
+        "balanced_accuracy": 0.42452830188679247,
+        "mcc": -0.15161960871578067,
+        "roc_auc": 0.4444642221431115,
+        "pr_auc": 0.4812412087019809,
+        "precision": 0.4166666666666667,
+        "sensitivity": 0.37735849056603776,
+        "specificity": 0.47169811320753824,
+        "tn": 25,
+        "fp": 28,
+        "fn": 33,
+        "tp": 20
+      },
+      "fold_summary": {
+        "f1_mean": 0.3941362357299899,
+        "f1_std": 0.033246356799434704,
+        "accuracy_mean": 0.4238095238095238,
+        "accuracy_std": 0.05928523618089873,
+        "balanced_accuracy_mean": 0.42272727272727273,
+        "balanced_accuracy_std": 0.05891582453098054,
+        "mcc_mean": -0.15509846162740437,
+        "mcc_std": 0.1181649404308284,
+        "roc_auc_mean": 0.43892561983471073,
+        "roc_auc_std": 0.04838629477755439,
+        "pr_auc_mean": 0.5300450761359853,
+        "pr_auc_std": 0.06627303167123075,
+        "precision_mean": 0.42494949494949485,
+        "precision_std": 0.05114443757185499,
+        "sensitivity_mean": 0.37818181818181823,
+        "sensitivity_std": 0.0672972928120791,
+        "specificity_mean": 0.4672727272726836,
+        "specificity_std": 0.17099610937527976
+      }
+    },
+    {
+      "task": "1vs3",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 1 → 0",
+      "pos_original": "3",
+      "neg_original": "1",
+      "pooled_metrics": {
+        "f1": 0.819047619047619,
+        "accuracy": 0.8207547169811321,
+        "balanced_accuracy": 0.8207547169811321,
+        "mcc": 0.6416236526819377,
+        "roc_auc": 0.8225347098611606,
+        "pr_auc": 0.7720051407321676,
+        "precision": 0.8269230769230769,
+        "sensitivity": 0.8113207547169812,
+        "specificity": 0.8301886792452673,
+        "tn": 44,
+        "fp": 9,
+        "fn": 10,
+        "tp": 43
+      },
+      "fold_summary": {
+        "f1_mean": 0.8214141414141414,
+        "f1_std": 0.08052792344549452,
+        "accuracy_mean": 0.8207792207792208,
+        "accuracy_std": 0.08502940337196097,
+        "balanced_accuracy_mean": 0.8190909090909091,
+        "balanced_accuracy_std": 0.0839618173746823,
+        "mcc_mean": 0.6495906585366251,
+        "mcc_std": 0.16697171941741684,
+        "roc_auc_mean": 0.8176859504132231,
+        "roc_auc_std": 0.09705132896318798,
+        "pr_auc_mean": 0.8363977372972589,
+        "pr_auc_std": 0.12682571754052233,
+        "precision_mean": 0.8420490620490619,
+        "precision_std": 0.11105260729984165,
+        "sensitivity_mean": 0.8127272727272727,
+        "sensitivity_std": 0.10977060980453514,
+        "specificity_mean": 0.8254545454544677,
+        "specificity_std": 0.1491574131053974
+      }
+    },
+    {
+      "task": "2vs3",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 2 → 0",
+      "pos_original": "3",
+      "neg_original": "2",
+      "pooled_metrics": {
+        "f1": 0.6019417475728155,
+        "accuracy": 0.6132075471698113,
+        "balanced_accuracy": 0.6132075471698113,
+        "mcc": 0.22677868380553634,
+        "roc_auc": 0.6169455322178711,
+        "pr_auc": 0.592289132839932,
+        "precision": 0.62,
+        "sensitivity": 0.5849056603773585,
+        "specificity": 0.641509433962252,
+        "tn": 34,
+        "fp": 19,
+        "fn": 22,
+        "tp": 31
+      },
+      "fold_summary": {
+        "f1_mean": 0.5987301587301587,
+        "f1_std": 0.08250457128665512,
+        "accuracy_mean": 0.612987012987013,
+        "accuracy_std": 0.07163161486362964,
+        "balanced_accuracy_mean": 0.6127272727272728,
+        "balanced_accuracy_std": 0.07007964772167015,
+        "mcc_mean": 0.23085644607405303,
+        "mcc_std": 0.14197092191027003,
+        "roc_auc_mean": 0.5996694214876033,
+        "roc_auc_std": 0.10075122515852901,
+        "pr_auc_mean": 0.6433445023563233,
+        "pr_auc_std": 0.09094112150140028,
+        "precision_mean": 0.6261360861360861,
+        "precision_std": 0.07879237136504626,
+        "sensitivity_mean": 0.5872727272727273,
+        "sensitivity_std": 0.13009850050907867,
+        "specificity_mean": 0.6381818181817581,
+        "specificity_std": 0.13180250690500367
+      }
+    },
+    {
+      "task": "1+2vs3",
+      "n_total": 159,
+      "n_positive": 53,
+      "n_negative": 106,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 1,2 → 0",
+      "pos_original": "3",
+      "neg_original": "(1, 2)",
+      "pooled_metrics": {
+        "f1": 0.5046728971962616,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6273584905660377,
+        "mcc": 0.253546276418555,
+        "roc_auc": 0.6682093271626913,
+        "pr_auc": 0.4742269108932651,
+        "precision": 0.5,
+        "sensitivity": 0.5094339622641509,
+        "specificity": 0.7452830188679175,
+        "tn": 79,
+        "fp": 27,
+        "fn": 26,
+        "tp": 27
+      },
+      "fold_summary": {
+        "f1_mean": 0.5001054018445322,
+        "f1_std": 0.23350278665486587,
+        "accuracy_mean": 0.6651209677419355,
+        "accuracy_std": 0.14992125816522456,
+        "balanced_accuracy_mean": 0.6236796536796537,
+        "balanced_accuracy_std": 0.17000532436044827,
+        "mcc_mean": 0.2503258353345508,
+        "mcc_std": 0.3445331335040437,
+        "roc_auc_mean": 0.6584415584415584,
+        "roc_auc_std": 0.1755852907754173,
+        "pr_auc_mean": 0.524315272541942,
+        "pr_auc_std": 0.14443543814642676,
+        "precision_mean": 0.5021678321678322,
+        "precision_std": 0.2438525310963552,
+        "sensitivity_mean": 0.5036363636363637,
+        "sensitivity_std": 0.23754947288115735,
+        "specificity_mean": 0.7437229437229087,
+        "specificity_std": 0.12099547739066625
+      }
+    }
+  ],
+  "task_results_with_baselines": [
+    {
+      "task": "1vs2",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 2 → 1",
+      "neg_label": "Class 1 → 0",
+      "pos_original": "2",
+      "neg_original": "1",
+      "pooled_metrics": {
+        "f1": 0.39603960396039606,
+        "accuracy": 0.42452830188679247,
+        "balanced_accuracy": 0.42452830188679247,
+        "mcc": -0.15161960871578067,
+        "roc_auc": 0.4444642221431115,
+        "pr_auc": 0.4812412087019809,
+        "precision": 0.4166666666666667,
+        "sensitivity": 0.37735849056603776,
+        "specificity": 0.47169811320753824,
+        "tn": 25,
+        "fp": 28,
+        "fn": 33,
+        "tp": 20
+      },
+      "fold_summary": {
+        "f1_mean": 0.3941362357299899,
+        "f1_std": 0.033246356799434704,
+        "accuracy_mean": 0.4238095238095238,
+        "accuracy_std": 0.05928523618089873,
+        "balanced_accuracy_mean": 0.42272727272727273,
+        "balanced_accuracy_std": 0.05891582453098054,
+        "mcc_mean": -0.15509846162740437,
+        "mcc_std": 0.1181649404308284,
+        "roc_auc_mean": 0.43892561983471073,
+        "roc_auc_std": 0.04838629477755439,
+        "pr_auc_mean": 0.5300450761359853,
+        "pr_auc_std": 0.06627303167123075,
+        "precision_mean": 0.42494949494949485,
+        "precision_std": 0.05114443757185499,
+        "sensitivity_mean": 0.37818181818181823,
+        "sensitivity_std": 0.0672972928120791,
+        "specificity_mean": 0.4672727272726836,
+        "specificity_std": 0.17099610937527976
+      },
+      "baselines": [
+        {
+          "baseline": "DummyClassifier(most_frequent)",
+          "pooled": {
+            "f1": 0.42105263157894735,
+            "accuracy": 0.4811320754716981,
+            "balanced_accuracy": 0.4811320754716981,
+            "mcc": -0.03857583749052298,
+            "roc_auc": 0.48113207547169806,
+            "pr_auc": 0.4910152740341419,
+            "precision": 0.47619047619047616,
+            "sensitivity": 0.37735849056603776,
+            "specificity": 0.5849056603773475,
+            "tn": 31,
+            "fp": 22,
+            "fn": 33,
+            "tp": 20
+          },
+          "fold_summary": {
+            "f1_mean": 0.25806451612903225,
+            "f1_std": 0.35336939193881683,
+            "accuracy_mean": 0.4809523809523809,
+            "accuracy_std": 0.01064794274999901,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.19047619047619047,
+            "precision_std": 0.2608202654786505,
+            "sensitivity_mean": 0.4,
+            "sensitivity_std": 0.5477225575051662,
+            "specificity_mean": 0.5999999999999418,
+            "specificity_std": 0.547722557505113
+          },
+          "task": "1vs2"
+        },
+        {
+          "baseline": "DummyClassifier(stratified)",
+          "pooled": {
+            "f1": 0.5046728971962616,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 0.5094339622641509,
+            "specificity": 0.4905660377358398,
+            "tn": 26,
+            "fp": 27,
+            "fn": 26,
+            "tp": 27
+          },
+          "fold_summary": {
+            "f1_mean": 0.5026915113871635,
+            "f1_std": 0.11216870827936289,
+            "accuracy_mean": 0.4991341991341991,
+            "accuracy_std": 0.10817747869668665,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.10813979321245744,
+            "mcc_mean": 0.00015120080337470697,
+            "mcc_std": 0.21643867826810562,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.10813979321245744,
+            "pr_auc_mean": 0.5092207792207792,
+            "pr_auc_std": 0.03129319226063841,
+            "precision_mean": 0.4948484848484848,
+            "precision_std": 0.08795451282853778,
+            "sensitivity_mean": 0.5127272727272728,
+            "sensitivity_std": 0.13690800434193964,
+            "specificity_mean": 0.48727272727268156,
+            "specificity_std": 0.07966873563710983
+          },
+          "task": "1vs2"
+        },
+        {
+          "baseline": "AllPositive",
+          "pooled": {
+            "f1": 0.6666666666666666,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 1.0,
+            "specificity": 0.0,
+            "tn": 0,
+            "fp": 53,
+            "fn": 0,
+            "tp": 53
+          },
+          "fold_summary": {
+            "f1_mean": 0.6663978494623656,
+            "f1_std": 0.02116988819945954,
+            "accuracy_mean": 0.5,
+            "accuracy_std": 0.023809523809523836,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.5,
+            "precision_std": 0.023809523809523836,
+            "sensitivity_mean": 1.0,
+            "sensitivity_std": 0.0,
+            "specificity_mean": 0.0,
+            "specificity_std": 0.0
+          },
+          "task": "1vs2"
+        }
+      ]
+    },
+    {
+      "task": "1vs3",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 1 → 0",
+      "pos_original": "3",
+      "neg_original": "1",
+      "pooled_metrics": {
+        "f1": 0.819047619047619,
+        "accuracy": 0.8207547169811321,
+        "balanced_accuracy": 0.8207547169811321,
+        "mcc": 0.6416236526819377,
+        "roc_auc": 0.8225347098611606,
+        "pr_auc": 0.7720051407321676,
+        "precision": 0.8269230769230769,
+        "sensitivity": 0.8113207547169812,
+        "specificity": 0.8301886792452673,
+        "tn": 44,
+        "fp": 9,
+        "fn": 10,
+        "tp": 43
+      },
+      "fold_summary": {
+        "f1_mean": 0.8214141414141414,
+        "f1_std": 0.08052792344549452,
+        "accuracy_mean": 0.8207792207792208,
+        "accuracy_std": 0.08502940337196097,
+        "balanced_accuracy_mean": 0.8190909090909091,
+        "balanced_accuracy_std": 0.0839618173746823,
+        "mcc_mean": 0.6495906585366251,
+        "mcc_std": 0.16697171941741684,
+        "roc_auc_mean": 0.8176859504132231,
+        "roc_auc_std": 0.09705132896318798,
+        "pr_auc_mean": 0.8363977372972589,
+        "pr_auc_std": 0.12682571754052233,
+        "precision_mean": 0.8420490620490619,
+        "precision_std": 0.11105260729984165,
+        "sensitivity_mean": 0.8127272727272727,
+        "sensitivity_std": 0.10977060980453514,
+        "specificity_mean": 0.8254545454544677,
+        "specificity_std": 0.1491574131053974
+      },
+      "baselines": [
+        {
+          "baseline": "DummyClassifier(most_frequent)",
+          "pooled": {
+            "f1": 0.42105263157894735,
+            "accuracy": 0.4811320754716981,
+            "balanced_accuracy": 0.4811320754716981,
+            "mcc": -0.03857583749052298,
+            "roc_auc": 0.48113207547169806,
+            "pr_auc": 0.4910152740341419,
+            "precision": 0.47619047619047616,
+            "sensitivity": 0.37735849056603776,
+            "specificity": 0.5849056603773475,
+            "tn": 31,
+            "fp": 22,
+            "fn": 33,
+            "tp": 20
+          },
+          "fold_summary": {
+            "f1_mean": 0.25806451612903225,
+            "f1_std": 0.35336939193881683,
+            "accuracy_mean": 0.4809523809523809,
+            "accuracy_std": 0.01064794274999901,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.19047619047619047,
+            "precision_std": 0.2608202654786505,
+            "sensitivity_mean": 0.4,
+            "sensitivity_std": 0.5477225575051662,
+            "specificity_mean": 0.5999999999999418,
+            "specificity_std": 0.547722557505113
+          },
+          "task": "1vs3"
+        },
+        {
+          "baseline": "DummyClassifier(stratified)",
+          "pooled": {
+            "f1": 0.5046728971962616,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 0.5094339622641509,
+            "specificity": 0.4905660377358398,
+            "tn": 26,
+            "fp": 27,
+            "fn": 26,
+            "tp": 27
+          },
+          "fold_summary": {
+            "f1_mean": 0.5026915113871635,
+            "f1_std": 0.11216870827936289,
+            "accuracy_mean": 0.4991341991341991,
+            "accuracy_std": 0.10817747869668665,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.10813979321245744,
+            "mcc_mean": 0.00015120080337470697,
+            "mcc_std": 0.21643867826810562,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.10813979321245744,
+            "pr_auc_mean": 0.5092207792207792,
+            "pr_auc_std": 0.03129319226063841,
+            "precision_mean": 0.4948484848484848,
+            "precision_std": 0.08795451282853778,
+            "sensitivity_mean": 0.5127272727272728,
+            "sensitivity_std": 0.13690800434193964,
+            "specificity_mean": 0.48727272727268156,
+            "specificity_std": 0.07966873563710983
+          },
+          "task": "1vs3"
+        },
+        {
+          "baseline": "AllPositive",
+          "pooled": {
+            "f1": 0.6666666666666666,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 1.0,
+            "specificity": 0.0,
+            "tn": 0,
+            "fp": 53,
+            "fn": 0,
+            "tp": 53
+          },
+          "fold_summary": {
+            "f1_mean": 0.6663978494623656,
+            "f1_std": 0.02116988819945954,
+            "accuracy_mean": 0.5,
+            "accuracy_std": 0.023809523809523836,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.5,
+            "precision_std": 0.023809523809523836,
+            "sensitivity_mean": 1.0,
+            "sensitivity_std": 0.0,
+            "specificity_mean": 0.0,
+            "specificity_std": 0.0
+          },
+          "task": "1vs3"
+        }
+      ]
+    },
+    {
+      "task": "2vs3",
+      "n_total": 106,
+      "n_positive": 53,
+      "n_negative": 53,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 2 → 0",
+      "pos_original": "3",
+      "neg_original": "2",
+      "pooled_metrics": {
+        "f1": 0.6019417475728155,
+        "accuracy": 0.6132075471698113,
+        "balanced_accuracy": 0.6132075471698113,
+        "mcc": 0.22677868380553634,
+        "roc_auc": 0.6169455322178711,
+        "pr_auc": 0.592289132839932,
+        "precision": 0.62,
+        "sensitivity": 0.5849056603773585,
+        "specificity": 0.641509433962252,
+        "tn": 34,
+        "fp": 19,
+        "fn": 22,
+        "tp": 31
+      },
+      "fold_summary": {
+        "f1_mean": 0.5987301587301587,
+        "f1_std": 0.08250457128665512,
+        "accuracy_mean": 0.612987012987013,
+        "accuracy_std": 0.07163161486362964,
+        "balanced_accuracy_mean": 0.6127272727272728,
+        "balanced_accuracy_std": 0.07007964772167015,
+        "mcc_mean": 0.23085644607405303,
+        "mcc_std": 0.14197092191027003,
+        "roc_auc_mean": 0.5996694214876033,
+        "roc_auc_std": 0.10075122515852901,
+        "pr_auc_mean": 0.6433445023563233,
+        "pr_auc_std": 0.09094112150140028,
+        "precision_mean": 0.6261360861360861,
+        "precision_std": 0.07879237136504626,
+        "sensitivity_mean": 0.5872727272727273,
+        "sensitivity_std": 0.13009850050907867,
+        "specificity_mean": 0.6381818181817581,
+        "specificity_std": 0.13180250690500367
+      },
+      "baselines": [
+        {
+          "baseline": "DummyClassifier(most_frequent)",
+          "pooled": {
+            "f1": 0.42105263157894735,
+            "accuracy": 0.4811320754716981,
+            "balanced_accuracy": 0.4811320754716981,
+            "mcc": -0.03857583749052298,
+            "roc_auc": 0.48113207547169806,
+            "pr_auc": 0.4910152740341419,
+            "precision": 0.47619047619047616,
+            "sensitivity": 0.37735849056603776,
+            "specificity": 0.5849056603773475,
+            "tn": 31,
+            "fp": 22,
+            "fn": 33,
+            "tp": 20
+          },
+          "fold_summary": {
+            "f1_mean": 0.25806451612903225,
+            "f1_std": 0.35336939193881683,
+            "accuracy_mean": 0.4809523809523809,
+            "accuracy_std": 0.01064794274999901,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.19047619047619047,
+            "precision_std": 0.2608202654786505,
+            "sensitivity_mean": 0.4,
+            "sensitivity_std": 0.5477225575051662,
+            "specificity_mean": 0.5999999999999418,
+            "specificity_std": 0.547722557505113
+          },
+          "task": "2vs3"
+        },
+        {
+          "baseline": "DummyClassifier(stratified)",
+          "pooled": {
+            "f1": 0.5046728971962616,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 0.5094339622641509,
+            "specificity": 0.4905660377358398,
+            "tn": 26,
+            "fp": 27,
+            "fn": 26,
+            "tp": 27
+          },
+          "fold_summary": {
+            "f1_mean": 0.5026915113871635,
+            "f1_std": 0.11216870827936289,
+            "accuracy_mean": 0.4991341991341991,
+            "accuracy_std": 0.10817747869668665,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.10813979321245744,
+            "mcc_mean": 0.00015120080337470697,
+            "mcc_std": 0.21643867826810562,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.10813979321245744,
+            "pr_auc_mean": 0.5092207792207792,
+            "pr_auc_std": 0.03129319226063841,
+            "precision_mean": 0.4948484848484848,
+            "precision_std": 0.08795451282853778,
+            "sensitivity_mean": 0.5127272727272728,
+            "sensitivity_std": 0.13690800434193964,
+            "specificity_mean": 0.48727272727268156,
+            "specificity_std": 0.07966873563710983
+          },
+          "task": "2vs3"
+        },
+        {
+          "baseline": "AllPositive",
+          "pooled": {
+            "f1": 0.6666666666666666,
+            "accuracy": 0.5,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.5,
+            "precision": 0.5,
+            "sensitivity": 1.0,
+            "specificity": 0.0,
+            "tn": 0,
+            "fp": 53,
+            "fn": 0,
+            "tp": 53
+          },
+          "fold_summary": {
+            "f1_mean": 0.6663978494623656,
+            "f1_std": 0.02116988819945954,
+            "accuracy_mean": 0.5,
+            "accuracy_std": 0.023809523809523836,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.5,
+            "pr_auc_std": 0.023809523809523836,
+            "precision_mean": 0.5,
+            "precision_std": 0.023809523809523836,
+            "sensitivity_mean": 1.0,
+            "sensitivity_std": 0.0,
+            "specificity_mean": 0.0,
+            "specificity_std": 0.0
+          },
+          "task": "2vs3"
+        }
+      ]
+    },
+    {
+      "task": "1+2vs3",
+      "n_total": 159,
+      "n_positive": 53,
+      "n_negative": 106,
+      "pos_label": "Class 3 → 1",
+      "neg_label": "Class 1,2 → 0",
+      "pos_original": "3",
+      "neg_original": "(1, 2)",
+      "pooled_metrics": {
+        "f1": 0.5046728971962616,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6273584905660377,
+        "mcc": 0.253546276418555,
+        "roc_auc": 0.6682093271626913,
+        "pr_auc": 0.4742269108932651,
+        "precision": 0.5,
+        "sensitivity": 0.5094339622641509,
+        "specificity": 0.7452830188679175,
+        "tn": 79,
+        "fp": 27,
+        "fn": 26,
+        "tp": 27
+      },
+      "fold_summary": {
+        "f1_mean": 0.5001054018445322,
+        "f1_std": 0.23350278665486587,
+        "accuracy_mean": 0.6651209677419355,
+        "accuracy_std": 0.14992125816522456,
+        "balanced_accuracy_mean": 0.6236796536796537,
+        "balanced_accuracy_std": 0.17000532436044827,
+        "mcc_mean": 0.2503258353345508,
+        "mcc_std": 0.3445331335040437,
+        "roc_auc_mean": 0.6584415584415584,
+        "roc_auc_std": 0.1755852907754173,
+        "pr_auc_mean": 0.524315272541942,
+        "pr_auc_std": 0.14443543814642676,
+        "precision_mean": 0.5021678321678322,
+        "precision_std": 0.2438525310963552,
+        "sensitivity_mean": 0.5036363636363637,
+        "sensitivity_std": 0.23754947288115735,
+        "specificity_mean": 0.7437229437229087,
+        "specificity_std": 0.12099547739066625
+      },
+      "baselines": [
+        {
+          "baseline": "DummyClassifier(most_frequent)",
+          "pooled": {
+            "f1": 0.0,
+            "accuracy": 0.6666666666666666,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.3333333333333333,
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9999999999999906,
+            "tn": 106,
+            "fp": 0,
+            "fn": 53,
+            "tp": 0
+          },
+          "fold_summary": {
+            "f1_mean": 0.0,
+            "f1_std": 0.0,
+            "accuracy_mean": 0.666733870967742,
+            "accuracy_std": 0.014791436136713439,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.33326612903225805,
+            "pr_auc_std": 0.01479143613671345,
+            "precision_mean": 0.0,
+            "precision_std": 0.0,
+            "sensitivity_mean": 0.0,
+            "sensitivity_std": 0.0,
+            "specificity_mean": 0.9999999999999529,
+            "specificity_std": 9.43689570931383e-16
+          },
+          "task": "1+2vs3"
+        },
+        {
+          "baseline": "DummyClassifier(stratified)",
+          "pooled": {
+            "f1": 0.11363636363636363,
+            "accuracy": 0.5094339622641509,
+            "balanced_accuracy": 0.40566037735849053,
+            "mcc": -0.21466939537054594,
+            "roc_auc": 0.4056603773584906,
+            "pr_auc": 0.31536388140161725,
+            "precision": 0.14285714285714285,
+            "sensitivity": 0.09433962264150944,
+            "specificity": 0.716981132075465,
+            "tn": 76,
+            "fp": 30,
+            "fn": 48,
+            "tp": 5
+          },
+          "fold_summary": {
+            "f1_mean": 0.11372549019607843,
+            "f1_std": 0.003579885996765794,
+            "accuracy_mean": 0.509475806451613,
+            "accuracy_std": 0.014033474641366816,
+            "balanced_accuracy_mean": 0.4057142857142857,
+            "balanced_accuracy_std": 0.0048462618589727915,
+            "mcc_mean": -0.21454864072579394,
+            "mcc_std": 0.013614655278959432,
+            "roc_auc_mean": 0.4057142857142857,
+            "roc_auc_std": 0.004846261858972822,
+            "pr_auc_mean": 0.3153210096355258,
+            "pr_auc_std": 0.014285158739491205,
+            "precision_mean": 0.14285714285714285,
+            "precision_std": 0.0,
+            "sensitivity_mean": 0.09454545454545456,
+            "sensitivity_std": 0.004979295977319694,
+            "specificity_mean": 0.7168831168830831,
+            "specificity_std": 0.005807968772727175
+          },
+          "task": "1+2vs3"
+        },
+        {
+          "baseline": "AllPositive",
+          "pooled": {
+            "f1": 0.5,
+            "accuracy": 0.3333333333333333,
+            "balanced_accuracy": 0.5,
+            "mcc": 0.0,
+            "roc_auc": 0.5,
+            "pr_auc": 0.3333333333333333,
+            "precision": 0.3333333333333333,
+            "sensitivity": 1.0,
+            "specificity": 0.0,
+            "tn": 0,
+            "fp": 106,
+            "fn": 0,
+            "tp": 53
+          },
+          "fold_summary": {
+            "f1_mean": 0.4997758150338979,
+            "f1_std": 0.01674057787925582,
+            "accuracy_mean": 0.33326612903225805,
+            "accuracy_std": 0.01479143613671345,
+            "balanced_accuracy_mean": 0.5,
+            "balanced_accuracy_std": 0.0,
+            "mcc_mean": 0.0,
+            "mcc_std": 0.0,
+            "roc_auc_mean": 0.5,
+            "roc_auc_std": 0.0,
+            "pr_auc_mean": 0.33326612903225805,
+            "pr_auc_std": 0.01479143613671345,
+            "precision_mean": 0.33326612903225805,
+            "precision_std": 0.01479143613671345,
+            "sensitivity_mean": 1.0,
+            "sensitivity_std": 0.0,
+            "specificity_mean": 0.0,
+            "specificity_std": 0.0
+          },
+          "task": "1+2vs3"
+        }
+      ]
+    }
+  ],
+  "pca": {
+    "n_components": 5,
+    "explained_variance_ratio": [
+      0.20744158220656825,
+      0.09578854298146666,
+      0.07034766670147487,
+      0.05768610846776812,
+      0.032840779785977034
+    ],
+    "cumulative_variance": [
+      0.20744158220656825,
+      0.30323012518803494,
+      0.3735777918895098,
+      0.4312639003572779,
+      0.46410468014325496
+    ],
+    "pc1_variance": 0.20744158220656825,
+    "pc2_variance": 0.09578854298146666,
+    "pc1_pc2_cumulative": 0.30323012518803494
+  }
+}

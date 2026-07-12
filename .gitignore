@@ -8,3 +8,4 @@ pycache/
 .vscode/
 result/**/*.pt
 result/**/*.npz
+__pycache__/

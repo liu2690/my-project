@@ -1,0 +1,260 @@
+# traditional_selector_frozen.yaml
+# 阶段二冻结配置 — 传统模型 Nested CV 统计协议
+# 
+# 此文件为不可变配置。任何修改必须创建新的版本化协议，
+# 不得静默覆盖此文件。run_nested_cv.py --full 会验证此配置的
+# frozen_config_hash 与当前数据集/manifests 的一致性。
+#
+# 生成时间: 2026-07-12
+# 协议版本: v1.0.0
+
+protocol:
+  name: "traditional_selector_v1"
+  version: "1.0.0"
+  created_at: "2026-07-12T08:50:00+08:00"
+  description: "传统模型 Nested CV，候选独立 inner OOF + 阈值选择"
+
+# ---- 数据集 ----
+dataset:
+  fingerprint: "5b866523ae14b0cd888b6a4ba4edbaa0821fab8d90bc4027a7433aff440fd93f"
+  n_samples: 159
+  n_features: 988
+  task_name: "1+2_vs_3"
+  label_mapping:
+    "1": 0
+    "2": 0
+    "3": 1
+  binary_class_labels:
+    "0": "class 1+2 (control)"
+    "1": "class 3 (case)"
+
+# ---- Canonical Manifests ----
+manifests:
+  outer:
+    file: "canonical_outer_folds.json"
+    hash: "74e6b237e77206f160c3b02e0b4df5525b42a29eece90c396f78b787d05b9c32"
+    algorithm: "StratifiedKFold"
+    n_splits: 5
+    shuffle: true
+    random_state: 42
+    stratify_on: "y_binary"
+  inner:
+    algorithm: "StratifiedKFold"
+    n_splits: 4
+    shuffle: true
+    random_state_base: 43
+    random_state_formula: "43 + outer_fold_id"
+    folds:
+      - outer_fold: 0
+        file: "outer_0_inner_folds.json"
+        hash: "3af8b6a3cf932114b86a2f2d4c83e09e257e7ee71009cd9792de1b6c200a6ae3"
+      - outer_fold: 1
+        file: "outer_1_inner_folds.json"
+        hash: "00ed9dd62802e3af7967f0901205ecf326afd697300b7fcaf77e16eba0d188df"
+      - outer_fold: 2
+        file: "outer_2_inner_folds.json"
+        hash: "ad4a9f589984805d21c0b0d0380b3e851c600ef8798e4d9cb092be3d1b56f029"
+      - outer_fold: 3
+        file: "outer_3_inner_folds.json"
+        hash: "651a68b3461b77f6e4eea20d452764d3fcbe17522e7177a5a3a85f535ccc2cce"
+      - outer_fold: 4
+        file: "outer_4_inner_folds.json"
+        hash: "5eb6ec713ed9b20f79ad4d31247bcdb049a648a4458d834b4d6750d94fc68610"
+
+# ---- Pipeline 定义 ----
+pipeline:
+  steps:
+    - name: "imputer"
+      class: "SimpleImputer"
+      params:
+        strategy: "median"
+    - name: "voc_filter"
+      class: "VOCAbundanceIQRFilter"
+      params:
+        abundance_percentile: 40.0
+        iqr_percentile: 25.0
+        apply_log1p: true
+    - name: "scaler"
+      class: "StandardScaler"
+      params: {}
+    - name: "selector"
+      class: "SelectKBest"
+      params:
+        score_func: "f_classif"
+        k: "variable (see model families)"
+      optional: true
+    - name: "classifier"
+      class: "variable (see model families)"
+      optional: false
+
+# ---- 模型族 ----
+model_families:
+  elastic_net:
+    classifier: "LogisticRegression"
+    classifier_params:
+      solver: "saga"
+      penalty: "elasticnet"
+      max_iter: 50000
+      tol: 1.0e-4
+      random_state: 42
+    uses_selector: false
+    score_type: "probability"
+    default_threshold: 0.5
+
+  linear_svm:
+    classifier: "LinearSVC"
+    classifier_params:
+      max_iter: 50000
+      dual: true
+      random_state: 42
+    uses_selector: true
+    score_type: "decision"
+    default_threshold: 0.0
+
+  rbf_svm:
+    classifier: "SVC"
+    classifier_params:
+      kernel: "rbf"
+      probability: false
+      random_state: 42
+    uses_selector: true
+    score_type: "decision"
+    default_threshold: 0.0
+
+  lda:
+    classifier: "LinearDiscriminantAnalysis"
+    classifier_params:
+      solver: "lsqr"
+    uses_selector: true
+    score_type: "probability"
+    default_threshold: 0.5
+
+# ---- 参数网格 ----
+param_grids:
+  full:
+    elastic_net:
+      C: [0.01, 0.1, 1.0, 10.0]
+      l1_ratio: [0.25, 0.5, 0.75]
+      class_weight: [null, "balanced"]
+      total: 24
+    linear_svm:
+      C: [0.01, 0.1, 1.0, 10.0]
+      class_weight: [null, "balanced"]
+      k: [20, 50, 100, "all"]
+      total: 32
+    rbf_svm:
+      C: [0.1, 1.0, 10.0]
+      gamma: ["scale", 0.01, 0.1]
+      class_weight: [null, "balanced"]
+      k: [20, 50, 100, "all"]
+      total: 72
+    lda:
+      shrinkage: ["auto", 0.1, 0.5, 0.9]
+      k: [20, 50, 100, "all"]
+      total: 16
+    total: 144
+
+  quick:
+    elastic_net:
+      C: [0.1, 1.0]
+      l1_ratio: [0.5]
+      class_weight: [null, "balanced"]
+      total: 4
+    linear_svm:
+      C: [0.1, 1.0]
+      class_weight: [null, "balanced"]
+      k: [50, "all"]
+      total: 8
+    rbf_svm:
+      C: [1.0]
+      gamma: ["scale"]
+      class_weight: [null]
+      k: [50]
+      total: 1
+    lda:
+      shrinkage: ["auto"]
+      k: [50, "all"]
+      total: 2
+    total: 15
+
+# ---- Candidate ID 规则 ----
+candidate_id:
+  format: "{model_family}__{param1}={value1}__{param2}={value2}__..."
+  parameter_order:
+    elastic_net: ["C", "l1", "cw"]
+    linear_svm: ["C", "cw", "k"]
+    rbf_svm: ["C", "gamma", "cw", "k"]
+    lda: ["shrinkage", "k"]
+  value_format:
+    C: "float (e.g. 0.1)"
+    l1: "float (e.g. 0.5)"
+    cw: "string (none or balanced)"
+    gamma: "string or float (e.g. scale, 0.01)"
+    k: "int or 'all'"
+    shrinkage: "string or float (e.g. auto, 0.5)"
+
+# ---- Inner OOF 生成规则 ----
+inner_oof:
+  method: "4-fold StratifiedKFold CV on outer-train"
+  score_type: "per model_family (probability or decision_function)"
+  oof_array: "float64, initialized to NaN, filled per inner fold"
+  validation: "all NaN checked after inner CV; incomplete OOF → invalid candidate"
+
+# ---- 阈值候选生成规则 ----
+threshold_candidates:
+  method: "midpoints between sorted unique scores"
+  score_type: "probability or decision_function"
+  fallback: "single threshold (0.0 for decision, 0.5 for probability) if only one unique score"
+
+# ---- 阈值 Tie-Break 规则 ----
+threshold_tie_break:
+  primary: "maximize F1"
+  secondary: "maximize MCC"
+  tertiary: "maximize Balanced Accuracy"
+  quaternary: "closest to default threshold"
+
+# ---- Candidate 排名规则 ----
+candidate_ranking:
+  primary: "inner_tuned_f1 (descending)"
+  secondary: "inner_tuned_mcc (descending)"
+  tertiary: "inner_tuned_balanced_accuracy (descending)"
+  quaternary: "inner_pr_auc (descending)"
+  quinary: "candidate_id (ascending, deterministic tie-break)"
+
+# ---- 主指标和次级指标 ----
+metrics:
+  primary:
+    name: "pooled_outer_oof_tuned_f1"
+    description: "所有 outer fold 的 OOF 预测拼接后计算的 tuned F1"
+  secondary:
+    - name: "pooled_outer_oof_default_f1"
+      description: "使用默认阈值计算的 pooled F1"
+    - name: "pooled_outer_oof_tuned_mcc"
+    - name: "pooled_outer_oof_tuned_balanced_accuracy"
+    - name: "foldwise_mean_tuned_f1"
+    - name: "foldwise_std_tuned_f1"
+  tuned_threshold: "inner OOF 联合选择（主结果）"
+  default_threshold: "预先规定的次级对照（不做主结果）"
+
+# ---- Random States ----
+random_states:
+  outer_cv: 42
+  inner_cv_base: 43
+  elastic_net: 42
+  linear_svm: 42
+  rbf_svm: 42
+  dummy_stratified_base: 1000
+
+# ---- 输出目录 ----
+output_dirs:
+  full: "result/nested_cv/traditional_selector/full/"
+  quick: "result/nested_cv/traditional_selector/quick/"
+  dataflow_smoke: "result/nested_cv/traditional_selector/dataflow_smoke/"
+
+# ---- Evidence Limitations ----
+evidence_limitations:
+  subject_independence_unverified: true
+  batch_confounding_cannot_be_excluded: true
+  internal_validation_only: true
+  quick_results_are_smoke_test_only: true
+  must_not_modify_protocol_based_on_quick_results: true

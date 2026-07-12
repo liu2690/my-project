@@ -1,0 +1,26 @@
+{
+  "git_commit": "bbe61de",
+  "git_dirty": true,
+  "dataset_fingerprint": "5b866523ae14b0cd888b6a4ba4edbaa0821fab8d90bc4027a7433aff440fd93f",
+  "outer_manifest_hash": "18a59f43b02b9a00ab385db5f922cdd1637ae4f315f8080031a5f2b323398b00",
+  "python_version": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "sklearn_version": "1.7.2",
+  "command": "run_nested_cv.py --quick",
+  "mode": "quick",
+  "start_time": "2026-07-12T08:44:20.769153+00:00",
+  "end_time": "2026-07-12T08:44:42.962043+00:00",
+  "runtime": 22.179651975631714,
+  "candidate_count": 15,
+  "invalid_candidate_count": 0,
+  "is_quick_run": true,
+  "formal_evaluation": false,
+  "smoke_test_only": true,
+  "canonical_outer_results_partially_exposed": true,
+  "exposed_outer_folds": [
+    0,
+    1
+  ],
+  "must_not_be_used_for_model_or_protocol_changes": true
+}
