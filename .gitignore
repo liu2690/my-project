@@ -9,3 +9,4 @@ pycache/
 result/**/*.pt
 result/**/*.npz
 __pycache__/
+full_nested_cv.log

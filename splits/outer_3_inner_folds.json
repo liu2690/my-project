@@ -139,7 +139,7 @@
   "random_state": 46,
   "stratify_on": "y_binary",
   "sklearn_version": "1.7.2",
-  "created_at": "2026-07-12T09:04:40.462520+00:00",
+  "created_at": "2026-07-12T09:46:47.885466+00:00",
   "n_outer_train": 127,
   "inner_folds": [
     {
@@ -1299,5 +1299,5 @@
       "n_val": 31
     }
   ],
-  "manifest_hash": "40d879b0982ccebd36ef712dace3000b23efb4b25346897c3857427f66a464a1"
+  "manifest_hash": "3e544781804dea1c3ecf9e81c11504a605c3e58c08a9e394de503acbec1fdc4e"
 }

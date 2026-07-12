@@ -40,8 +40,8 @@ LEGACY_SPLIT_LENGTH = [0.8, 0.2]
 # 工具函数
 # ============================================================
 def _compute_manifest_hash(data: dict) -> str:
-    """计算 manifest 的 SHA-256 哈希 (排除 hash 字段自身)"""
-    data_copy = {k: v for k, v in data.items() if k != 'manifest_hash'}
+    """计算 manifest 的 SHA-256 哈希 (排除 hash 字段自身和 created_at 时间戳)"""
+    data_copy = {k: v for k, v in data.items() if k not in ('manifest_hash', 'created_at')}
     serialized = json.dumps(data_copy, sort_keys=True, ensure_ascii=False, default=str)
     return hashlib.sha256(serialized.encode('utf-8')).hexdigest()
 
