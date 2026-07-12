@@ -1,0 +1,22 @@
+{
+  "git_commit": "bbe61de",
+  "git_dirty": true,
+  "dataset_fingerprint": "5b866523ae14b0cd888b6a4ba4edbaa0821fab8d90bc4027a7433aff440fd93f",
+  "outer_manifest_hash": "91899da6b946568ce16f55c10c02234b7397affaf0cc511610ef76cc52fc7996",
+  "python_version": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "sklearn_version": "1.7.2",
+  "command": "run_nested_cv.py --full",
+  "mode": "full",
+  "formal_evaluation": true,
+  "smoke_test_only": false,
+  "start_time": "2026-07-12T09:49:20.712323+00:00",
+  "end_time": "2026-07-12T09:56:32.168993+00:00",
+  "runtime": 431.4262127876282,
+  "candidate_count": 144,
+  "invalid_candidate_count": 0,
+  "is_quick_run": false,
+  "frozen_config_hash": "ceedba92988a64047f0ccf5972c091b02c22b010a50157df0f9301c23f383fc9",
+  "frozen_config_match": true
+}

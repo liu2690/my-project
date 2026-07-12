@@ -1,0 +1,47 @@
+[
+  {
+    "outer_fold": 0,
+    "selected_candidate_id": "elastic_net__C=0.1__l1=0.5__cw=none",
+    "selected_model_family": "elastic_net",
+    "threshold": 0.398322246537,
+    "score_type": "probability",
+    "tuned_f1": 0.5454545454545454,
+    "tuned_mcc": 0.3133397807202561
+  },
+  {
+    "outer_fold": 1,
+    "selected_candidate_id": "rbf_svm__C=10.0__gamma=scale__cw=none__k=20",
+    "selected_model_family": "rbf_svm",
+    "threshold": -0.253032009722,
+    "score_type": "decision",
+    "tuned_f1": 0.6666666666666666,
+    "tuned_mcc": 0.47306844125299624
+  },
+  {
+    "outer_fold": 2,
+    "selected_candidate_id": "rbf_svm__C=10.0__gamma=scale__cw=balanced__k=20",
+    "selected_model_family": "rbf_svm",
+    "threshold": -0.436090111713,
+    "score_type": "decision",
+    "tuned_f1": 0.6428571428571429,
+    "tuned_mcc": 0.4161455870818984
+  },
+  {
+    "outer_fold": 3,
+    "selected_candidate_id": "lda__shrinkage=auto__k=50",
+    "selected_model_family": "lda",
+    "threshold": 0.40134859204,
+    "score_type": "probability",
+    "tuned_f1": 0.6153846153846154,
+    "tuned_mcc": 0.374943053707453
+  },
+  {
+    "outer_fold": 4,
+    "selected_candidate_id": "lda__shrinkage=0.5__k=all",
+    "selected_model_family": "lda",
+    "threshold": 0.337930620863,
+    "score_type": "probability",
+    "tuned_f1": 0.25,
+    "tuned_mcc": 0.011268723396380222
+  }
+]
