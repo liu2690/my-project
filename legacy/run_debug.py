@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """快速调试: 冠军数=1, 内层循环=1, epochs=2, 输出到 ./result/debug/"""
 
-from voc_experiment import experiment
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from legacy.voc_experiment import experiment
 
 
 def main():

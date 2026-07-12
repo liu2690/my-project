@@ -1,0 +1,30 @@
+VOC_Index,VOC_Name,Selection_Freq,Soft_Mean,Soft_Std
+18,42_Triethylamine                                                                                                               ,0.68,0.5963984,0.2069249
+134,"471_Hexanal, 2-ethyl-                                                                                                          ",0.62,0.54933774,0.17959927
+82,"268_Cyclotrisiloxane, hexamethyl-                                                                                              ",0.58,0.52539057,0.1770158
+354,1213_(-)-.alpha.-Panasinsen                                                                                                    ,0.58,0.5216615,0.16161296
+316,1111_Butyl benzoate                                                                                                            ,0.57,0.54057294,0.17819317
+120,"395_Ethanol, 2-butoxy-                                                                                                         ",0.57,0.5365953,0.17954433
+8,"18_Diborane(6), .mu.-mercapto-                                                                                                 ",0.55,0.5226326,0.16747434
+62,"217_1,3-Diisopropoxy-1,3-dimethyl-1,3-disilacyclobutane                                                                        ",0.55,0.5210316,0.18922947
+370,1258_Butylated Hydroxytoluene                                                                                                  ,0.55,0.5209733,0.17979586
+291,"1033_Cyclohexasiloxane, dodecamethyl-                                                                                          ",0.55,0.5202094,0.16246103
+119,"392_1-Butyl(dimethyl)silyloxy-2,2-dimethylpropane                                                                              ",0.55,0.5079292,0.1915739
+11,"26_2-Propanol, 1-methoxy-                                                                                                      ",0.55,0.48230216,0.18221587
+70,"234_Hexane, 2,2,4-trimethyl-                                                                                                   ",0.54,0.51159304,0.16484281
+231,"771_1H-Indene, 2,3-dihydro-5-methyl-                                                                                           ",0.54,0.507822,0.15620096
+306,"1080_Tricyclo[5.4.0.0(2,8)]undec-9-ene, 2,6,6,9-tetramethyl-, (1R,2S,7R,8R)-                                                   ",0.54,0.5075393,0.17117298
+319,"1125_2,4,4,6,6,8,8-Heptamethyl-1-nonene                                                                                        ",0.54,0.5051179,0.2050943
+67,"228_Cyclopentane, 1,2,4-trimethyl-, (1.alpha.,2.beta.,4.alpha.)-                                                               ",0.53,0.5202572,0.17911142
+52,172_Toluene                                                                                                                    ,0.53,0.50956535,0.15218587
+407,"1436_Pentanoic acid, 6-ethyl-3-octyl ester                                                                                     ",0.53,0.50043684,0.17014503
+401,"1392_1,3,5-Triazine-2,4,6(1H,3H,5H)-trione, 1,3,5-tri-2-propenyl-                                                              ",0.52,0.52472156,0.17490391
+286,"1016_Benzothiazole, 2-methyl-                                                                                                  ",0.52,0.51137435,0.16964324
+327,"1151_1H-Cycloprop[e]azulene, decahydro-1,1,4,7-tetramethyl-                                                                    ",0.52,0.5012276,0.17421573
+251,832_trans-2-Dodecen-1-ol                                                                                                       ,0.52,0.49651787,0.17704447
+64,"224_2-Methoxy-1,3-dioxolane                                                                                                    ",0.52,0.48497468,0.1802824
+203,672_Acetophenone                                                                                                               ,0.52,0.47915176,0.17995404
+20,"54_Heptanal, 2-methyl-                                                                                                         ",0.51,0.5117522,0.16746669
+167,569_Octanal                                                                                                                    ,0.51,0.4890678,0.18354402
+95,"329_Succinic acid, but-3-yn-2-yl tetrahydrofurfuryl ester                                                                      ",0.51,0.48335263,0.1842586
+345,"1190_Quinoline, 1,2-dihydro-2,2,4-trimethyl-                                                                                   ",0.51,0.48298606,0.17102967

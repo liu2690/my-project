@@ -32,7 +32,7 @@ dataset:
 manifests:
   outer:
     file: "canonical_outer_folds.json"
-    hash: "74e6b237e77206f160c3b02e0b4df5525b42a29eece90c396f78b787d05b9c32"
+    hash: "59151d02c9f91c2328dc40c51d645c993ec4983e33ce16ba331c0f6290940e59"
     algorithm: "StratifiedKFold"
     n_splits: 5
     shuffle: true
@@ -47,19 +47,19 @@ manifests:
     folds:
       - outer_fold: 0
         file: "outer_0_inner_folds.json"
-        hash: "3af8b6a3cf932114b86a2f2d4c83e09e257e7ee71009cd9792de1b6c200a6ae3"
+        hash: "5adc9f98f19205bebb91a3cd625401f20c9004543b847fe9aadef9632013aefd"
       - outer_fold: 1
         file: "outer_1_inner_folds.json"
-        hash: "00ed9dd62802e3af7967f0901205ecf326afd697300b7fcaf77e16eba0d188df"
+        hash: "4b1f76ffb135709d47d013e225e0c18ddb973bfdadfa4b9e96865d36d2623b77"
       - outer_fold: 2
         file: "outer_2_inner_folds.json"
-        hash: "ad4a9f589984805d21c0b0d0380b3e851c600ef8798e4d9cb092be3d1b56f029"
+        hash: "526fcd789a345bb936a2096f0d99fc4832c826499777efbeb44e67475093495e"
       - outer_fold: 3
         file: "outer_3_inner_folds.json"
-        hash: "651a68b3461b77f6e4eea20d452764d3fcbe17522e7177a5a3a85f535ccc2cce"
+        hash: "a71d91d4320a0fb89b736351f39a1540b8d88ecbb43de4aaa5bf722c5b4b9299"
       - outer_fold: 4
         file: "outer_4_inner_folds.json"
-        hash: "5eb6ec713ed9b20f79ad4d31247bcdb049a648a4458d834b4d6750d94fc68610"
+        hash: "ef4488ae56e690a3ab50a1f816e938283ee56f683ae1fab5315ab2a63b1b30b3"
 
 # ---- Pipeline 定义 ----
 pipeline:

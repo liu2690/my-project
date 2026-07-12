@@ -9,7 +9,10 @@ Phase 1 诊断脚本：验证"分类器是否是瓶颈"
 输出：诊断报告到 ./result/diagnosis/diagnosis_report.csv
 """
 
-from voc_experiment import experiment
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from legacy.voc_experiment import experiment
 import pandas as pd
 import os
 import sys

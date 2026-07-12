@@ -1,8 +1,0 @@
-Metric,Mean,Std,SEM,CI95_Lower,CI95_Upper
-Sensitivity,0.0,,,,
-Specificity,0.9999999999999525,,,,
-PPV,0.0,,,,
-NPV,0.6774193548386879,,,,
-Accuracy,0.6774193548386879,,,,
-F1,0.0,,,,
-AUC,0.5857142857142857,,,,

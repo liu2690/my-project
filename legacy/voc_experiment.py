@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import importlib
-import modules
+from legacy import modules
 importlib.reload(modules)
-from utils import *
-from modules import *
+from legacy.utils import *
+from legacy.modules import *
 import copy
 import os
 import json

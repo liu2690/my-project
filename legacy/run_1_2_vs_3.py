@@ -17,7 +17,9 @@
 """
 
 import sys
-from voc_experiment import experiment
+import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from legacy.voc_experiment import experiment
 
 DATA_PATH = './data/voc_dataset_1+2_vs_3.mat'
 NUM_CLUSTER = 3

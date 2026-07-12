@@ -15,10 +15,10 @@ import sys
 
 def main():
     paths = {
-        'Original_Linear': './result/20/1+2_vs_3/metrics_summary.csv',
-        'Deep_MLP':       './result/deep_mlp/1+2_vs_3/metrics_summary.csv',
-        'CNN_Seq':        './result/cnn_seq/1+2_vs_3/metrics_summary.csv',
-        'CNN_Cluster':    './result/cnn_cluster/1+2_vs_3/metrics_summary.csv',
+        'Original_Linear': './result/legacy/20/1+2_vs_3/metrics_summary.csv',
+        'Deep_MLP':       './result/legacy/deep_mlp/1+2_vs_3/metrics_summary.csv',
+        'CNN_Seq':        './result/legacy/cnn_seq/1+2_vs_3/metrics_summary.csv',
+        'CNN_Cluster':    './result/legacy/cnn_cluster/1+2_vs_3/metrics_summary.csv',
     }
 
     rows = []

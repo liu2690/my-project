@@ -6,7 +6,7 @@ import torch
 import scipy.io as sio
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
-from modules import *
+from legacy.modules import *
 from torch.utils.data import random_split, ConcatDataset, DataLoader, TensorDataset, Dataset
 import torch.nn as nn
 import torch.nn.functional as F
