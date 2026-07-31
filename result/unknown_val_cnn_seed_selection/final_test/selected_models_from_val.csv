@@ -1,0 +1,2 @@
+Repeat,Split_Seed,Model_Seed,Inner_Index,Champion_Val_Acc,Checkpoint
+4,100046,129,7,1.0,./result/unknown_val_cnn_seed_selection/champion_model_repeat4.pt

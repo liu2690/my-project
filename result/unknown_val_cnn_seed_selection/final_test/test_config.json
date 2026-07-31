@@ -1,0 +1,23 @@
+{
+  "data_path": "./data/voc_dataset_1+2_vs_3_with_unknown.mat",
+  "result_dir": "./result/unknown_val_cnn_seed_selection",
+  "evaluation_set": "test",
+  "model_selection_set": "val",
+  "test_used_for_selection": false,
+  "base_seed": 42,
+  "num_cluster": 3,
+  "cnn_channels": [
+    16,
+    32
+  ],
+  "cnn_pooled_length": 8,
+  "cnn_dropout": 0.3,
+  "top_k": 1,
+  "decision_threshold": 0.5,
+  "selected_repeats": [
+    4
+  ],
+  "selected_model_seeds": [
+    129
+  ]
+}
