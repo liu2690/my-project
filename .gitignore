@@ -17,3 +17,5 @@ result/
 # matlab files
 *.mat
 *.xlsx
+.vscode/
+
