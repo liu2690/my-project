@@ -1,42 +1,40 @@
 """
-实验总入口
+多次重复实验入口
 
 功能:
-1. 加载VOC mat数据
-2. train/val/test划分
-3. K-means VOC聚类
-4. MultiView训练
-5. Test最终评价
-6. 保存结果
 
+1. Unknown数据接口
+2. K-means k=8
+3. train/val/test
+4. 多次repeat
+5. TEST最终评价
+6. 保存统计结果
 
 """
+
 
 import os
 import json
 import random
 
 import numpy as np
+import pandas as pd
 
 import torch
 import scipy.io as sio
 
 
 from src.split import split_dataset
-
 from src.clustering import feature_cluster
-
 from src.model import MultiView
-
 from src.trainer import train_model
-
 from src.evaluator import evaluate_model
 
 
 
-# ============================================================
-# 随机种子
-# ============================================================
+# ==================================================
+# seed
+# ==================================================
 
 def set_seed(seed):
 
@@ -48,138 +46,49 @@ def set_seed(seed):
 
     torch.cuda.manual_seed_all(seed)
 
-    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.deterministic=True
 
-    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.benchmark=False
 
 
 
-# ============================================================
-# 主实验函数
-# ============================================================
+# ==================================================
+# 单次实验
+# ==================================================
 
-def experiment(
-        data_path=None,
-        save_path="result/default",
+def run_single_experiment(
 
-        use_unknown=True,
+        X,
 
-        num_cluster=8,
+        y,
 
-        epochs=30,
+        repeat_seed,
 
-        batch_size=16,
+        num_cluster,
 
-        experiment_repeats=100,
+        epochs,
 
-        seed=42
+        batch_size
+
 ):
 
 
-    set_seed(seed)
+    set_seed(
+        repeat_seed
+    )
 
 
-    device = torch.device(
-
+    device=torch.device(
         "cuda"
-
         if torch.cuda.is_available()
-
         else
-
         "cpu"
-
     )
 
 
-    os.makedirs(
-        save_path,
-        exist_ok=True
-    )
-
-
-    print("="*60)
-
-    print("Start Experiment")
-
-    print("="*60)
-
-
-    print(
-        "device:",
-        device
-    )
-
-
-
-    # ========================================================
-    # 1. 加载mat
-    # ========================================================
-    if data_path is None:
-
-        if use_unknown:
-
-            data_path = (
-                "data/"
-                "voc_dataset_1+2_vs_3_with_unknown.mat"
-            )
-
-        else:
-
-            data_path = (
-                "data/"
-                "voc_dataset_1+2_vs_3.mat"
-            )
-
-    data = sio.loadmat(
-        data_path
-    )
-
-
-    X = torch.tensor(
-        data["X"],
-        dtype=torch.float32
-    )
-
-
-    y = torch.tensor(
-        data["y"].reshape(-1),
-        dtype=torch.long
-    )
-
-
-    feat_names = [
-
-        str(x[0])
-
-        for x in data["feat_names"].flatten()
-
-    ]
-
-
-
-    print(
-        "samples:",
-        X.shape[0]
-    )
-
-    print(
-        "features:",
-        X.shape[1]
-    )
-
-
-    print(
-        "Unknown included:",
-        use_unknown
-    )
-
-
-
-    # ========================================================
-    # 2. train val test
-    # ========================================================
-
+    # -------------------------
+    # split
+    # -------------------------
 
     (
         train_loader,
@@ -195,34 +104,14 @@ def experiment(
 
         batch_size=batch_size,
 
-        seed=seed
+        seed=repeat_seed
 
     )
 
 
-    print(
-        "train:",
-        len(train_loader.dataset)
-    )
-
-
-    print(
-        "val:",
-        len(val_loader.dataset)
-    )
-
-
-    print(
-        "test:",
-        len(test_loader.dataset)
-    )
-
-
-
-    # ========================================================
-    # 3. K-means聚类
-    # ========================================================
-
+    # -------------------------
+    # Kmeans
+    # -------------------------
 
     cluster_mask = feature_cluster(
 
@@ -230,24 +119,16 @@ def experiment(
 
         num_cluster=num_cluster,
 
-        seed=seed
+        seed=repeat_seed
 
     )
 
 
-    print(
-        "cluster mask:",
-        cluster_mask.shape
-    )
+    # -------------------------
+    # model
+    # -------------------------
 
-
-
-    # ========================================================
-    # 4. 创建模型
-    # ========================================================
-
-
-    model = MultiView(
+    model=MultiView(
 
         cluster_mask=cluster_mask,
 
@@ -262,11 +143,9 @@ def experiment(
     )
 
 
-
-    # ========================================================
-    # 5. train + validation
-    # ========================================================
-
+    # -------------------------
+    # train
+    # -------------------------
 
     (
         best_state,
@@ -290,76 +169,18 @@ def experiment(
     )
 
 
-    print(
-        "Best val accuracy:",
-        best_val_acc
-    )
-
-
-
-    # ========================================================
-    # 6. 保存最佳模型
-    # ========================================================
-
-
-    model_path = os.path.join(
-
-        save_path,
-
-        "best_model.pt"
-
-    )
-
-
-    torch.save(
-
-        {
-
-            "state_dict":
-                best_state,
-
-
-            "mask":
-                best_mask,
-
-
-            "cluster_mask":
-                cluster_mask,
-
-
-            "val_acc":
-                best_val_acc,
-
-
-            "num_cluster":
-                num_cluster
-
-
-        },
-
-        model_path
-
-    )
-
-
-    print(
-        "saved:",
-        model_path
-    )
-
-
-
-    # ========================================================
-    # 7. Test评价
-    # ========================================================
-
+    # 加载最佳模型
 
     model.load_state_dict(
         best_state
     )
 
 
-    test_result = evaluate_model(
+    # -------------------------
+    # test
+    # -------------------------
+
+    test_result=evaluate_model(
 
         model,
 
@@ -370,104 +191,357 @@ def experiment(
     )
 
 
-    print("\nTEST RESULT")
+    test_result["Val_Accuracy"]=(
+        best_val_acc
+    )
 
-    print("-"*40)
+
+    test_result["Seed"]=(
+        repeat_seed
+    )
 
 
-    for key,value in test_result.items():
+    return (
 
-        if key!="Confusion_Matrix":
+        test_result,
 
-            print(
-                f"{key}: {value:.4f}"
+        {
+
+        "state_dict":
+            best_state,
+
+        "mask":
+            best_mask,
+
+        "cluster_mask":
+            cluster_mask,
+
+        "val_acc":
+            best_val_acc
+
+        }
+
+    )
+
+
+
+# ==================================================
+# 总实验
+# ==================================================
+
+def experiment(
+
+        data_path=None,
+
+        save_path="result/default",
+
+        use_unknown=True,
+
+        num_cluster=8,
+
+        epochs=30,
+
+        batch_size=16,
+
+        experiment_repeats=100,
+
+        seed=42
+
+):
+
+
+    os.makedirs(
+        save_path,
+        exist_ok=True
+    )
+
+
+    model_dir=os.path.join(
+        save_path,
+        "models"
+    )
+
+
+    os.makedirs(
+        model_dir,
+        exist_ok=True
+    )
+
+
+    # -------------------------
+    # 自动选择数据
+    # -------------------------
+
+    if data_path is None:
+
+
+        if use_unknown:
+
+            data_path=(
+                "data/"
+                "voc_dataset_1+2_vs_3_with_unknown.mat"
             )
-
-
-    print(
-        "Confusion Matrix:"
-    )
-
-    print(
-        test_result[
-            "Confusion_Matrix"
-        ]
-    )
-
-
-
-    # ========================================================
-    # 8. 保存结果
-    # ========================================================
-
-
-    result_save = {}
-
-    for k,v in test_result.items():
-
-        if k=="Confusion_Matrix":
-
-            result_save[k]=v.tolist()
 
         else:
 
-            result_save[k]=float(v)
+            data_path=(
+                "data/"
+                "voc_dataset_1+2_vs_3.mat"
+            )
+
+
+    data=sio.loadmat(
+        data_path
+    )
+
+
+    X=torch.tensor(
+        data["X"],
+        dtype=torch.float32
+    )
+
+
+    y=torch.tensor(
+        data["y"].reshape(-1),
+        dtype=torch.long
+    )
+
+
+    print("="*60)
+
+    print(
+        "Experiment start"
+    )
+
+    print(
+        "Samples:",
+        X.shape[0]
+    )
+
+    print(
+        "Features:",
+        X.shape[1]
+    )
+
+    print(
+        "Unknown:",
+        use_unknown
+    )
+
+    print(
+        "Repeats:",
+        experiment_repeats
+    )
 
 
 
-    with open(
-
-        os.path.join(
-            save_path,
-            "test_metrics.json"
-        ),
-
-        "w",
-
-        encoding="utf-8"
-
-    ) as f:
+    all_results=[]
 
 
-        json.dump(
+    # =================================================
+    # repeat循环
+    # =================================================
 
-            result_save,
+    for repeat in range(
+        experiment_repeats
+    ):
 
-            f,
 
-            indent=2,
+        print(
+            "\n"
+            +
+            "="*50
+        )
 
-            ensure_ascii=False
+
+        print(
+            f"Repeat {repeat+1}/{experiment_repeats}"
+        )
+
+
+        result, checkpoint = run_single_experiment(
+
+            X,
+
+            y,
+
+            repeat_seed=
+                seed+repeat,
+
+            num_cluster=
+                num_cluster,
+
+            epochs=
+                epochs,
+
+            batch_size=
+                batch_size
 
         )
 
 
+        all_results.append(
+            result
+        )
+
+
+        torch.save(
+
+            checkpoint,
+
+            os.path.join(
+
+                model_dir,
+
+                f"best_model_repeat{repeat}.pt"
+
+            )
+
+        )
+
+
+        print(
+            result
+        )
+
+
+
+    # =================================================
+    # 保存逐组结果
+    # =================================================
+
+    df=pd.DataFrame(
+        all_results
+    )
+
+
+    df.to_csv(
+
+        os.path.join(
+
+            save_path,
+
+            "test_metrics_per_repeat.csv"
+
+        ),
+
+        index=False
+
+    )
+
+
+    # =================================================
+    # 汇总
+    # =================================================
+
+    metrics=[
+        "Accuracy",
+        "Precision",
+        "Recall",
+        "F1",
+        "AUC",
+        "Sensitivity",
+        "Specificity"
+    ]
+
+
+    summary=[]
+
+
+    for metric in metrics:
+
+
+        values=df[metric].values
+
+
+        mean=np.mean(values)
+
+
+        std=np.std(
+            values,
+            ddof=1
+        )
+
+
+        ci=(
+            1.96
+            *
+            std
+            /
+            np.sqrt(
+                len(values)
+            )
+        )
+
+
+        summary.append(
+
+            {
+
+            "Metric":
+                metric,
+
+            "Mean":
+                mean,
+
+            "Std":
+                std,
+
+            "CI95_Lower":
+                max(0, mean-ci),
+
+            "CI95_Upper":
+                min(1, mean+ci)
+
+            }
+
+        )
+
+
+    summary_df=pd.DataFrame(
+        summary
+    )
+
+
+    summary_df.to_csv(
+
+        os.path.join(
+
+            save_path,
+
+            "test_metrics_summary.csv"
+
+        ),
+
+        index=False
+
+    )
+
+
+    # config
 
     config={
 
         "data_path":
             data_path,
 
-
         "use_unknown":
             use_unknown,
-
 
         "num_cluster":
             num_cluster,
 
-
         "epochs":
             epochs,
-
 
         "batch_size":
             batch_size,
 
+        "experiment_repeats":
+            experiment_repeats,
 
         "seed":
             seed
-
 
     }
 
@@ -483,25 +557,21 @@ def experiment(
 
     ) as f:
 
-
         json.dump(
-
             config,
-
             f,
-
             indent=2
-
         )
 
 
-
-    print("="*60)
-
-    print("Experiment finished")
-
-    print("="*60)
+    print(
+        "\nFinished"
+    )
 
 
+    print(
+        summary_df
+    )
 
-    return test_result
+
+    return summary_df
