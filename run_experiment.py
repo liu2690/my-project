@@ -1,7 +1,7 @@
 from src.experiment import experiment
 
 
-result = experiment(
+experiment(
 
     save_path=
     "result/k8_unknown",
@@ -12,7 +12,7 @@ result = experiment(
 
     epochs=30,
 
-    experiment_repeats=1,
+    experiment_repeats=100,
 
     seed=42
 

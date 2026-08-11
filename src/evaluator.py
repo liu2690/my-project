@@ -86,14 +86,18 @@ def evaluate_model(
 
 
     result = compute_metrics(
-
-        targets,
-
-        preds,
-
-        probs
-
+    targets,
+    preds,
+    probs
     )
+
+
+    # 保存原始预测信息
+    result["Targets"] = np.array(targets)
+
+    result["Predictions"] = np.array(preds)
+
+    result["Probabilities"] = np.array(probs)
 
 
     return result

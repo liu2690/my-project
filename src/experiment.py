@@ -337,6 +337,9 @@ def experiment(
 
     all_results=[]
 
+    all_predictions=[]
+
+    all_masks=[]
 
     # =================================================
     # repeat循环
@@ -383,6 +386,24 @@ def experiment(
         all_results.append(
             result
         )
+        all_predictions.append(
+            {
+                "Repeat":
+                    repeat,
+
+                "Targets":
+                    result["Targets"],
+
+                "Predictions":
+                    result["Predictions"],
+
+                "Probabilities":
+                    result["Probabilities"]
+            }
+        )
+        all_masks.append(
+            checkpoint["mask"].numpy()
+        )
 
 
         torch.save(
@@ -427,6 +448,28 @@ def experiment(
 
         index=False
 
+    )
+
+    np.save(
+        os.path.join(
+            save_path,
+            "test_predictions.npy"
+        ),
+        np.array(
+            all_predictions,
+            dtype=object
+        ),
+        allow_pickle=True
+    )
+
+    np.save(
+        os.path.join(
+            save_path,
+            "selection_masks.npy"
+        ),
+        np.array(
+            all_masks
+        )
     )
 
 

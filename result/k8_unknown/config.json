@@ -1,0 +1,9 @@
+{
+  "data_path": "data/voc_dataset_1+2_vs_3_with_unknown.mat",
+  "use_unknown": true,
+  "num_cluster": 8,
+  "epochs": 30,
+  "batch_size": 16,
+  "experiment_repeats": 100,
+  "seed": 42
+}
