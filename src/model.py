@@ -82,7 +82,106 @@ class ParalleResidualBlock(nn.Module):
             self.net(x)+x
         )
 
+class CNNClassifier(nn.Module):
 
+    def __init__(
+            self,
+            input_size,
+            num_classes=2,
+            channel_1=8,
+            channel_2=16,
+            pooled_length=4,
+            dropout=0.40
+    ):
+        super().__init__()
+
+        self.pooled_length = pooled_length
+
+        self.features = nn.Sequential(
+
+            # [B, 1, F] -> [B, 16, F]
+            nn.Conv1d(
+                in_channels=1,
+                out_channels=channel_1,
+                kernel_size=5,
+                padding=2,
+                bias=False
+            ),
+
+            nn.GroupNorm(
+                num_groups=4,
+                num_channels=channel_1
+            ),
+
+            nn.GELU(),
+
+            nn.MaxPool1d(
+                kernel_size=2,
+                stride=2
+            ),
+
+
+            # [B, 16, F/2] -> [B, 32, F/2]
+            nn.Conv1d(
+                in_channels=channel_1,
+                out_channels=channel_2,
+                kernel_size=5,
+                padding=2,
+                bias=False
+            ),
+
+            nn.GroupNorm(
+                num_groups=8,
+                num_channels=channel_2
+            ),
+
+            nn.GELU(),
+
+            nn.MaxPool1d(
+                kernel_size=2,
+                stride=2
+            ),
+
+            nn.AdaptiveAvgPool1d(
+                output_size=pooled_length
+            )
+        )
+
+
+        self.classifier = nn.Sequential(
+
+            nn.Flatten(),
+
+            nn.Linear(
+                channel_2 * pooled_length,
+                32
+            ),
+
+            nn.GELU(),
+
+            nn.Dropout(dropout),
+
+            nn.Linear(
+                32,
+                num_classes
+            )
+        )
+
+
+    def forward(self, x):
+
+        # x:
+        # [B, F]
+
+        x = x.unsqueeze(1)
+
+        # [B, 1, F]
+
+        x = self.features(x)
+
+        x = self.classifier(x)
+
+        return x
 
 
 
@@ -155,13 +254,19 @@ class MultiView(nn.Module):
 
 
 
-        self.mlp_classifier = nn.Sequential(
+        self.classifier = CNNClassifier(
 
-            nn.Linear(
-                self.input_size,
-                num_classes
-            )
+            input_size=self.input_size,
 
+            num_classes=num_classes,
+
+            channel_1=16,
+
+            channel_2=32,
+
+            pooled_length=8,
+
+            dropout=0.30
         )
 
 
@@ -270,13 +375,14 @@ class MultiView(nn.Module):
 
 
 
-    def forward(self,x):
+    def forward(self, x):
 
-        mask=self.get_score(x)
+        mask = self.get_score(x)
 
-        logits=self.mlp_classifier(
-            x*mask
+        selected_x = x * mask
+
+        logits = self.classifier(
+            selected_x
         )
 
-
-        return logits,mask
+        return logits, mask
