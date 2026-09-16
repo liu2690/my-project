@@ -1,2 +1,9 @@
 ORVMD_coherence_test/result/
 wind_field_analysis/*.dat
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Wind field intermediate data
+wind_field_analysis/selected_data/*.npy
