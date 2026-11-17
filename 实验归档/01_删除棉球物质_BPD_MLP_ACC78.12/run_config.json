@@ -1,0 +1,40 @@
+{
+  "seed": 42,
+  "num_cluster": 3,
+  "kmeans": {
+    "run_count": 1,
+    "data_source": "development_set_A_only",
+    "fixed_for_all_repeats": true
+  },
+  "outer_split": {
+    "development": 0.8,
+    "test": 0.2
+  },
+  "inner_split": {
+    "train": 0.75,
+    "validation": 0.25
+  },
+  "inner_splits": 10,
+  "models_per_split": 10,
+  "total_candidate_models": 100,
+  "epochs": 30,
+  "class_weight": {
+    "class_0": 1.0,
+    "class_1": 1.0
+  },
+  "stable_feature_rule": "Selection_Frequency > 0.6",
+  "decision_threshold": {
+    "selected_on": "development_validation_only",
+    "objective": "f1_acc",
+    "value": 0.05,
+    "test_used": false
+  },
+  "test_used_for_model_selection": false,
+  "test_evaluation_count": 1,
+  "unknown_features_removed": false,
+  "roc_bootstrap": {
+    "enabled": true,
+    "n_bootstrap": 1000,
+    "confidence_level": 0.95
+  }
+}
