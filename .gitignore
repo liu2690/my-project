@@ -17,3 +17,7 @@ result/
 # matlab files
 *.mat
 *.xlsx
+
+# local environments and reproduced outputs
+.venv/
+reproduced/

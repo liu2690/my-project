@@ -37,6 +37,7 @@
 
 ## 5. 主要文件
 
+- `run.py`：可复现入口；`--check` 仅检查数据和代码，默认执行正式 Notebook 的单元 0、1
 - `testing_MLP.ipynb`：完整实验 Notebook
 - `modules.py`：MLP 模型结构
 - `utils.py`：实验辅助函数
@@ -51,3 +52,14 @@
 ## 6. 实验结论
 
 在独立测试集 B 上，模型 Accuracy 达到 78.12%，AUC 为 0.7684，筛选出 264 个稳定 VOC。
+
+## 7. 复现
+
+从仓库根目录运行：
+
+```bash
+python "实验归档/01_删除棉球物质_BPD_MLP_ACC78.12/run.py" --check
+python "实验归档/01_删除棉球物质_BPD_MLP_ACC78.12/run.py"
+```
+
+输入数据文件名和字段见根目录 `data/README.md`，新结果写入 `result/reproduced/01_mlp/`。

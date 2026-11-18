@@ -45,7 +45,19 @@
 
 ## 6. 主要文件
 
+- run.py：可复现入口；从公开 CSV 重建 264 VOC mask 和固定数据划分
 - 264VOC_L2正则化逻辑回归.py：实验代码
 - logistic_regression_264.csv：不同 C 参数的实验结果
 
 本实验用于与原 BPD 分类模型进行对照。
+
+## 7. 复现
+
+从仓库根目录运行：
+
+```bash
+python "实验归档/04_264VOC_L2逻辑回归_ACC78.13/run.py" --check
+python "实验归档/04_264VOC_L2逻辑回归_ACC78.13/run.py"
+```
+
+`run.py` 从实验 01 的 `stable_features.csv` 读取 264 个 `VOC_Index`，并用种子 42/1042 重建外层和内部划分，不依赖未上传的 `.npy/.npz`。新结果写入 `result/reproduced/04_logistic_regression/`。

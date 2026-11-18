@@ -40,6 +40,7 @@ F_j = Selected_Count_j / 10
 
 ## 6. 主要文件
 
+- run.py：从选择频率表重建三组 mask，并使用固定划分完成 MLP 内部验证
 - feature_selection_frequency.csv：全部 VOC 选择频率
 - stable_features_gt60%.csv：大于 60% 的 VOC 名单
 - stable_features_gt70%.csv：大于 70% 的 VOC 名单
@@ -48,3 +49,14 @@ F_j = Selected_Count_j / 10
 - validation_summary.csv：三组 MLP 内部验证结果
 
 本实验为开发集内部探索性验证，不作为独立测试集的最终泛化性能。
+
+## 7. 复现
+
+从仓库根目录运行：
+
+```bash
+python "实验归档/03_VOC选择频率筛选_60_70_85/run.py" --check
+python "实验归档/03_VOC选择频率筛选_60_70_85/run.py"
+```
+
+脚本直接使用本目录公开的 `feature_selection_frequency.csv`，不依赖未公开的 `.npy` mask 或 `.npz` 划分文件；固定外层种子为 42，内部验证种子为 1042。新结果写入 `result/reproduced/03_voc_thresholds/`。

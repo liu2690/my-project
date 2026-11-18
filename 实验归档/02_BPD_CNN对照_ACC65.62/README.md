@@ -37,8 +37,20 @@
 
 ## 6. 主要文件
 
+- run.py：可复现入口；默认执行正式 CNN 定义单元和同数据对照实验单元
 - modules_CNN.py：CNN 模型结构
 - testing_CNN.ipynb：CNN 实验代码
 - 结果：训练记录、模型权重、测试指标和 ROC 图
 
 本实验使用独立测试集 B 进行最终评价。
+
+## 7. 复现
+
+从仓库根目录运行：
+
+```bash
+python "实验归档/02_BPD_CNN对照_ACC65.62/run.py" --check
+python "实验归档/02_BPD_CNN对照_ACC65.62/run.py"
+```
+
+入口会显式加载本目录的 `modules_CNN.py`，不会误用根目录的 MLP 模型。新结果写入 `result/reproduced/02_cnn/`。
