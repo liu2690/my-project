@@ -8,7 +8,10 @@
     "Multiple_Test_Correction": "Benjamini-Hochberg",
     "Significance_Level": 0.05,
     "Effect_Size": "Rank-biserial correlation",
-    "Effect_Positive_Meaning": "Class 1 tends to have higher values than Class 0",
+    "Plot_Type": "Violin + Boxplot + Individual Samples",
+    "Plot_VOC_Count": 25,
+    "Plot_Ranking": "FDR ascending",
+    "Plot_Significance": "FDR adjusted",
     "Analysis_Type": "Exploratory analysis using all 159 samples",
     "Independent_Test_Set_Evaluation": false
 }
