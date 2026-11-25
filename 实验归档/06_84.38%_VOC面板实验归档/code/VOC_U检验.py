@@ -1,9 +1,11 @@
 
 import os
+import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from pathlib import Path
 from scipy.io import loadmat
 from scipy.stats import mannwhitneyu
 
@@ -11,8 +13,6 @@ from scipy.stats import mannwhitneyu
 # ============================================================
 # 1. 路径设置
 # ============================================================
-
-from pathlib import Path
 
 ARCHIVE = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -37,10 +37,32 @@ OUT_DIR = (
 
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+# 新增：多VOC小提琴图参数
+TOP_N = 25
+N_COLS = 5
+RANDOM_SEED = 42
+
+# 绘图颜色
+PALETTE = ["#C7D0E3", "#9ADDD2"]
+
+# 字体
+plt.rcParams["font.sans-serif"] = [
+    "DejaVu Sans",
+    "SimHei",
+    "Microsoft YaHei"
+]
+plt.rcParams["axes.unicode_minus"] = False
+
 
 # ============================================================
 # 2. 读取 MAT 数据和稳定 VOC 名单
 # ============================================================
+
+if not MAT_PATH.exists():
+    raise FileNotFoundError(f"找不到MAT数据：{MAT_PATH}")
+
+if not FEATURE_PATH.exists():
+    raise FileNotFoundError(f"找不到VOC名单：{FEATURE_PATH}")
 
 mat = loadmat(MAT_PATH)
 
@@ -63,7 +85,13 @@ features = pd.read_csv(FEATURE_PATH)
 def decode_name(x):
 
     while isinstance(x, np.ndarray):
-        x = x.item()
+        if x.size == 1:
+            x = x.item()
+        else:
+            x = x.reshape(-1)[0]
+
+    if isinstance(x, bytes):
+        return x.decode("utf-8", errors="replace")
 
     return str(x)
 
@@ -76,10 +104,6 @@ feature_names = [
 
 # ============================================================
 # 4. 数据和 VOC 索引严格验证
-#
-# 重要：
-# VOC_Index 是 X 矩阵中的零起始列位置
-# 不能使用 feature_ids 进行二次映射
 # ============================================================
 
 print("=" * 65)
@@ -98,23 +122,16 @@ assert len(features) == 264, (
 
 assert np.isin(y, [0, 1]).all()
 
-assert np.isfinite(X).all(), (
-    "X中存在NaN或无穷值，请先检查原始数据"
-)
+assert np.isfinite(X).all()
 
-# 直接使用 VOC_Index 定位 X 的列
 columns = features[
     "VOC_Index"
 ].to_numpy(dtype=int)
 
-# 检查索引范围
 assert np.all(columns >= 0)
 assert np.all(columns < X.shape[1])
-
-# 检查是否存在重复索引
 assert len(np.unique(columns)) == 264
 
-# 检查名称与 MAT 特征名称是否完全匹配
 errors = []
 
 for _, row in features.iterrows():
@@ -134,16 +151,13 @@ for _, row in features.iterrows():
 
 if errors:
 
-    print("VOC名称匹配失败：")
-
     for item in errors[:10]:
         print(item)
 
     raise ValueError(
-        f"发现{len(errors)}个VOC名称不匹配，停止分析"
+        f"发现{len(errors)}个VOC名称不匹配"
     )
 
-# 提取264个稳定VOC
 X_selected = X[:, columns]
 
 assert X_selected.shape == (159, 264)
@@ -165,34 +179,23 @@ group1 = y == 1
 n0 = int(group0.sum())
 n1 = int(group1.sum())
 
-assert n0 == 106, (
-    f"Class 0数量异常：{n0}"
-)
-
-assert n1 == 53, (
-    f"Class 1数量异常：{n1}"
-)
+assert n0 == 106
+assert n1 == 53
 
 print("\n===== 样本分组 =====")
-
 print("Class 0：", n0)
 print("Class 1：", n1)
-
-print("Class 0 + Class 1：", n0 + n1)
 
 
 # ============================================================
 # 6. Mann-Whitney U 检验
-#
-# 双侧检验
-# Class 0 vs Class 1
 # ============================================================
+
+print("\n开始进行264个VOC的U检验...")
 
 records = []
 
-for j, (_, row) in enumerate(
-    features.iterrows()
-):
+for j, (_, row) in enumerate(features.iterrows()):
 
     values0 = X_selected[group0, j]
     values1 = X_selected[group1, j]
@@ -205,52 +208,25 @@ for j, (_, row) in enumerate(
     )
 
     u_stat = float(result.statistic)
-
     p_value = float(result.pvalue)
-
-    # --------------------------------------------------------
-    # Rank-biserial correlation
-    #
-    # scipy 返回的是以 Class 0 为第一组的 U 统计量
-    #
-    # 正值：Class 1 整体取值倾向高于 Class 0
-    # 负值：Class 1 整体取值倾向低于 Class 0
-    # --------------------------------------------------------
 
     effect = (
         1.0
-        -
-        2.0 * u_stat / (n0 * n1)
+        - 2.0 * u_stat / (n0 * n1)
     )
 
     records.append({
 
-        "VOC_Index":
-            int(row["VOC_Index"]),
+        "VOC_Index": int(row["VOC_Index"]),
+        "VOC_Name": row["VOC_Name"],
+        "Selection_Frequency": row["Selection_Frequency"],
+        "Soft_Mean": row["Soft_Mean"],
+        "U_Statistic": u_stat,
+        "P_Value": p_value,
+        "Median_Class0": float(np.median(values0)),
+        "Median_Class1": float(np.median(values1)),
+        "Rank_Biserial": effect
 
-        "VOC_Name":
-            row["VOC_Name"],
-
-        "Selection_Frequency":
-            row["Selection_Frequency"],
-
-        "Soft_Mean":
-            row["Soft_Mean"],
-
-        "U_Statistic":
-            u_stat,
-
-        "P_Value":
-            p_value,
-
-        "Median_Class0":
-            float(np.median(values0)),
-
-        "Median_Class1":
-            float(np.median(values1)),
-
-        "Rank_Biserial":
-            effect
     })
 
 
@@ -258,28 +234,23 @@ result_df = pd.DataFrame(records)
 
 
 # ============================================================
-# 7. Benjamini-Hochberg FDR 多重检验校正
+# 7. Benjamini-Hochberg FDR 校正
 # ============================================================
 
-p = result_df[
-    "P_Value"
-].to_numpy()
+p = result_df["P_Value"].to_numpy()
 
 m = len(p)
 
-# 按P值升序排列
 order = np.argsort(p)
 
 ranked_p = p[order]
 
-# BH 校正
 adjusted = (
     ranked_p
     * m
     / np.arange(1, m + 1)
 )
 
-# 从后向前保证单调性
 adjusted = np.minimum.accumulate(
     adjusted[::-1]
 )[::-1]
@@ -290,14 +261,12 @@ adjusted = np.clip(
     1
 )
 
-# 恢复原始顺序
 q_values = np.empty(m)
 
 q_values[order] = adjusted
 
 result_df["FDR"] = q_values
 
-# 显著性判断
 result_df["Significant_P05"] = (
     result_df["P_Value"] < 0.05
 )
@@ -318,43 +287,28 @@ result_df = result_df.sort_values(
 
 
 # ============================================================
-# 9. 保存完整 U 检验结果
+# 9. 保存完整U检验结果
 # ============================================================
 
-result_path = os.path.join(
-    OUT_DIR,
-    "VOC_U检验结果.csv"
-)
-
 result_df.to_csv(
-    result_path,
+    OUT_DIR / "VOC_U检验结果.csv",
     index=False,
     encoding="utf-8-sig"
 )
-
-
-# ============================================================
-# 10. 保存显著 VOC 名单
-# ============================================================
 
 significant = result_df[
     result_df["Significant_FDR05"]
 ].copy()
 
-significant_path = os.path.join(
-    OUT_DIR,
-    "VOC显著差异名单_FDR05.csv"
-)
-
 significant.to_csv(
-    significant_path,
+    OUT_DIR / "VOC显著差异名单_FDR05.csv",
     index=False,
     encoding="utf-8-sig"
 )
 
 
 # ============================================================
-# 11. 输出统计结果
+# 10. 输出统计结果
 # ============================================================
 
 print("\n" + "=" * 65)
@@ -362,21 +316,12 @@ print("二、Mann-Whitney U 检验结果")
 print("=" * 65)
 
 print("总检验VOC数量：", len(result_df))
+print("原始P < 0.05：",
+      int(result_df["Significant_P05"].sum()))
 
-print(
-    "原始P < 0.05：",
-    int(result_df["Significant_P05"].sum())
-)
-
-print(
-    "FDR < 0.05：",
-    len(significant)
-)
-
-print(
-    "FDR < 0.01：",
-    int((result_df["FDR"] < 0.01).sum())
-)
+print("FDR < 0.05：", len(significant))
+print("FDR < 0.01：",
+      int((result_df["FDR"] < 0.01).sum()))
 
 print("\n显著差异VOC前20名：")
 
@@ -396,21 +341,13 @@ print(
 
 
 # ============================================================
-# 12. 绘制 U 检验散点图
-#
-# 横轴：Rank-biserial correlation
-# 纵轴：-log10(FDR)
+# 11. 原有U检验效应量散点图
 # ============================================================
 
 plt.figure(figsize=(11, 7))
 
-x_plot = result_df[
-    "Rank_Biserial"
-].to_numpy()
-
-q = result_df[
-    "FDR"
-].to_numpy()
+x_plot = result_df["Rank_Biserial"].to_numpy()
+q = result_df["FDR"].to_numpy()
 
 y_plot = -np.log10(
     np.maximum(q, 1e-300)
@@ -418,7 +355,6 @@ y_plot = -np.log10(
 
 significant_mask = q < 0.05
 
-# 未显著 VOC
 plt.scatter(
     x_plot[~significant_mask],
     y_plot[~significant_mask],
@@ -427,7 +363,6 @@ plt.scatter(
     label="FDR >= 0.05"
 )
 
-# 显著 VOC
 plt.scatter(
     x_plot[significant_mask],
     y_plot[significant_mask],
@@ -436,7 +371,6 @@ plt.scatter(
     label="FDR < 0.05"
 )
 
-# FDR阈值
 plt.axhline(
     -np.log10(0.05),
     linestyle="--",
@@ -444,50 +378,309 @@ plt.axhline(
     label="FDR = 0.05"
 )
 
-# 效应量零点
 plt.axvline(
     0,
     color="gray",
     linewidth=0.8
 )
 
-plt.xlabel(
-    "Rank-biserial correlation",
-    fontsize=12
-)
-
-plt.ylabel(
-    "-log10(FDR)",
-    fontsize=12
-)
+plt.xlabel("Rank-biserial correlation", fontsize=12)
+plt.ylabel("-log10(FDR)", fontsize=12)
 
 plt.title(
     "Mann-Whitney U Test of 264 Stable VOC Features",
     fontsize=14
 )
 
-plt.legend(
-    frameon=True
-)
-
-plt.grid(
-    alpha=0.2
-)
-
+plt.legend()
+plt.grid(alpha=0.2)
 plt.tight_layout()
 
-figure_path = os.path.join(
-    OUT_DIR,
-    "VOC_U检验结果图.png"
-)
-
 plt.savefig(
-    figure_path,
+    OUT_DIR / "VOC_U检验结果图.png",
     dpi=300,
     bbox_inches="tight"
 )
 
 plt.close()
+
+
+# ============================================================
+# 12. 新增：师兄风格的VOC小提琴图
+# Violin + Boxplot + Individual Samples
+# ============================================================
+
+print("\n开始生成多VOC小提琴图...")
+
+# 按FDR排序，取前25个
+plot_df = result_df.head(TOP_N).copy()
+
+n_plots = len(plot_df)
+
+n_rows = int(np.ceil(n_plots / N_COLS))
+
+fig, axes = plt.subplots(
+    n_rows,
+    N_COLS,
+    figsize=(20, 3.5 * n_rows),
+    squeeze=False
+)
+
+axes = axes.flatten()
+
+rng = np.random.default_rng(RANDOM_SEED)
+
+
+def p_to_star(q_value):
+
+    if q_value < 0.001:
+        return "***"
+
+    elif q_value < 0.01:
+        return "**"
+
+    elif q_value < 0.05:
+        return "*"
+
+    else:
+        return "n.s."
+
+
+for i, (_, row) in enumerate(plot_df.iterrows()):
+
+    ax = axes[i]
+
+    voc_idx = int(row["VOC_Index"])
+    voc_name = str(row["VOC_Name"])
+
+    # 使用原始MAT数据，不额外改变统计数据
+    values0 = X[:, voc_idx][group0]
+    values1 = X[:, voc_idx][group1]
+
+    data_groups = [
+        values0,
+        values1
+    ]
+
+    # --------------------------------------------------------
+    # 1. 小提琴图
+    # --------------------------------------------------------
+
+    violin = ax.violinplot(
+        data_groups,
+        positions=[0, 1],
+        widths=0.72,
+        showmeans=False,
+        showmedians=False,
+        showextrema=False
+    )
+
+    for body, color in zip(
+        violin["bodies"],
+        PALETTE
+    ):
+
+        body.set_facecolor(color)
+        body.set_edgecolor(color)
+        body.set_alpha(0.80)
+        body.set_linewidth(0.8)
+
+    # --------------------------------------------------------
+    # 2. 箱线图
+    # --------------------------------------------------------
+
+    bp = ax.boxplot(
+        data_groups,
+        positions=[0, 1],
+        widths=0.18,
+        patch_artist=True,
+        showfliers=False,
+        medianprops={
+            "color": "black",
+            "linewidth": 1.2
+        },
+        whiskerprops={
+            "color": "#555555",
+            "linewidth": 0.9
+        },
+        capprops={
+            "color": "#555555",
+            "linewidth": 0.9
+        }
+    )
+
+    for box in bp["boxes"]:
+
+        box.set_facecolor("white")
+        box.set_edgecolor("#555555")
+        box.set_linewidth(0.9)
+
+    # --------------------------------------------------------
+    # 3. 单个样本散点
+    # --------------------------------------------------------
+
+    for position, values, color in zip(
+        [0, 1],
+        data_groups,
+        PALETTE
+    ):
+
+        jitter = rng.uniform(
+            -0.11,
+            0.11,
+            size=len(values)
+        )
+
+        ax.scatter(
+            position + jitter,
+            values,
+            s=9,
+            color=color,
+            alpha=0.72,
+            edgecolors="none",
+            zorder=3
+        )
+
+    # --------------------------------------------------------
+    # 4. 显著性横线和星号
+    # --------------------------------------------------------
+
+    q_value = float(row["FDR"])
+
+    y_min = min(
+        np.min(values0),
+        np.min(values1)
+    )
+
+    y_max = max(
+        np.max(values0),
+        np.max(values1)
+    )
+
+    data_range = y_max - y_min
+
+    if data_range == 0:
+        data_range = max(abs(y_max), 1.0)
+
+    bracket_y = y_max + data_range * 0.13
+    bracket_h = data_range * 0.025
+
+    ax.plot(
+        [0, 0, 1, 1],
+        [
+            bracket_y,
+            bracket_y + bracket_h,
+            bracket_y + bracket_h,
+            bracket_y
+        ],
+        color="#444444",
+        linewidth=0.85
+    )
+
+    ax.text(
+        0.5,
+        bracket_y + bracket_h,
+        p_to_star(q_value),
+        ha="center",
+        va="bottom",
+        fontsize=9
+    )
+
+    # --------------------------------------------------------
+    # 5. 标题及坐标轴
+    # --------------------------------------------------------
+
+    title = f"#{voc_idx}  {voc_name}"
+
+    if len(title) > 30:
+        title = title[:27] + "..."
+
+    ax.set_title(
+        title,
+        fontsize=9,
+        pad=8
+    )
+
+    ax.set_xticks([0, 1])
+
+    ax.set_xticklabels(
+        [
+            f"Class 0\n(n={n0})",
+            f"Class 1\n(n={n1})"
+        ],
+        fontsize=8
+    )
+
+    if i % N_COLS == 0:
+        ax.set_ylabel(
+            "Relative intensity (MAT scale)",
+            fontsize=8
+        )
+    else:
+        ax.set_ylabel("")
+
+    ax.tick_params(
+        axis="y",
+        labelsize=7
+    )
+
+    ax.grid(
+        axis="y",
+        alpha=0.16,
+        linewidth=0.5
+    )
+
+    ax.set_axisbelow(True)
+
+    # 给显著性横线留出空间
+    ax.set_ylim(
+        bottom=min(0, y_min - data_range * 0.08),
+        top=bracket_y + data_range * 0.16
+    )
+
+    # 边框美化
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+
+# 删除多余空白子图
+for j in range(n_plots, len(axes)):
+    fig.delaxes(axes[j])
+
+
+fig.suptitle(
+    "Mann-Whitney U Test of Top 25 Stable VOC Features",
+    fontsize=17,
+    y=1.002
+)
+
+fig.tight_layout()
+
+violin_path = (
+    OUT_DIR
+    / "VOC_U检验_Top25_小提琴箱线散点图.png"
+)
+
+fig.savefig(
+    violin_path,
+    dpi=400,
+    bbox_inches="tight",
+    facecolor="white"
+)
+
+plt.close(fig)
+
+
+# 保存本次绘图所使用的VOC名单
+plot_df.to_csv(
+    OUT_DIR / "VOC_U检验_Top25绘图名单.csv",
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("多VOC小提琴图生成完成")
+print("展示VOC数量：", n_plots)
+print("图片保存位置：", violin_path)
 
 
 # ============================================================
@@ -514,8 +707,13 @@ config = {
 
     "Effect_Size": "Rank-biserial correlation",
 
-    "Effect_Positive_Meaning":
-        "Class 1 tends to have higher values than Class 0",
+    "Plot_Type": "Violin + Boxplot + Individual Samples",
+
+    "Plot_VOC_Count": n_plots,
+
+    "Plot_Ranking": "FDR ascending",
+
+    "Plot_Significance": "FDR adjusted",
 
     "Analysis_Type":
         "Exploratory analysis using all 159 samples",
@@ -523,10 +721,8 @@ config = {
     "Independent_Test_Set_Evaluation": False
 }
 
-import json
-
 with open(
-    os.path.join(OUT_DIR, "analysis_config.json"),
+    OUT_DIR / "analysis_config.json",
     "w",
     encoding="utf-8"
 ) as f:
@@ -544,28 +740,19 @@ with open(
 # ============================================================
 
 print("\n" + "=" * 65)
-
 print("Mann-Whitney U 检验全部完成")
-
 print("=" * 65)
 
 print("检验VOC数量：", len(result_df))
-
+print("原始P < 0.05：",
+      int(result_df["Significant_P05"].sum()))
 print("FDR显著VOC数量：", len(significant))
 
 print("\n结果保存位置：")
-
 print(OUT_DIR)
 
-print("\n生成文件：")
-
-print("1. VOC_U检验结果.csv")
-
-print("2. VOC显著差异名单_FDR05.csv")
-
-print("3. VOC_U检验结果图.png")
-
-print("4. analysis_config.json")
+print("\n新增图片：")
+print("VOC_U检验_Top25_小提琴箱线散点图.png")
 
 print("=" * 65)
 
