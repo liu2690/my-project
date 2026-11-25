@@ -1,0 +1,13 @@
+# 原始数据不上传GitHub
+*.mat
+
+# Python缓存
+__pycache__/
+*.py[cod]
+
+# Jupyter缓存
+.ipynb_checkpoints/
+
+# 系统文件
+.DS_Store
+Thumbs.db

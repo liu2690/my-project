@@ -1,0 +1,13 @@
+{
+    "Validation_Samples": 32,
+    "VOC_Count": 264,
+    "Accuracy": 0.84375,
+    "Sensitivity": 0.8181818181818182,
+    "Specificity": 0.8571428571428571,
+    "F1": 0.782608695652174,
+    "AUC": 0.8376623376623378,
+    "Same_Indices": true,
+    "Same_Targets": true,
+    "Same_Predictions": true,
+    "Same_Probabilities": true
+}
