@@ -1,0 +1,14 @@
+{
+    "Sample_Count": 159,
+    "Class_0_Count": 106,
+    "Class_1_Count": 53,
+    "Stable_VOC_Count": 264,
+    "Test_Method": "Mann-Whitney U",
+    "Alternative": "two-sided",
+    "Multiple_Test_Correction": "Benjamini-Hochberg",
+    "Significance_Level": 0.05,
+    "Effect_Size": "Rank-biserial correlation",
+    "Effect_Positive_Meaning": "Class 1 tends to have higher values than Class 0",
+    "Analysis_Type": "Exploratory analysis using all 159 samples",
+    "Independent_Test_Set_Evaluation": false
+}

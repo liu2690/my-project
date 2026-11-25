@@ -1,0 +1,19 @@
+{
+    "experiment": "VOC panel MLP gt60",
+    "samples": 159,
+    "features": 1692,
+    "train_samples": 95,
+    "validation_samples": 32,
+    "test_samples": 32,
+    "stable_VOC": 264,
+    "selection_frequency_threshold": 0.6,
+    "epochs": 30,
+    "training_seed": 42,
+    "outer_split_seed": 42,
+    "inner_split_seed": 1042,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.005,
+    "positive_class_weight": 1.0,
+    "validation_accuracy": 0.84375,
+    "validation_auc": 0.8376623376623378
+}
